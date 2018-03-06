@@ -1,1 +1,6 @@
 @import "tachyons";
+
+/* Custom */
+.w-85 { 
+  width: 85%;
+}
