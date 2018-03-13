@@ -1,5 +1,25 @@
 @import "tachyons";
 
+body {
+	font-family: "Roboto", sans-sarif;
+	font-size: 16px;
+	line-height: 1.61;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 13px;
+	}
+}
+
+/*Typography*/
+h1 { font-size: 3em;}
+h2 { font-size: 2.25em;}
+h3 { font-size: 1.75em;}
+h4 { font-size: 1.5em;}
+h5 { font-size: 1.25em;}
+p  { font-size: 1em;}
+
 /* Custom */
 .w-85 { 
   width: 85%;

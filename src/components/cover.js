@@ -2,9 +2,9 @@ import React from 'react'
 import logo from '../logo.jpg'
 
 export default () => (
-  <section className='tc pv4 pv5-ns'>
-    <img src={logo} className='br-100 pa1 ba b--black-10 h3 w3' alt='avatar' />
-    <h1 className='f5 f4-ns fw6 mid-gray'>Jasper Whitehouse</h1>
-    <h2 className='f6 gray fw2 ttu tracked'>Los Angeles</h2>
+  <section className='fw-100 min-vh-100'>
+  	<div className="container mw9 w-85 center pv4">
+    	<h1 className='mid-gray tc'>Jasper Whitehouse</h1>
+    </div>
   </section>
 )
