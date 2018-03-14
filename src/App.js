@@ -56,7 +56,7 @@ class App extends Component {
           <div className="container mw9 w-85 center">
             <h2 className="ma0 lh-title pb4-l pb3 tc fw2">合作夥伴</h2>
             <div className="mw9 center ph3-ns">
-              <div className="cf ph2-ns">
+              <div className="cf ph2-ns tc">
                 <div className="fl w-100 w-third-l w-50-m pa3 hidediv hideme">
                   <div className="bg-white pa4 h-320">
                     <a href="#" className="u-line moon-gray dib relative">連結</a>
@@ -91,34 +91,37 @@ class App extends Component {
             </div>
           </div>
         </section>
-        <section className="fw-100 bg-gray"> 
+        <section className="fw-100 bg-white"> 
           <div className="cf">
             <div className="fl w-100 w-third-ns">
-              <div className="bg-white pa4 h-480 hover-bg-gray bg-animate tc">
-                <a href="#" className="link btn ba b--moon-gray bw1 dib center ph4 br1 moon-gray hover-black relative overflow-hidden">
-                  <span className="btn-color bg-moon-gray w-100 h-100 absolute"></span>
+              <div className="bg-white pa5-l pa4 h-480 hover-bg-moon-gray bg-animate tc">
+                <a href="#" className="link btn ba b--dark bw1 dib center ph4 br1 dark hover-white relative overflow-hidden">
+                  <span className="btn-color bg-dark w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw4 pv3 relative">
                     參加 g0v
+                    <FontAwesome className="pl2" name='long-arrow-right'/>
                   </p>
                 </a>
               </div>
             </div>
             <div className="fl w-100 w-third-ns">
-              <div className="bg-white pa4 h-480 hover-bg-gray bg-animate tc">
-                <a href="#" className="link btn ba b--moon-gray bw1 dib center ph4 br1 moon-gray hover-black relative overflow-hidden">
-                  <span className="btn-color bg-moon-gray w-100 h-100 absolute"></span>
+              <div className="bg-white pa5-l pa4 h-480 hover-bg-moon-gray bg-animate tc">
+                <a href="#" className="link btn ba b--dark bw1 dib center ph4 br1 dark hover-white relative overflow-hidden">
+                  <span className="btn-color bg-dark w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw4 pv3 relative">
                     我要捐款
+                    <FontAwesome className="pl2" name='long-arrow-right'/>
                   </p>
                 </a>
               </div>
             </div>
             <div className="fl w-100 w-third-ns">
-              <div className="bg-white pa4 h-480 hover-bg-gray bg-animate tc">
-                <a href="#" className="link btn ba b--moon-gray bw1 dib center ph4 br1 moon-gray hover-black relative overflow-hidden">
-                  <span className="btn-color bg-moon-gray w-100 h-100 absolute"></span>
+              <div className="bg-white pa5-l pa4 h-480 hover-bg-moon-gray bg-animate tc">
+                <a href="#" className="link btn ba b--dark bw1 dib center ph4 br1 dark hover-white relative overflow-hidden">
+                  <span className="btn-color bg-dark w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw4 pv3 relative">
                     下載資料
+                    <FontAwesome className="pl2" name='long-arrow-right'/>
                   </p>
                 </a>
               </div>

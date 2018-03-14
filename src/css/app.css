@@ -75,9 +75,17 @@ a  { text-decoration: none;}
 .bg-dark-black {
 	background-color: #1b1b1c;
 }
+
+.dark {
+	color: #2a2039;
+}
 .bg-dark {
 	background-color: #2a2039;
 }
+.b--dark {
+	border-color: #2a2039;
+}
+
 
 /* Transition */
 .hidediv {
