@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import Cover from './components/cover'
-import Footer from './components/footer'
+import Cover from './components/cover';
+import Footer from './components/footer';
+import FontAwesome from 'react-fontawesome';
+import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <ParallaxProvider>
         <Cover />
         <section className="fw-100 bg-light-gray min-vh-100 pv5-l pv4"> 
           <div className="container mw9 w-85 center">
@@ -43,28 +46,110 @@ class App extends Component {
             <h4 className="ma0 lh-copy tc mw7 center fw4">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h4>
           </div>
         </section>
-        <section className="fw-100 bg-light-gray min-vh-100 pv5-l pv4"> 
+        <section className="fw-100 bg-white min-vh-100 pv5-l pv4"> 
           <div className="container mw9 w-85 center">
             <h2 className="ma0 lh-title pb4-l pb3 tc fw2">五大主題</h2>
             <h4 className="ma0 lh-copy tc mw7 center fw4">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h4>
           </div>
         </section>
-        <section className="fw-100 bg-gray min-vh-100 pv5-l pv4"> 
+        <section className="fw-100 bg-light-gray pv5-l pv4"> 
           <div className="container mw9 w-85 center">
             <h2 className="ma0 lh-title pb4-l pb3 tc fw2">合作夥伴</h2>
+            <div className="mw9 center ph3-ns">
+              <div className="cf ph2-ns">
+                <div className="fl w-100 w-third-l w-50-m pa3 hidediv hideme">
+                  <div className="bg-white pa4 h-320">
+                    <a href="#" className="u-line moon-gray dib relative">連結</a>
+                  </div>
+                </div>
+                <div className="fl w-100 w-third-l w-50-m pa3 hidediv hideme">
+                  <div className="bg-white pa4 h-320">
+                    <a href="#" className="u-line moon-gray dib relative">連結</a>
+                  </div>
+                </div>
+                <div className="fl w-100 w-third-l w-50-m pa3 hidediv hideme">
+                  <div className="bg-white pa4 h-320">
+                    <a href="#" className="u-line moon-gray dib relative">連結</a>
+                  </div>
+                </div>
+                <div className="fl w-100 w-third-l w-50-m pa3 hidediv hideme">
+                  <div className="bg-white pa4 h-320">
+                    <a href="#" className="u-line moon-gray dib relative">連結</a>
+                  </div>
+                </div>
+                <div className="fl w-100 w-third-l w-50-m pa3 hidediv hideme">
+                  <div className="bg-white pa4 h-320">
+                    <a href="#" className="u-line moon-gray dib relative">連結</a>
+                  </div>
+                </div>
+                <div className="fl w-100 w-third-l w-50-m pa3 hidediv hideme">
+                  <div className="bg-white pa4 h-320">
+                    <a href="#" className="u-line moon-gray dib relative">連結</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section className="fw-100 bg-light-gray min-vh-100 pv5-l pv4"> 
-          <div className="container mw9 w-85 center">
-            <h2 className="ma0 lh-title pb4-l pb3 tc fw2">分享</h2>
+        <section className="fw-100 bg-gray"> 
+          <div className="cf">
+            <div className="fl w-100 w-third-ns">
+              <div className="bg-white pa4 h-480 hover-bg-gray bg-animate tc">
+                <a href="#" className="link btn ba b--moon-gray bw1 dib center ph4 br1 moon-gray hover-black relative overflow-hidden">
+                  <span className="btn-color bg-moon-gray w-100 h-100 absolute"></span>
+                  <p className="ma0 lh-title tc fw4 pv3 relative">
+                    參加 g0v
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div className="fl w-100 w-third-ns">
+              <div className="bg-white pa4 h-480 hover-bg-gray bg-animate tc">
+                <a href="#" className="link btn ba b--moon-gray bw1 dib center ph4 br1 moon-gray hover-black relative overflow-hidden">
+                  <span className="btn-color bg-moon-gray w-100 h-100 absolute"></span>
+                  <p className="ma0 lh-title tc fw4 pv3 relative">
+                    我要捐款
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div className="fl w-100 w-third-ns">
+              <div className="bg-white pa4 h-480 hover-bg-gray bg-animate tc">
+                <a href="#" className="link btn ba b--moon-gray bw1 dib center ph4 br1 moon-gray hover-black relative overflow-hidden">
+                  <span className="btn-color bg-moon-gray w-100 h-100 absolute"></span>
+                  <p className="ma0 lh-title tc fw4 pv3 relative">
+                    下載資料
+                  </p>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
-        <section className="fw-100 bg-gray pv5-l pv4"> 
-          <div className="container mw9 w-85 center">
-            <h2 className="ma0 lh-title tc">分享</h2>
+        <ParallaxBanner
+          className="fw-100 bg-dark pv5-l pv4"
+          layers={[
+              {
+                  image: 'images/topography.svg',
+                  amount: 1,
+                  slowerScrollRate: false,
+              }
+          ]}
+          style={{
+              height: 'auto',
+          }}
+        >
+          <div className="container mw9 w-85 tc center">
+            <a href="#" className="link btn ba b--white bw1 dib center ph4 br1 white hover-black relative overflow-hidden">
+              <span className="btn-color bg-white w-100 h-100 absolute"></span>
+              <p className="ma0 lh-title tc fw4 pv3 relative">
+                <FontAwesome className="pr2" name='facebook-square'/>
+                分享到 Facebook
+              </p>
+            </a>
           </div>
-        </section>
+        </ParallaxBanner>
         <Footer />
+        </ParallaxProvider>
       </div>
     );
   }

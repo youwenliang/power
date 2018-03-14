@@ -12,6 +12,12 @@ body {
 	}
 }
 
+.logo {
+	background-image: url(/images/g0v-logo.svg);
+	width: 199px;
+	height: 32px;
+}
+
 /*Typography*/
 h1 { font-size: 3em;}
 h2 { font-size: 2.25em;}
@@ -19,8 +25,68 @@ h3 { font-size: 1.75em;}
 h4 { font-size: 1.5em;}
 h5 { font-size: 1.25em;}
 p  { font-size: 1em;}
+a  { text-decoration: none;}
 
 /* Custom */
 .w-85 { 
   width: 85%;
+}
+
+.h-320 {
+  height: 320px;	
+}
+
+.h-480 {
+  height: 480px;
+}
+
+.u-line:before {
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: #ccc;
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.u-line:hover:before {
+	width: 100%;
+}
+
+/* Button */
+.btn {
+	transition: all .4s ease-in-out;
+}
+
+.btn-color {
+	left: 0;
+	transform: translateX(-100%);
+	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.btn:hover .btn-color{
+	transform: translateX(0%);
+	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* Color */
+.bg-dark-black {
+	background-color: #1b1b1c;
+}
+.bg-dark {
+	background-color: #2a2039;
+}
+
+/* Transition */
+.hidediv {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.hideme {
+	opacity: 0;
+	transform: translateY(20px);
 }
