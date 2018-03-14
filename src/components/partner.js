@@ -36,7 +36,7 @@ var partnerListData = [
 class Partner extends Component {
   partner = (i) => {
     return (
-      <div className="fl ma3 bg-white hidediv hideme">
+      <div className="fl partners ma3 bg-white hidediv hideme">
         <div className="pa4">
           <figure className="center mb3">
             <img src={partnerListData[i].image[0]} width={partnerListData[i].image[1]} height={partnerListData[i].image[2]} />
@@ -56,10 +56,8 @@ class Partner extends Component {
       <section className="fw-100 bg-light-gray pv5-l pv4"> 
         <div className="container mw9 w-85 center">
           <h2 className="ma0 lh-title pb4-l pb3 tc fw2">合作夥伴</h2>
-          <div className="mw9 center ph3-ns">
-            <div className="cf ph2-ns tc flexbox">
-              {partnerList}
-            </div>
+          <div className="cf tc flexbox center mw74">
+            {partnerList}
           </div>
         </div>
       </section>

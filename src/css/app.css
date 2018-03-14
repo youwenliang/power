@@ -1,5 +1,9 @@
 @import "tachyons";
 
+html, body {
+	overflow-x: hidden;
+}
+
 body {
 	font-family: "Roboto", sans-sarif;
 	font-size: 16px;
@@ -38,11 +42,15 @@ a  { text-decoration: none;}
 .mw-320 {
   max-width: 320px;
 }
-
+.mw74 {
+  max-width: 74rem;
+}
 .mh-360 {
   min-height: 360px;	
 }
-
+.mh-600 {
+  min-height: 600px;
+}
 .h-480 {
   height: 480px;
 }
@@ -102,18 +110,36 @@ a  { text-decoration: none;}
   flex-wrap: wrap;
 }
 
-.flexbox .fl {
+.flexbox .push {
+	width: 33.33%;
+	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media screen and (min-width: 1025px) {
+	.flexbox .push{
+		flex: 2 0 0;
+	}
+	.flexbox .push:hover {
+		flex: 3 0 0;
+		transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
+	}
+}
+
+.flexbox .partners {
   width: calc(33.33% - 2rem);
 }
 
 @media screen and (max-width: 768px) {
-	.flexbox .fl {
+	.flexbox .partners {
 	  width: calc(100% - 2rem);
+	}
+	.flexbox .push {
+	  width: 100%;
 	}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-	.flexbox .fl {
+	.flexbox .partners {
 	  width: calc(50% - 2rem);
 	}
 }
@@ -130,3 +156,19 @@ a  { text-decoration: none;}
 	opacity: 0;
 	transform: translateY(20px);
 }
+
+/* Swiper */
+.swiper-container {
+	overflow: visible;
+}
+
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 5px;
+}
+.swiper-button-disabled {opacity: .1 !important}
+
+.swiper-pagination-bullet-active {background: #333 !important;}

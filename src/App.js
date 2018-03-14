@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Cover from './components/cover';
 import Footer from './components/footer';
 import Partner from './components/partner';
+import Topics from './components/topics';
 import FontAwesome from 'react-fontawesome';
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 
@@ -47,17 +48,15 @@ class App extends Component {
             <h4 className="ma0 lh-copy tc mw7 center fw4">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h4>
           </div>
         </section>
-        <section className="fw-100 bg-white min-vh-100 pv5-l pv4"> 
-          <div className="container mw9 w-85 center">
-            <h2 className="ma0 lh-title pb4-l pb3 tc fw2">五大主題</h2>
-            <h4 className="ma0 lh-copy tc mw7 center fw4">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h4>
-          </div>
-        </section>
+        <Topics/>
         <Partner/>
         <section className="fw-100 bg-white"> 
-          <div className="cf">
-            <div className="fl w-100 w-third-ns">
-              <div className="bg-white pa5-l pa4 h-480 hover-bg-moon-gray bg-animate tc">
+          <div className="cf flexbox">
+            <div className="push fl">
+              <div className="bg-white pa5-l pa4 hover-bg-moon-gray bg-animate tc">
+                <figure className="center mb4 w4 h4 bg-dark"></figure>
+                <h5 className="ma0">測試測試</h5>
+                <p className="mw-320 center mb4">內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
                 <a href="#" className="link btn ba b--dark bw1 dib center ph4 br1 dark hover-white relative overflow-hidden">
                   <span className="btn-color bg-dark w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw5 pv3 relative">
@@ -67,8 +66,11 @@ class App extends Component {
                 </a>
               </div>
             </div>
-            <div className="fl w-100 w-third-ns">
-              <div className="bg-white pa5-l pa4 h-480 hover-bg-moon-gray bg-animate tc">
+            <div className="push fl">
+              <div className="bg-white pa5-l pa4 hover-bg-moon-gray bg-animate tc">
+                <figure className="center mb4 w4 h4 bg-dark"></figure>
+                <h5 className="ma0">測試測試</h5>
+                <p className="mw-320 center mb4">內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
                 <a href="#" className="link btn ba b--dark bw1 dib center ph4 br1 dark hover-white relative overflow-hidden">
                   <span className="btn-color bg-dark w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw5 pv3 relative">
@@ -78,8 +80,11 @@ class App extends Component {
                 </a>
               </div>
             </div>
-            <div className="fl w-100 w-third-ns">
-              <div className="bg-white pa5-l pa4 h-480 hover-bg-moon-gray bg-animate tc">
+            <div className="push fl">
+              <div className="bg-white pa5-l pa4 hover-bg-moon-gray bg-animate tc">
+                <figure className="center mb4 w4 h4 bg-dark"></figure>
+                <h5 className="ma0">測試測試</h5>
+                <p className="mw-320 center mb4">內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
                 <a href="#" className="link btn ba b--dark bw1 dib center ph4 br1 dark hover-white relative overflow-hidden">
                   <span className="btn-color bg-dark w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw5 pv3 relative">
