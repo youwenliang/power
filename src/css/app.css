@@ -16,12 +16,6 @@ body {
 	}
 }
 
-.logo {
-	background-image: url(/images/g0v-logo.svg);
-	width: 199px;
-	height: 32px;
-}
-
 /*Typography*/
 h1 { font-size: 3em;}
 h2 { font-size: 2.25em;}
