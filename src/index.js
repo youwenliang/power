@@ -17,7 +17,7 @@ $(window).scroll( function(){
 	  	var $this = $(this);
 	  	setTimeout(function(){
 	  		$this.removeClass('showme-expand-y');
-	  	}, i*150)
+	  	}, i*80)
 	  }	  
 	});
 	$('.hideme').each( function(i){
@@ -41,6 +41,7 @@ $(window).scroll( function(){
 	$('section').each( function(i){
 	  var bottom_of_object = $(this).offset().top + $(this).outerHeight() + 3*$(window).height()/4;
 	  var bottom_of_window = $(window).scrollTop() + $(window).height();
+	  var h = $(this).css('height');
 	  if( bottom_of_window > bottom_of_object ){
 	  	var $this = $(this);
 	  	$this.css('opacity', '.6');
