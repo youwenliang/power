@@ -30,13 +30,14 @@ class Projects extends Component {
       backgroundPosition: 'center center'
     };
     return (
-      <div className="fl project ma3 cp">
-        <div className="overflow-hidden center mt0 mb3 bg-white h5">
+      <div className="fl project ma3 cp hideme-more hidediv">
+        <div className="overflow-hidden center mt0 mb3 bg-white h5 relative">
+          <span className="bg-dark-black w-100 h-100 absolute showdiv showme-expand-y"></span>
           <figure className="project-img w-100 h-100 ma0" style={divStyle}></figure>
         </div>
-        <div className="pt0">
-          <h4 className="ma0 white">{projectListData[i].name}</h4>
-          <p className="white mt2">{projectListData[i].description}</p>
+        <div className="pt0 pl5 dash">
+          <h4 className="ma0 white hideme hidediv">{projectListData[i].name}</h4>
+          <p className="white mt2 hideme hidediv">{projectListData[i].description}</p>
         </div>
       </div>
     )

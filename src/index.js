@@ -17,11 +17,19 @@ $(window).scroll( function(){
 	  	var $this = $(this);
 	  	setTimeout(function(){
 	  		$this.removeClass('showme-expand-y');
-	  	}, i*80)
+	  	}, i*180)
+	  }	  
+	});
+	$('.hideme-more').each( function(i){
+	  var bottom_of_object = $(this).offset().top;
+	  var bottom_of_window = $(window).scrollTop() + $(window).height();
+	  if( bottom_of_window > bottom_of_object ){
+	  	var $this = $(this);
+	  	$this.removeClass('hideme-more');
 	  }	  
 	});
 	$('.hideme').each( function(i){
-	  var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
+	  var bottom_of_object = $(this).offset().top + $(this).outerHeight()/4;
 	  var bottom_of_window = $(window).scrollTop() + $(window).height();
 	  if( bottom_of_window > bottom_of_object ){
 	  	var $this = $(this);
