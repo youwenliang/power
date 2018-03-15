@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Cover from './components/cover';
-import Footer from './components/footer';
-import Partner from './components/partner';
+import Projects from './components/projects';
 import Topics from './components/topics';
+import Partner from './components/partner';
+import Footer from './components/footer';
 import FontAwesome from 'react-fontawesome';
 import { ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 
@@ -42,12 +43,7 @@ class App extends Component {
             <h4 className="ma0 lh-copy tc mw7 center fw4">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h4>
           </div>
         </section>
-        <section className="fw-100 bg-moon-gray min-vh-100 pv5-l pv4"> 
-          <div className="container mw9 w-85 center">
-            <h2 className="ma0 lh-title pb4-l pb3 tc fw2">精選專案</h2>
-            <h4 className="ma0 lh-copy tc mw7 center fw4">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h4>
-          </div>
-        </section>
+        <Projects/>
         <Topics/>
         <Partner/>
         <section className="fw-100 bg-white"> 
