@@ -35,7 +35,7 @@ class Projects extends Component {
           <span className="bg-dark-black w-100 h-100 absolute showdiv showme-expand-y"></span>
           <figure className="project-img w-100 h-100 ma0" style={divStyle}></figure>
         </div>
-        <div className="pt0 pl5 dash">
+        <div className="pt0 pl5 dash hideme hidediv">
           <h4 className="ma0 white hideme hidediv">{projectListData[i].name}</h4>
           <p className="white mt2 hideme hidediv">{projectListData[i].description}</p>
         </div>

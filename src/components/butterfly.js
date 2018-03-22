@@ -13,7 +13,7 @@ class Butterfly extends Component {
           <div className="pt4-l center">
             <ul className="ma0 pa0 tc">
               <li className="dib ma2 w45 h45 tc bg-white pa2 hideme hidediv">
-                <h5 className="ma0 tc pt3">提案</h5>
+                <h5 className="ma0 tc pt3 tracked">提案</h5>
                 <h1 className="ma0 tc di pr1">
                 <AnimatedNumber component="text" value="151"
                   stepPrecision = {0}
@@ -21,7 +21,7 @@ class Butterfly extends Component {
                 </h1><span>件</span>
               </li>
               <li className="dib ma2 w45 h45 tc bg-white pa2 hideme hidediv">
-                <h5 className="ma0 tc pt3">獲獎提案</h5>
+                <h5 className="ma0 tc pt3 tracked">獲獎提案</h5>
                 <h1 className="ma0 tc di pr1">
                 <AnimatedNumber component="text" value="13"
                   stepPrecision = {0}
@@ -29,7 +29,7 @@ class Butterfly extends Component {
                 </h1><span>件</span>
               </li>
               <li className="dib ma2 w45 h45 tc bg-white pa2 hideme hidediv">
-                <h5 className="ma0 tc pt3">媒體報導</h5>
+                <h5 className="ma0 tc pt3 tracked">媒體報導</h5>
                 <h1 className="ma0 tc di pr1">
                 <AnimatedNumber component="text" value="30"
                   stepPrecision = {0}
@@ -37,7 +37,7 @@ class Butterfly extends Component {
                 +</h1><span>篇</span>
               </li>
               <li className="dib ma2 w45 h45 tc bg-white pa2 hideme hidediv">
-                <h5 className="ma0 tc pt3">獎金</h5>
+                <h5 className="ma0 tc pt3 tracked">獎金</h5>
                 <h1 className="ma0 tc di pr1">
                 <AnimatedNumber component="text" value="600"
                   stepPrecision = {0}

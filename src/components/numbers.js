@@ -14,45 +14,60 @@ class Numbers extends Component {
       return (
         <div className="center">
           <ul className="ma0 pa0 tc">
-            <li className="dib ma2 w45 h45 tc white pa2 hideme hidediv br b--white-20">
-              <h5 className="ma0 tc pt3">黑客松</h5>
-              <h1 className="ma0 tc di pr1">
+            <li className="dib ma0 w48 h45 tc white ph3 hideme hidediv br-ns b--white-20 bn">
+              <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="29"
+                style={{
+                  fontSize: 60
+                }}
                 stepPrecision = {0}
                 duration={750} />
               </h1><span>次</span>
+              <p className="ma0 tc pa0 tracked">黑客松</p>
             </li>
-            <li className="dib ma2 w45 h45 tc white pa2 hideme hidediv br b--white-20">
-              <h5 className="ma0 tc pt3">國際雙年會</h5>
-              <h1 className="ma0 tc di pr1">
+            <li className="dib ma0 w48 h45 tc white ph3 hideme hidediv br-ns b--white-20 bn">
+              <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="3"
+                style={{
+                  fontSize: 60
+                }}
                 stepPrecision = {0}
                 duration={790} />
               </h1><span>次</span>
+              <p className="ma0 tc pa0 tracked">國際雙年會</p>
             </li>
-            <li className="dib ma2 w45 h45 tc white pa2 hideme hidediv br b--white-20">
-              <h5 className="ma0 tc pt3">正式提案</h5>
-              <h1 className="ma0 tc di pr1">
+            <li className="dib ma0 w48 h45 tc white ph3 hideme hidediv br-ns b--white-20 bn">
+              <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="517"
+                style={{
+                  fontSize: 60
+                }}
                 stepPrecision = {0}
                 duration={830} />
               </h1><span>次</span>
+              <p className="ma0 tc pa0 tracked">正式提案</p>
             </li>
-            <li className="dib ma2 w45 h45 tc white pa2 hideme hidediv br b--white-20">
-              <h5 className="ma0 tc pt3">坑主</h5>
-              <h1 className="ma0 tc di pr1">
+            <li className="dib ma0 w48 h45 tc white ph3 hideme hidediv br-ns b--white-20 bn">
+              <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="304"
+                style={{
+                  fontSize: 60
+                }}
                 stepPrecision = {0}
                 duration={870} />
               </h1><span>位</span>
+              <p className="ma0 tc pa0 tracked">坑主</p>
             </li>
-            <li className="dib ma2 w45 h45 tc white pa2 hideme hidediv">
-              <h5 className="ma0 tc pt3">參與者</h5>
-              <h1 className="ma0 tc di pr1">
+            <li className="dib ma2 w48 h45 tc white ph3 hideme hidediv">
+              <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="5000"
+                style={{
+                  fontSize: 60
+                }}
                 stepPrecision = {0}
                 duration={910} />
               +</h1>
+              <p className="ma0 tc pa0 tracked">參與者</p>
             </li>
           </ul>
         </div>
@@ -80,8 +95,8 @@ class Numbers extends Component {
                 <li className="dib">
                 <Parallax
                     className="ma0 pa0"
-                    offsetYMax={10}
-                    offsetYMin={-10}
+                    offsetYMax={-10}
+                    offsetYMin={-20}
                     slowerScrollRate
                     tag="figure"
                 >
@@ -91,8 +106,8 @@ class Numbers extends Component {
                 <li className="dib">
                 <Parallax
                     className="ma0 pa0"
-                    offsetYMax={10}
-                    offsetYMin={-10}
+                    offsetYMax={-10}
+                    offsetYMin={-20}
                     slowerScrollRate
                     tag="figure"
                 >
@@ -102,8 +117,8 @@ class Numbers extends Component {
                 <li className="dib">
                 <Parallax
                     className="ma0 pa0"
-                    offsetYMax={10}
-                    offsetYMin={-10}
+                    offsetYMax={-10}
+                    offsetYMin={-20}
                     slowerScrollRate
                     tag="figure"
                 >
@@ -113,8 +128,8 @@ class Numbers extends Component {
                 <li className="dib">
                 <Parallax
                     className="ma0 pa0"
-                    offsetYMax={10}
-                    offsetYMin={-10}
+                    offsetYMax={-10}
+                    offsetYMin={-20}
                     slowerScrollRate
                     tag="figure"
                 >
@@ -124,8 +139,8 @@ class Numbers extends Component {
                 <li className="dib">
                 <Parallax
                     className="ma0 pa0"
-                    offsetYMax={10}
-                    offsetYMin={-10}
+                    offsetYMax={-10}
+                    offsetYMin={-20}
                     slowerScrollRate
                     tag="figure"
                 >
