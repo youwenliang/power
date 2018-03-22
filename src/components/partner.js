@@ -55,7 +55,7 @@ class Partner extends Component {
     return (
       <section className="fw-100 bg-light pv6-l pv5"> 
         <div className="container mw9 w-85 center">
-          <h3 className="ma0 lh-title mb4-l mb3 tc fw2">合作夥伴</h3>
+          <h3 className="ma0 lh-title mb4-l mb3 tc fw2 hideme hidediv">合作夥伴</h3>
           <div className="cf tc flexbox center mw74">
             {partnerList}
           </div>

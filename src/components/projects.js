@@ -36,8 +36,8 @@ class Projects extends Component {
           <figure className="project-img w-100 h-100 ma0" style={divStyle}></figure>
         </div>
         <div className="pt0 pl5 dash hideme hidediv">
-          <h4 className="ma0 white hideme hidediv">{projectListData[i].name}</h4>
-          <p className="white mt2 hideme hidediv">{projectListData[i].description}</p>
+          <h4 className="ma0 white">{projectListData[i].name}</h4>
+          <p className="white mt2">{projectListData[i].description}</p>
         </div>
       </div>
     )
@@ -51,8 +51,8 @@ class Projects extends Component {
     return (
       <section className="fw-100 bg-dark pv6-l pv5"> 
         <div className="container mw9 w-85 center">
-          <h3 className="ma0 lh-title pb4-l pb3 tc fw2 white">精選專案</h3>
-          <h5 className="ma0 lh-copy tc mw7 center fw4 white mb5">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
+          <h3 className="ma0 lh-title pb4-l pb3 tc fw2 white hideme hidediv">精選專案</h3>
+          <h5 className="ma0 lh-copy tc mw7 center fw4 white mb5 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
           <div className="cf flexbox center mw74">
             {projectList}
           </div>
