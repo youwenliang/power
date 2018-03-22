@@ -9,7 +9,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
 $(window).scroll( function(){
-
 	$('.showme-expand-y').each( function(i){
 	  var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	  var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -18,14 +17,6 @@ $(window).scroll( function(){
 	  	setTimeout(function(){
 	  		$this.removeClass('showme-expand-y');
 	  	}, i*180)
-	  }	  
-	});
-	$('.hideme-more').each( function(i){
-	  var bottom_of_object = $(this).offset().top;
-	  var bottom_of_window = $(window).scrollTop() + $(window).height();
-	  if( bottom_of_window > bottom_of_object ){
-	  	var $this = $(this);
-	  	$this.removeClass('hideme-more');
 	  }	  
 	});
 	$('.hideme').each( function(i){
@@ -46,16 +37,22 @@ $(window).scroll( function(){
 	  	$this.removeClass('hideme-expand');
 	  }	  
 	});
+	$('.hideme-more').each( function(i){
+	  var bottom_of_object = $(this).offset().top;
+	  var bottom_of_window = $(window).scrollTop() + $(window).height();
+	  if( bottom_of_window > bottom_of_object ){
+	  	var $this = $(this);
+	  	$this.removeClass('hideme-more');
+	  }	  
+	});
 	$('section').each( function(i){
 	  var bottom_of_object = $(this).offset().top + $(this).outerHeight() + 3*$(window).height()/4;
 	  var bottom_of_window = $(window).scrollTop() + $(window).height();
-	  var h = $(this).css('height');
+	  var $this = $(this);
 	  if( bottom_of_window > bottom_of_object ){
-	  	var $this = $(this);
 	  	$this.css('opacity', '.6');
 	  }	  
 	  else {
-	  	var $this = $(this);
 	  	$this.css('opacity', '1');
 	  }
 	});

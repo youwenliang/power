@@ -14,7 +14,10 @@ body {
 	}
 }
 section {
-	transition: all .6s cubic-bezier(0.86, 0, 0.07, 1);
+	transition: all .3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+img {
+	vertical-align: bottom;
 }
 
 /*Typography*/
@@ -47,6 +50,12 @@ a {
 /* Custom */
 .w-85 {
 	width: 85%;
+}
+.w45 {
+	width: 10rem;
+}
+.h45 {
+	height: 10rem;
 }
 .mw-320 {
 	max-width: 320px;
@@ -104,6 +113,9 @@ a {
 .bg-dark {
 	background-color: #2a2039;
 }
+.bg-light {
+	background-color: #f4f4f4;
+}
 .b--dark {
 	border-color: #2a2039;
 }
@@ -121,6 +133,7 @@ a {
 	overflow: hidden;
 	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
 }
+
 @media screen and (min-width: 1025px) {
 	.flexbox .push{
 		flex: 2 0 0;
@@ -244,4 +257,32 @@ a {
 }
 .swiper-pagination-bullet-active {
 	background: #333 !important;
+}
+
+/* Gallery */
+.hover-scroll {
+	position: relative;
+}
+.hover-scroll ul {
+	margin-bottom: -15px;
+}
+.hover-scroll-next {
+	background-color: transparent;
+	display: block;
+	width: 33%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+}
+.hover-scroll-prev {
+	background-color: transparent;
+	display: block;
+	width: 33%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
 }

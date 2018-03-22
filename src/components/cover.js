@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../logo.jpg'
 
 export default () => (
   <section className='fw-100 min-vh-100 bg-white'>
