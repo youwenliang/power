@@ -4,18 +4,18 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 
 var shareListData = [
   {
-    "name": "聯合報系願景工程",
-    "description": "願景工程不只報導，還有行動，你我合作，正向改變。",
+    "name": "CTA1",
+    "description": "CTA1 Description CTA1 Description Description CTA1 Description",
     "action": "參加 g0v"
   },
   {
-    "name": "台灣大哥大基金會",
-    "description": "希望成為「數位匯流的領航者」，帶動公益科技化，使社會效益極大化。",
+    "name": "CTA2",
+    "description": "CTA2 Description CTA2 Description Description CTA2 Description",
     "action": "我要捐款"
   },
   {
-    "name": "前政委蔡玉玲律師",
-    "description": "2014 年因為「vTaiwan 虛擬世界法規調適交流平台」與 g0v 結緣。",
+    "name": "CTA3",
+    "description": "CTA3 Description CTA3 Description Description CTA3 Description",
     "action": "下載資料"
   }
 ]

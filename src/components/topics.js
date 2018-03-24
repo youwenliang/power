@@ -1,5 +1,39 @@
 import React, { Component } from 'react'
 import Swiper from 'swiper';
+import $ from 'jquery';
+
+var topicListData = [
+  {
+    "name": "科技與公益",
+    "description": "科技陪公益走完最後一哩路",
+    "content": "g0v 社群長期與公民團體站在同一個陣線，在開放資料與公眾參與的基礎上，降低議題的參與門檻，也累積議題的能量，讓公民團體與大眾更靠近。",
+    "image": ["images/topography.svg"]
+  },
+  {
+    "name": "開放政府",
+    "description": "開放政府，民間續航",
+    "content": "公民科技所作的事，就是讓公民把事情攤開來檢視，以「開放×資料×程式」的策略，從解決資訊落差開始，讓參與的層次前所未有的激發。",
+    "image": ["images/topography.svg"]
+  },
+  {
+    "name": "新資料",
+    "description": "這樣也行！創新的資料收集大法",
+    "content": "公民科技的介入，將資料從原本不易分享的型態解放出來，這個過程本身即是公民參與的實踐。",
+    "image": ["images/topography.svg"]
+  },
+  {
+    "name": "資料檢核",
+    "description": "自媒體時代，資料查核與再加值",
+    "content": "從單方向一元的傳播模式，走向多元分散式的結構化資料，新世代開發者嘗試在媒體領域走出一條新路，也應用在其他大量資料的領域。",
+    "image": ["images/topography.svg"]
+  },
+  {
+    "name": "社群基礎建設",
+    "description": "前瞻也顧後，社群基礎建設整合公民科技力",
+    "content": "g0v 揪松團從 2016 年開始推廣大家投入基礎建設工作，希望打造讓更多人投入協作、長期開發的公民科技生態系。",
+    "image": ["images/topography.svg"]
+  }
+]
 
 class Topics extends Component {
   componentDidMount() {
@@ -12,32 +46,77 @@ class Topics extends Component {
       prevButton: '.swiper-button-prev',
       spaceBetween: 32,
     });
+    $('.slide').each(function(index){
+      $(this).click(function(){
+        swiper.slideTo(index+1);
+      })
+    })
   }
+  topicIntro = (i) => {
+    return (
+      <li className="slide dib tc bg-near-white pa2 mv3 hideme hidediv relative w-30-l w-100 cp">
+          <figure className="center mb4">
+            <img src={topicListData[i].image[0]} height="175"/>
+          </figure>
+          <h1 className="absolute p-large o-10">{"0"+(i+1)}</h1>
+          <h3 className="ma0 tracked o-90 pt3 fw6">{topicListData[i].name}</h3>
+          <p className="mw-320 center o-70 ph2 mt4">{topicListData[i].description}</p>
+      </li>
+    )
+  }
+  numbers = () => {
+    let topicIntroList = [];
+    for(var i = 0; i < topicListData.length; i++) {
+      topicIntroList.push(this.topicIntro(i));
+    }
+    return (
+      <div className="numbers fl w-100">
+        <div className="pt4-l center">
+          <ul className="ma0 pa0 tc center">
+            {topicIntroList}
+          </ul>
+        </div>
+      </div>
+    )
+  }
+
   render() { 
     return (
       <section className="fw-100 bg-white pv6-l pv5"> 
         <div className="container mw9 w-85 center">
           <h3 className="ma0 lh-title pb4-l pb3 tc fw2 hideme hidediv">五大主題</h3>
-          <h5 className="ma0 lh-copy tc mw7 center fw4 mb5 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
+          <h5 className="ma0 lh-copy tc mw7 center fw4 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
           <div className="swiper-container center relative">
             <div className="swiper-wrapper">
-              <div className="swiper-slide ph5">
-                <div className="b--light-gray ba mh-600 pa4">a</div>
+              <div className="swiper-slide ph5-l ph0">
+                <div className="pa4">
+                  {this.numbers()}
+                </div>
               </div>
-              <div className="swiper-slide ph5">
-                <div className="b--light-gray ba mh-600 pa4">a</div>
+              <div className="swiper-slide ph5-l ph0">
+                <div className="b--light-gray ba pa4">
+                  01
+                </div>
               </div>
-              <div className="swiper-slide ph5">
-                <div className="b--light-gray ba mh-600 pa4">a</div>
+              <div className="swiper-slide ph5-l ph0">
+                <div className="b--light-gray ba pa4">
+                  02
+                </div>
               </div>
-              <div className="swiper-slide ph5">
-                <div className="b--light-gray ba mh-600 pa4">a</div>
+              <div className="swiper-slide ph5-l ph0">
+                <div className="b--light-gray ba pa4">
+                  03
+                </div>
               </div>
-              <div className="swiper-slide ph5">
-                <div className="b--light-gray ba mh-600 pa4">a</div>
+              <div className="swiper-slide ph5-l ph0">
+                <div className="b--light-gray ba pa4">
+                  04
+                </div>
               </div>
-              <div className="swiper-slide ph5">
-                <div className="b--light-gray ba mh-600 pa4">a</div>
+              <div className="swiper-slide ph5-l ph0">
+                <div className="b--light-gray ba pa4">
+                  05
+                </div>
               </div>
             </div>
             <div className="swiper-button-prev"></div>

@@ -1,9 +1,13 @@
 import React from 'react'
 
 export default () => (
-  <section className='fw-100 min-vh-100 bg-white'>
+  <section className='fw-100 min-vh-100 bg-dark'>
   	<div className="container mw9 w-85 center pv4">
-    	<h1 className='mid-gray'>2018 g0v <br/> 公民科技創新獎助金</h1>
+  		<div className="pv5">
+	  		<h1 className="white mv3 o-80">2018 g0v</h1>
+	    	<h1 className="white mv0">Civic Tech <br/> Prototype Grant <br/></h1>
+	    	<h2 className="near-white mv3 tracked">公民科技創新獎助金</h2>
+	    </div>
     </div>
   </section>
 )
