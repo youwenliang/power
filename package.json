@@ -10,6 +10,7 @@
     "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",
     "react-parallax": "^1.6.1",
+    "react-responsive-modal": "^2.0.1",
     "react-scripts": "1.1.1",
     "react-scroll-parallax": "^1.3.2",
     "swiper": "^3.4.2",

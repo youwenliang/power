@@ -44,7 +44,7 @@ class Topics extends Component {
       paginationClickable: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      spaceBetween: 32,
+      spaceBetween: 100,
     });
     $('.slide').each(function(index){
       $(this).click(function(){
@@ -54,14 +54,31 @@ class Topics extends Component {
   }
   topicIntro = (i) => {
     return (
-      <li className="slide dib tc bg-near-white pa2 mv3 hideme hidediv relative w-30-l w-100 cp">
-          <figure className="center mb4">
+      <li className="slide dib tc pa2 hideme hidediv relative w-third-l w-100 cp">
+          <figure className="center mb4 dn db-l">
             <img src={topicListData[i].image[0]} height="175"/>
           </figure>
           <h1 className="absolute p-large o-10">{"0"+(i+1)}</h1>
           <h3 className="ma0 tracked o-90 pt3 fw6">{topicListData[i].name}</h3>
           <p className="mw-320 center o-70 ph2 mt4">{topicListData[i].description}</p>
       </li>
+    )
+  }
+  topicContent = (i) => {
+    return (
+      <div className="swiper-slide ph5-l ph0 pt4-l">
+        <div className="fl w-20-l w-100">
+          <figure className="center">
+            <img src={topicListData[i].image[0]} height="225"/>
+          </figure>
+        </div>
+        <div className="fl w-80-l w-100 mw7-l ph4">
+          <h1 className="mv0 o-20">{"0"+(i+1)}</h1>
+          <h1 className="mv0">{topicListData[i].name}</h1>
+          <h3 className="mv1 o-60">{topicListData[i].description}</h3>
+          <p>{topicListData[i].content}</p>
+        </div>
+      </div>
     )
   }
   numbers = () => {
@@ -72,52 +89,33 @@ class Topics extends Component {
     return (
       <div className="numbers fl w-100">
         <div className="pt4-l center">
-          <ul className="ma0 pa0 tc center">
+          <ul className="ma0 pa0 tc center flexbox jcc">
             {topicIntroList}
           </ul>
         </div>
       </div>
     )
   }
+  topics = () => {
+    let topicSlide = [];
+    for(var i = 0; i < topicListData.length; i++) {
+      topicSlide.push(this.topicContent(i));
+    }
+    return topicSlide;
+  }
 
   render() { 
     return (
       <section className="fw-100 bg-white pv6-l pv5"> 
         <div className="container mw9 w-85 center">
-          <h3 className="ma0 lh-title pb4-l pb3 tc fw2 hideme hidediv">五大主題</h3>
-          <h5 className="ma0 lh-copy tc mw7 center fw4 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
+          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv">五大主題</h3>
+            <h5 className="ma0 lh-copy tc mw7 center fw4 f4-ns f5 o-80 mb5-l mb4 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
           <div className="swiper-container center relative">
             <div className="swiper-wrapper">
               <div className="swiper-slide ph5-l ph0">
-                <div className="pa4">
-                  {this.numbers()}
-                </div>
+                {this.numbers()}
               </div>
-              <div className="swiper-slide ph5-l ph0">
-                <div className="b--light-gray ba pa4">
-                  01
-                </div>
-              </div>
-              <div className="swiper-slide ph5-l ph0">
-                <div className="b--light-gray ba pa4">
-                  02
-                </div>
-              </div>
-              <div className="swiper-slide ph5-l ph0">
-                <div className="b--light-gray ba pa4">
-                  03
-                </div>
-              </div>
-              <div className="swiper-slide ph5-l ph0">
-                <div className="b--light-gray ba pa4">
-                  04
-                </div>
-              </div>
-              <div className="swiper-slide ph5-l ph0">
-                <div className="b--light-gray ba pa4">
-                  05
-                </div>
-              </div>
+              {this.topics()}
             </div>
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>

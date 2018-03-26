@@ -4,18 +4,18 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 
 var shareListData = [
   {
-    "name": "CTA1",
-    "description": "CTA1 Description CTA1 Description Description CTA1 Description",
+    "name": "小標五個字",
+    "description": "內文二十個字內文二十個字內文二十個字內文二十個字",
     "action": "參加 g0v"
   },
   {
-    "name": "CTA2",
-    "description": "CTA2 Description CTA2 Description Description CTA2 Description",
+    "name": "小標五個字",
+    "description": "內文二十個字內文二十個字內文二十個字內文二十個字",
     "action": "我要捐款"
   },
   {
-    "name": "CTA3",
-    "description": "CTA3 Description CTA3 Description Description CTA3 Description",
+    "name": "小標五個字",
+    "description": "內文二十個字內文二十個字內文二十個字內文二十個字",
     "action": "下載資料"
   }
 ]
@@ -29,7 +29,7 @@ class Share extends Component {
         <div className="bg-white pa5-l pa4 hover-bg-light-gray bg-animate tc">
           <figure className="mb4 w3 h3 bg-dark center"></figure>
           <h5 className="ma0">{shareListData[i].name}</h5>
-          <p className="mw-320 mb4 center">{shareListData[i].description}</p>
+          <p className="mw-320 mb4 center tl ph4">{shareListData[i].description}</p>
           <a href="#" className="link btn ba b--dark bw1 dib center ph4 br1 dark hover-white relative overflow-hidden">
             <span className="btn-color bg-dark w-100 h-100 absolute"></span>
             <p className="ma0 lh-title tc fw5 pv3 relative">
