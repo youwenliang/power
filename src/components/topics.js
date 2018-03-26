@@ -72,7 +72,7 @@ class Topics extends Component {
             <img src={topicListData[i].image[0]} height="225"/>
           </figure>
         </div>
-        <div className="fl w-80-l w-100 mw7-l ph4">
+        <div className="fl w-80-l w-100 mw7-l ph4-l">
           <h1 className="mv0 o-20">{"0"+(i+1)}</h1>
           <h1 className="mv0">{topicListData[i].name}</h1>
           <h3 className="mv1 o-60">{topicListData[i].description}</h3>
@@ -117,8 +117,8 @@ class Topics extends Component {
               </div>
               {this.topics()}
             </div>
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
+            <div className="swiper-button-prev dn db-l"></div>
+            <div className="swiper-button-next dn db-l"></div>
           </div>
           <div className="swiper-pagination mt3"></div>
         </div>

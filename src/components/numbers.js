@@ -75,7 +75,7 @@ class Numbers extends Component {
     }
     render() {
       var divStyle = {
-        backgroundImage: 'url(images/topography.svg)',
+        backgroundImage: 'url(images/numbers/g0v-06.jpg)',
         backgroundPosition: 'center center',
         backgroundSize: 'cover'
       };
@@ -105,7 +105,7 @@ class Numbers extends Component {
                     slowerScrollRate
                     tag="figure"
                 >
-                    <img src="images/topography.svg" height="600"/>
+                    <img src="images/numbers/g0v-01.jpg" height="600"/>
                 </Parallax>
                 </li>
                 <li className="dib">
@@ -116,7 +116,7 @@ class Numbers extends Component {
                     slowerScrollRate
                     tag="figure"
                 >
-                    <img src="images/topography.svg" height="600"/>
+                    <img src="images/numbers/g0v-02.jpg" height="600"/>
                 </Parallax>
                 </li>
                 <li className="dib">
@@ -127,7 +127,7 @@ class Numbers extends Component {
                     slowerScrollRate
                     tag="figure"
                 >
-                    <img src="images/topography.svg" height="600"/>
+                    <img src="images/numbers/g0v-03.jpg" height="600"/>
                 </Parallax>
                 </li>
                 <li className="dib">
@@ -138,7 +138,7 @@ class Numbers extends Component {
                     slowerScrollRate
                     tag="figure"
                 >
-                    <img src="images/topography.svg" height="600"/>
+                    <img src="images/numbers/g0v-04.jpg" height="600"/>
                 </Parallax>
                 </li>
                 <li className="dib">
@@ -149,7 +149,7 @@ class Numbers extends Component {
                     slowerScrollRate
                     tag="figure"
                 >
-                    <img src="images/topography.svg" height="600"/>
+                    <img src="images/numbers/g0v-05.jpg" height="600"/>
                 </Parallax>
                 </li>
               </ul>
