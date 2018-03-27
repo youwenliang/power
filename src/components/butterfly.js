@@ -53,8 +53,8 @@ class Butterfly extends Component {
       return ( 
         <section className="fw-100 bg-light-gray pv6-l pv5"> 
           <div className="container mw8 w-85 center">
-            <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv">你有聽過蝴蝶效應嗎？</h3>
-            <h5 className="ma0 lh-copy tc mw7 center fw4 f4-ns f5 o-80 mb5-l mb4 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
+            <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">你有聽過蝴蝶效應嗎？</h3>
+            <h5 className="ma0 lh-copy tc mw7 center fw4 f4-ns f5 o-70 mb5-l mb4 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
             <figure className="w-100 tc ma0 hideme hidediv">
               <img src="images/butterfly.png" width="100%" />
             </figure>

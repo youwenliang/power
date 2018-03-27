@@ -26,7 +26,7 @@ class Share extends Component {
       <div className="push fl relative">
         <span className="bg-white w-100 h-100 absolute showdiv showme-expand-y delay"></span>
         <span className="bg-dark w-100 h-100 absolute showdiv showme-expand-y"></span>
-        <div className="bg-white pa5-l pa4 hover-bg-light-gray bg-animate tc">
+        <div className="bg-white pv5-l pv4 hover-bg-light-gray bg-animate tc">
           <figure className="mb4 w3 h3 bg-dark center"></figure>
           <h5 className="ma0">{shareListData[i].name}</h5>
           <p className="mw-320 mb4 center tl ph4">{shareListData[i].description}</p>
