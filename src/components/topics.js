@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import Swiper from 'swiper';
 import $ from 'jquery';
 
+var section =
+{
+  "title": "五大類別獲獎專案一覽",
+}
+
 var topicListData = [
   {
     "name": "科技與公益",
@@ -44,7 +49,7 @@ class Topics extends Component {
       paginationClickable: true,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      spaceBetween: 100,
+      spaceBetween: 100
     });
     $('.slide').each(function(index){
       $(this).click(function(){
@@ -56,7 +61,7 @@ class Topics extends Component {
     return (
       <li className="slide dib tc pa2 hideme hidediv relative w-third-l w-100 cp">
           <figure className="center mb4 dn db-l">
-            <img src={topicListData[i].image[0]} height="175"/>
+            <img src={topicListData[i].image[0]} height="175" alt={topicListData[i].name}/>
           </figure>
           <h1 className="absolute p-large o-10">{"0"+(i+1)}</h1>
           <h3 className="ma0 tracked o-90 pt3 fw6">{topicListData[i].name}</h3>
@@ -69,7 +74,7 @@ class Topics extends Component {
       <div className="swiper-slide ph5-l ph0 pt4-l">
         <div className="fl w-20-l w-100">
           <figure className="center">
-            <img src={topicListData[i].image[0]} height="225"/>
+            <img src={topicListData[i].image[0]} height="225" alt={topicListData[i].name}/>
           </figure>
         </div>
         <div className="fl w-80-l w-100 mw7-l ph4-l">
@@ -106,10 +111,9 @@ class Topics extends Component {
 
   render() { 
     return (
-      <section className="fw-100 bg-white pv6-l pv5"> 
+      <section id="topics" className="fw-100 bg-white pv6-l pv5"> 
         <div className="container mw9 w-85 center">
-          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">五大主題</h3>
-            <h5 className="ma0 lh-copy tc mw7 center fw4 f4-ns f5 o-70 mb5-l mb4 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
+          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
           <div className="swiper-container center relative">
             <div className="swiper-wrapper">
               <div className="swiper-slide ph5-l ph0">

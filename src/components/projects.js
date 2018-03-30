@@ -1,8 +1,13 @@
 import React, { Component } from 'react'
 import Modal from 'react-responsive-modal';
-import $ from 'jquery';
 
 var modalId = "";
+
+var section =
+{
+  "title": "精選 2017 獲獎專案",
+  "tagline": "自 2017 年開始，公民科技創新獎助金已陸續為 13 個獲獎團隊帶入實質資源，讓專案得以延續，持續運作。其中更有許多優秀專案，已成功締造實質改變！" 
+}
 
 var projectListData = [
   {
@@ -64,17 +69,17 @@ class Projects extends Component {
             <h3 className="ma0 fw5">{projectListData[i].name}</h3>
             <h5 className="mt2 o-70 fw4 mw6">{projectListData[i].description}</h5>
           </div>
-          <img src={projectListData[i].image[0]}/>
+          <img src={projectListData[i].image[0]} alt={projectListData[i].name}/>
           <div className="mt5 container mw9 w-85 center">
             <h4 className="ma0 fw4">觀察（insight）</h4>
             <p className="mv2 o-70 mw6 pb4">{projectListData[i].insight}</p>
-            <img className="mb5-l mb4" src={projectListData[i].image[0]}/>
+            <img className="mb5-l mb4" src={projectListData[i].image[0]} alt={projectListData[i].name}/>
             <h4 className="ma0 fw4">作法（idea）</h4>
             <p className="mv2 o-70 mw6 pb4">{projectListData[i].idea}</p>
-            <img className="mb5-l mb4" src={projectListData[i].image[0]}/>
+            <img className="mb5-l mb4" src={projectListData[i].image[0]} alt={projectListData[i].name}/>
             <h4 className="ma0 fw4">影響力（impact）</h4>
             <p className="mv2 o-70 mw6 pb4">{projectListData[i].impact}</p>
-            <img src={projectListData[i].image[0]}/>
+            <img src={projectListData[i].image[0]} alt={projectListData[i].name}/>
           </div>
         </div>
       );
@@ -109,10 +114,10 @@ class Projects extends Component {
     }
     const { open } = this.state;
     return (
-      <section className="fw-100 bg-dark pv6-l pv5"> 
+      <section id="projects" className="fw-100 bg-dark pv6-l pv5"> 
         <div className="container mw9 w-85 center white">
-          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">精選專案</h3>
-            <h5 className="ma0 lh-copy tc mw7 center fw4 f4-ns f5 o-70 mb5-l mb4 hideme hidediv">g0v相信，好的創意與設計，若能投入持續開發、長期營運維護的人力與心力，就能引發蝴蝶效應，真正成為足以產生改變的成果！</h5>
+          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
+            <h5 className="ma0 lh-copy tc mw7 center fw4 f4-ns f5 o-70 mb5-l mb4 hideme hidediv">{section.tagline}</h5>
           <div className="cf flexbox center mw74">
             {projectList}
           </div>

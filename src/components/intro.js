@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import FontAwesome from 'react-fontawesome';
 
 class Intro extends Component {
     componentDidMount(){
@@ -7,7 +6,7 @@ class Intro extends Component {
     }
     render() {
       return ( 
-        <section className="fw-100 bg-light-gray pv6-l pv5"> 
+        <section id="intro" className="fw-100 bg-light-gray pv6-l pv5"> 
           <div className="container mw9 w-85 center">
             <div className="cf">
               <div className="fl w-40-l w-100 ma0 hideme hidediv">
@@ -16,7 +15,7 @@ class Intro extends Component {
               </div>
               <div className="fl w-60-l w-100 ma0-l mt4 pl5-l hideme hidediv">
                 <figure className="w-100 ma0 hideme hidediv">
-                  <img src="images/intro.png"/>
+                  <img src="images/intro.png" alt="g0v-intro" />
                 </figure>
               </div>
             </div>

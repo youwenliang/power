@@ -8,6 +8,19 @@ import $ from 'jquery';
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+
 $(window).scroll( function(){
 	$('.showme-expand-y').each( function(i){
 	  var bottom_of_object = $(this).offset().top + $(this).outerHeight();
@@ -45,15 +58,15 @@ $(window).scroll( function(){
 	  	$this.removeClass('hideme-more');
 	  }	  
 	});
-	$('section').each( function(i){
-	  var bottom_of_object = $(this).offset().top + $(this).outerHeight() + 3*$(window).height()/4;
-	  var bottom_of_window = $(window).scrollTop() + $(window).height();
-	  var $this = $(this);
-	  if( bottom_of_window > bottom_of_object ){
-	  	$this.css('opacity', '.6');
-	  }	  
-	  else {
-	  	$this.css('opacity', '1');
-	  }
-	});
+	// $('section').each( function(i){
+	//   var bottom_of_object = $(this).offset().top + $(this).outerHeight() + 3*$(window).height()/4;
+	//   var bottom_of_window = $(window).scrollTop() + $(window).height();
+	//   var $this = $(this);
+	//   if( bottom_of_window > bottom_of_object ){
+	//   	$this.css('opacity', '.6');
+	//   }	  
+	//   else {
+	//   	$this.css('opacity', '1');
+	//   }
+	// });
 });

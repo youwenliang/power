@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
-import FontAwesome from 'react-fontawesome';
 import AnimatedNumber from 'react-animated-number';
 import { Parallax } from 'react-scroll-parallax';
 import Swiper from 'swiper';
-import $ from 'jquery';
 
 class Numbers extends Component {
     componentDidMount() {
-      var photoNum = 5;
-      var over = $('.hover-scroll li').width()*5 - $(window).width();
+      /* Init Swiper */
+      var swiperPhoto = new Swiper('#swiperPhoto', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        autoplay: 2500
+      });
     }
     numbers = () => {
       return (
@@ -80,11 +83,18 @@ class Numbers extends Component {
         backgroundSize: 'cover'
       };
       return ( 
-         <section className="fw-100 bg-moon-gray relative"> 
-          <div className="container center pv6-l pv5" style={divStyle}>
-            <div className="pa4 bg-white mw6 hideme hidediv mh6-l mh5-m mh4">
+         <section id="numbers" className="fw-100 bg-moon-gray relative">
+          <div className="container center pv6-l pv5 relative">
+            <div className="pa4 bg-white mw6 hideme hidediv mh6-l mh5-m mh4 z1 relative">
               <h3 className="ma0 lh-title pb3 fw5">g0v 簡介</h3>
               <p className="ma0 mw6 lh-copy fw4">自 2012 年以來，公民科技運動風起雲湧，以「寫程式改造社會」為口號，以開放透明、公民參與為號召的 g0v 台灣零時政府社群號召了第一場活動，從此開始五年間，透過一場場黑客松，打造出多項以開放資料、開放政府為精神的資訊平台。這場開放資料、開放政府運動，也打破了民間與政府對抗的傳統運動路線，開創出台灣公民社會與政府互動的新模式。五年多來，g0v 揪松團已舉辦二十餘次百人大黑客松，超過五千人次參與。總共發想出了數百個專案，其中少數發展成真正具有社會影響力的成品。</p>
+            </div>
+            <div id="swiperPhoto" className="swiper-container center absolute">
+              <div className="swiper-wrapper">
+                <div className="swiper-slide" style={divStyle}></div>
+                <div className="swiper-slide" style={divStyle}></div>
+                <div className="swiper-slide" style={divStyle}></div>
+              </div>
             </div>
           </div>
           <div className="fw-100 bg-dark pv5-l pv4"> 
@@ -96,61 +106,21 @@ class Numbers extends Component {
             <div className="ma0 pa0 overflow-hidden hover-scroll">
               <div className="hover-scroll-next pa0 ma0"></div>
               <div className="hover-scroll-prev pa0 ma0"></div>
-              <ul className="list ma0 pa0 nowrap overflow-x-scroll overflow-y-hidden h-480-ns h-300">
+              <ul className="list ma0 pa0 nowrap overflow-x-hidden overflow-y-hidden h-480-ns h-300">
                 <li className="dib">
-                <Parallax
-                    className="ma0 pa0"
-                    offsetYMax={5}
-                    offsetYMin={-5}
-                    slowerScrollRate
-                    tag="figure"
-                >
-                    <img src="images/numbers/g0v-01.jpg" height="600"/>
-                </Parallax>
+                  <img src="images/numbers/g0v-01.jpg" height="600" alt="g0v-photos"/>
                 </li>
                 <li className="dib">
-                <Parallax
-                    className="ma0 pa0"
-                    offsetYMax={5}
-                    offsetYMin={-5}
-                    slowerScrollRate
-                    tag="figure"
-                >
-                    <img src="images/numbers/g0v-02.jpg" height="600"/>
-                </Parallax>
+                  <img src="images/numbers/g0v-02.jpg" height="600" alt="g0v-photos"/>
                 </li>
                 <li className="dib">
-                <Parallax
-                    className="ma0 pa0"
-                    offsetYMax={5}
-                    offsetYMin={-5}
-                    slowerScrollRate
-                    tag="figure"
-                >
-                    <img src="images/numbers/g0v-03.jpg" height="600"/>
-                </Parallax>
+                  <img src="images/numbers/g0v-03.jpg" height="600" alt="g0v-photos"/>
                 </li>
                 <li className="dib">
-                <Parallax
-                    className="ma0 pa0"
-                    offsetYMax={5}
-                    offsetYMin={-5}
-                    slowerScrollRate
-                    tag="figure"
-                >
-                    <img src="images/numbers/g0v-04.jpg" height="600"/>
-                </Parallax>
+                  <img src="images/numbers/g0v-04.jpg" height="600" alt="g0v-photos"/>
                 </li>
                 <li className="dib">
-                <Parallax
-                    className="ma0 pa0"
-                    offsetYMax={5}
-                    offsetYMin={-5}
-                    slowerScrollRate
-                    tag="figure"
-                >
-                    <img src="images/numbers/g0v-05.jpg" height="600"/>
-                </Parallax>
+                  <img src="images/numbers/g0v-05.jpg" height="600" alt="g0v-photos"/>
                 </li>
               </ul>
             </div>
