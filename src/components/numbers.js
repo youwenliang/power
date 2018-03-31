@@ -1,81 +1,46 @@
 import React, { Component } from 'react'
-import AnimatedNumber from 'react-animated-number';
 import { Parallax } from 'react-scroll-parallax';
 import Swiper from 'swiper';
+
+var section =
+{
+  "title": "從 2012 到 2018， g0v 創造了…",
+  "powerby": "揪松團在獎助金網站介紹徵件辦法、合作夥伴與獲獎專案一覽，獲獎專案網站或其他形式服務須至少在持續營運一年內註明 Powered by g0v，並連結回「Powered by g0v」頁面。"
+}
+
+var content = [
+  {
+    "title": "緣起",
+    "content": "2012 年，g0v 台灣零時政府社群以「寫程式改造社會」為口號，強調開放透明、公民參與的精神，正式號召第一場活動。"
+  },
+  {
+    "title": "成就",
+    "content": "五年來，g0v 本著開放資料、開放政府的精神，已舉辦二十餘次百人大黑客松，超過五千人次參與，共同發想數百個專案，為全球前三大開放政府運動社群之一。"
+  },
+  {
+    "title": "理念",
+    "content": "不要問為什麼沒有人做這個，先承認你就是「沒有人」！社會問題不是別人的問題，而是身為公民的、我們的問題。"
+  },
+  {
+    "title": "特色",
+    "content": "不只寫程式，g0v 打造公民科技工具來促進公民參與的新實踐，所有成果都以開放授權的方式公開，任何人都可以直接使用、改作、加入協作或發展出更新的版本。"
+  },
+  {
+    "title": "影響",
+    "content": "這場開放資料、開放政府運動，也打破民間與政府對抗的傳統運動路線，開創出台灣公民社會與政府互動的新模式。"
+  }
+]
 
 class Numbers extends Component {
     componentDidMount() {
       /* Init Swiper */
       var swiperPhoto = new Swiper('#swiperPhoto', {
-        pagination: '.swiper-pagination',
         slidesPerView: 1,
         spaceBetween: 0,
         autoplay: 2500
       });
     }
-    numbers = () => {
-      return (
-        <div className="center">
-          <ul className="ma0 pa0 tc">
-            <li className="dib ma0 w48 tc white ph3 hideme hidediv">
-              <h1 className="ma0 tc di pr1 fw2">
-              <AnimatedNumber component="text" value="29"
-                style={{
-                  fontSize: 60
-                }}
-                stepPrecision = {0}
-                duration={750} />
-              </h1><span>次</span>
-              <p className="ma0 tc pa0 tracked">黑客松</p>
-            </li>
-            <li className="dib ma0 w48 tc white ph3 hideme hidediv">
-              <h1 className="ma0 tc di pr1 fw2">
-              <AnimatedNumber component="text" value="3"
-                style={{
-                  fontSize: 60
-                }}
-                stepPrecision = {0}
-                duration={790} />
-              </h1><span>次</span>
-              <p className="ma0 tc pa0 tracked">國際雙年會</p>
-            </li>
-            <li className="dib ma0 w48 tc white ph3 hideme hidediv">
-              <h1 className="ma0 tc di pr1 fw2">
-              <AnimatedNumber component="text" value="517"
-                style={{
-                  fontSize: 60
-                }}
-                stepPrecision = {0}
-                duration={830} />
-              </h1><span>次</span>
-              <p className="ma0 tc pa0 tracked">正式提案</p>
-            </li>
-            <li className="dib ma0 w48 tc white ph3 hideme hidediv">
-              <h1 className="ma0 tc di pr1 fw2">
-              <AnimatedNumber component="text" value="304"
-                style={{
-                  fontSize: 60
-                }}
-                stepPrecision = {0}
-                duration={870} />
-              </h1><span>位</span>
-              <p className="ma0 tc pa0 tracked">坑主</p>
-            </li>
-            <li className="dib ma2 w48 tc white ph3 hideme hidediv">
-              <h1 className="ma0 tc di pr1 fw2">
-              <AnimatedNumber component="text" value="5000"
-                style={{
-                  fontSize: 60
-                }}
-                stepPrecision = {0}
-                duration={910} />
-              +</h1>
-              <p className="ma0 tc pa0 tracked">參與者</p>
-            </li>
-          </ul>
-        </div>
-      )
-    }
+    
     render() {
       var divStyle = {
         backgroundImage: 'url(images/numbers/g0v-06.jpg)',
@@ -86,8 +51,8 @@ class Numbers extends Component {
          <section id="numbers" className="fw-100 bg-moon-gray relative">
           <div className="container center pv6-l pv5 relative">
             <div className="pa4 bg-white mw6 hideme hidediv mh6-l mh5-m mh4 z1 relative">
-              <h3 className="ma0 lh-title pb3 fw5">g0v 簡介</h3>
-              <p className="ma0 mw6 lh-copy fw4">自 2012 年以來，公民科技運動風起雲湧，以「寫程式改造社會」為口號，以開放透明、公民參與為號召的 g0v 台灣零時政府社群號召了第一場活動，從此開始五年間，透過一場場黑客松，打造出多項以開放資料、開放政府為精神的資訊平台。這場開放資料、開放政府運動，也打破了民間與政府對抗的傳統運動路線，開創出台灣公民社會與政府互動的新模式。五年多來，g0v 揪松團已舉辦二十餘次百人大黑客松，超過五千人次參與。總共發想出了數百個專案，其中少數發展成真正具有社會影響力的成品。</p>
+              <h3 className="ma0 lh-title pb3 fw5">{content[0].title}</h3>
+              <p className="ma0 mw6 lh-copy fw4">{content[0].content}</p>
             </div>
             <div id="swiperPhoto" className="swiper-container center absolute">
               <div className="swiper-wrapper">
@@ -95,34 +60,6 @@ class Numbers extends Component {
                 <div className="swiper-slide" style={divStyle}></div>
                 <div className="swiper-slide" style={divStyle}></div>
               </div>
-            </div>
-          </div>
-          <div className="fw-100 bg-dark pv5-l pv4"> 
-            <div className="container mw9 w-85 center">
-              {this.numbers()}
-            </div>
-          </div>
-          <div className="fw-100 bg-moon-gray"> 
-            <div className="ma0 pa0 overflow-hidden hover-scroll">
-              <div className="hover-scroll-next pa0 ma0"></div>
-              <div className="hover-scroll-prev pa0 ma0"></div>
-              <ul className="list ma0 pa0 nowrap overflow-x-hidden overflow-y-hidden h-480-ns h-300">
-                <li className="dib">
-                  <img src="images/numbers/g0v-01.jpg" height="600" alt="g0v-photos"/>
-                </li>
-                <li className="dib">
-                  <img src="images/numbers/g0v-02.jpg" height="600" alt="g0v-photos"/>
-                </li>
-                <li className="dib">
-                  <img src="images/numbers/g0v-03.jpg" height="600" alt="g0v-photos"/>
-                </li>
-                <li className="dib">
-                  <img src="images/numbers/g0v-04.jpg" height="600" alt="g0v-photos"/>
-                </li>
-                <li className="dib">
-                  <img src="images/numbers/g0v-05.jpg" height="600" alt="g0v-photos"/>
-                </li>
-              </ul>
             </div>
           </div>
         </section>

@@ -35,7 +35,7 @@ var topicListData = [
   {
     "name": "社群基礎建設",
     "description": "前瞻也顧後，社群基礎建設整合公民科技力",
-    "content": "g0v 揪松團從 2016 年開始推廣大家投入基礎建設工作，希望打造讓更多人投入協作、長期開發的公民科技生態系。",
+    "content": "g0v 揪松團從 2016 年開始推廣社群投入基礎建設工作，希望打造讓更多人投入協作、長期開發的公民科技生態系。",
     "image": ["images/topography.svg"]
   }
 ]
@@ -43,7 +43,7 @@ var topicListData = [
 class Topics extends Component {
   componentDidMount() {
     /* Init Swiper */
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#swiperTopic-container', {
       pagination: '.swiper-pagination',
       slidesPerView: 1,
       paginationClickable: true,
@@ -114,7 +114,7 @@ class Topics extends Component {
       <section id="topics" className="fw-100 bg-white pv6-l pv5"> 
         <div className="container mw9 w-85 center">
           <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
-          <div className="swiper-container center relative">
+          <div id="swiperTopic-container" className="swiper-container center relative">
             <div className="swiper-wrapper">
               <div className="swiper-slide ph5-l ph0">
                 {this.numbers()}

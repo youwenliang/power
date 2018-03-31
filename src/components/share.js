@@ -11,8 +11,8 @@ var section =
 var shareListData = [
   {
     "name": "報名黑客松",
-    "description": "有點子但缺舞台？揪松網歡迎你！",
-    "action": "參加 g0v"
+    "description": "想找地方揮灑熱血嗎？揪松網歡迎你！",
+    "action": "瞭解更多"
   },
   {
     "name": "贊助獎助金",
@@ -21,8 +21,8 @@ var shareListData = [
   },
   {
     "name": "下載最新年鑑",
-    "description": "最新 2018 獎助金專案年鑑，歡迎取用！",
-    "action": "下載資料"
+    "description": "最新 2017 獎助金年鑑，歡迎取用！",
+    "action": "馬上下載"
   }
 ]
 

@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         {/*--- Navigation---*/}
         <div id="section-nav">
-          <a href="#cover">2017公民科技創新獎助金</a>
+          <a href="#cover">2017 公民科技創新獎助金</a>
           <a href="#butterfly">見證一場「蝴蝶效應」</a>
           <a href="#projects">精選 2017 獲獎專案</a>
           <a href="#topics">五大類別獲獎專案一覽</a>
