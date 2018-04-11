@@ -38,6 +38,7 @@ h5 {
 	font-size: 1.25em;
 	letter-spacing: 0.5px;
 }
+
 .p-small {
 	font-size: .9em;
 }
@@ -48,6 +49,9 @@ h5 {
     font-size: 120px;
     top: 170px;
     bottom: 0;
+}
+.lh-large {
+	line-height: 1.8;
 }
 
 @media screen and (max-width: 960px) {
@@ -109,6 +113,12 @@ a {
 		height: 480px;
 	}
 }
+.mh-200 {
+	min-height: 200px;
+}
+.h-250 {
+	height: 250px;
+}
 .h-300 {
 	height: 300px;
 }
@@ -130,6 +140,10 @@ a {
 }
 .cp {
 	cursor: pointer;
+}
+.bottom-right {
+	bottom: 30px;
+	right: 30px;
 }
 
 /* Button */
@@ -160,16 +174,19 @@ a {
 	background-color: #1b1b1c;
 }
 .dark {
-	color: #2a2039;
+	color: #001C2F;
 }
 .bg-dark {
-	background-color: #2a2039;
+	background-color: #001C2F;
 }
 .bg-light {
 	background-color: #f4f4f4;
 }
 .b--dark {
-	border-color: #2a2039;
+	border-color: #001C2F;
+}
+.bg-primary {
+	background-color: #467DBD;
 }
 
 /* Flex */
@@ -188,9 +205,13 @@ a {
 }
 
 .flexbox .push {
-	width: calc(33.33% - 1px);
+	width: calc(33.33%);
 	overflow: hidden;
 	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.flexbox .intro {
+	width: calc(50% - 1px);
 }
 
 @media screen and (min-width: 1025px) {
@@ -220,6 +241,9 @@ a {
 	}
 	.flexbox .project {
 		width: calc(100% - 2rem);	
+	}
+	.flexbox .intro {
+		width: 100%;
 	}
 }
 @media screen and (max-width: 1024) and (min-width: 769px) {
@@ -399,6 +423,14 @@ a {
 
 
 /* Button */
+#intro-pag {
+	position: absolute !important;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 20px;
+}
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -439,7 +471,7 @@ a {
 #section-nav a {
   font-size: 13px;
   letter-spacing: .5px;
-  color: #4f4f4f;
+  color: #fff;
   padding-right: 35px;
   height: 25px;
   width: 25px;
@@ -469,7 +501,6 @@ a {
 
 	#section-nav a:hover {
 	  width: auto !important;
-	  color: #fff;
 	  padding-top: 0px;
 	  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 	}
@@ -493,4 +524,22 @@ a {
   background: #9D9FA2;
   border: 1px solid #9D9FA2;
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.show.none {
+	opacity: 0;
+	transform: translateY(5px);
+	transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);	
+}
+.show {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: all .2s cubic-bezier(0.23, 1, 0.32, 1);	
+}
+
+.bt-orange-small {
+	border-top: #F4A118 solid 5px;
+}
+.bb-orange-large {
+	border-bottom: #F4A118 solid 30px;
 }

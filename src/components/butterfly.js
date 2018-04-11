@@ -56,31 +56,35 @@ class Butterfly extends Component {
     }
     render() {
       return ( 
-        <section id="butterfly" className="fw-100 bg-light-gray pv6-l pv5"> 
-          <div className="container mw8 w-85 center">
-            <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
-            <p className="ma0 lh-copy tc fw4 mb4 hideme hidediv">{section.tagline}</p>
-            <h5 className="ma0 lh-copy tl mw7 center fw4 f4-ns f5 o-70 mb5-l mb4 hideme hidediv">{section.intro}</h5>
-            <figure className="w-100 tc ma0 hideme hidediv">
-              <img src="images/butterfly.png" width="100%" alt="butterfly" />
-            </figure>
-            <div className="cf mt3">
-              <div className="fl w-100 w-50-l">
-                <div className="pa4-l hidediv hideme tc tl-l">
-                  <h5 className="mv3">{section.contentTitle}</h5>
-                  <p className="ma0 pt2 tl">
-                    {section.content}
-                  </p>
-                  <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden mt4">
-                    <span className="btn-color bg-dark w-100 h-100 absolute"></span>
-                    <p className="ma0 lh-title tc fw5 pv3 relative">
-                      瀏覽獎助金官方網站
-                      <FontAwesome className="pl2" name='long-arrow-right'/>
+        <section id="butterfly" className="fw-100 bg-primary"> 
+          <div className="ma0 bg-white pv5 ph4 hideme hidediv bb-orange-large">
+            <h1 className="ma0 lh-title pb3 tc fw7 tracked f2-l f3">{section.title}</h1>
+            <p className="ma0 lh-copy tc fw4 mb4 o-60">{section.tagline}</p>
+            <h5 className="ma0 tl mw7 center fw4 f4-l f5 lh-large">{section.intro}</h5>
+          </div>
+          <figure className="w-100 tc ma0 hideme hidediv">
+            <img src="images/butterfly.png" width="100%" alt="butterfly" />
+          </figure>
+          <div className="ma0 bg-near-white pb6-l pb5 pt3 ph4 hideme hidediv">
+            <div className="container mw8 w-85 center">
+              <div className="cf mt3">
+                <div className="fl w-100 w-50-l">
+                  <div className="pa4-l hidediv hideme tc tl-l">
+                    <h5 className="mv3">{section.contentTitle}</h5>
+                    <p className="ma0 pt2 tl">
+                      {section.content}
                     </p>
-                  </a>
+                    <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden mt4">
+                      <span className="btn-color bg-dark w-100 h-100 absolute"></span>
+                      <p className="ma0 lh-title tc fw5 pv3 relative">
+                        瀏覽獎助金官方網站
+                        <FontAwesome className="pl2" name='long-arrow-right'/>
+                      </p>
+                    </a>
+                  </div>
                 </div>
+                {this.numbers()}
               </div>
-              {this.numbers()}
             </div>
           </div>
         </section>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Parallax } from 'react-scroll-parallax';
 import Swiper from 'swiper';
+import $ from 'jquery';
 
 var section =
 {
@@ -32,35 +32,67 @@ var content = [
 ]
 
 class Numbers extends Component {
-    componentDidMount() {
+    constructor(props) {
+      super(props);
+      this.state = {
+        id: 0
+      };
+    }
+    componentDidMount = () => {
       /* Init Swiper */
       var swiperPhoto = new Swiper('#swiperPhoto', {
+        pagination: '#intro-pag',
+        paginationClickable: true,
         slidesPerView: 1,
         spaceBetween: 0,
-        autoplay: 2500
+        autoplay: 4000,
+        onInit: function () {
+          console.log('init');
+        },
+        onSlideChangeStart: function(){
+          $('.show').addClass('none');
+        },
+        onSlideChangeEnd: function(){
+          this.setState({id:swiperPhoto.activeIndex});
+          $('.show').removeClass('none');
+        }.bind(this)
       });
     }
     
     render() {
-      var divStyle = {
-        backgroundImage: 'url(images/numbers/g0v-06.jpg)',
+      var divStyleList = [];
+      for(var i = 0; i < 5; i++) {
+        var divStyle = {
+          backgroundImage: 'url(images/numbers/g0v-0'+i+'.jpg)',
+          backgroundPosition: 'center center',
+          backgroundSize: 'cover'
+        };
+        divStyleList.push(divStyle);
+      }
+      var bgStyle = {
+        backgroundImage: 'url(images/star.jpg)',
         backgroundPosition: 'center center',
         backgroundSize: 'cover'
       };
+
       return ( 
-         <section id="numbers" className="fw-100 bg-moon-gray relative">
+         <section id="numbers" className="fw-100 bg-moon-gray relative" style={bgStyle}>
           <div className="container center pv6-l pv5 relative">
-            <div className="pa4 bg-white mw6 hideme hidediv mh6-l mh5-m mh4 z1 relative">
-              <h3 className="ma0 lh-title pb3 fw5">{content[0].title}</h3>
-              <p className="ma0 mw6 lh-copy fw4">{content[0].content}</p>
+            <div className="pa4 h-250 bg-white mw6 hideme hidediv mh6-l mh5-m mh4 z1 relative">
+              <h3 className="show ma0 lh-title pb3 fw5 tracked">{content[this.state.id].title}</h3>
+              <p className="show ma0 mw6 lh-copy fw4">{content[this.state.id].content}</p>
+              <h5 className="tr o-50 mv0 fw1 absolute bottom-right">{(this.state.id+1)+"/5"}</h5>
             </div>
-            <div id="swiperPhoto" className="swiper-container center absolute">
+            <div id="swiperPhoto" className="swiper-container center absolute o-90">
               <div className="swiper-wrapper">
-                <div className="swiper-slide" style={divStyle}></div>
-                <div className="swiper-slide" style={divStyle}></div>
-                <div className="swiper-slide" style={divStyle}></div>
+                <div className="swiper-slide" style={divStyleList[0]}></div>
+                <div className="swiper-slide" style={divStyleList[1]}></div>
+                <div className="swiper-slide" style={divStyleList[2]}></div>
+                <div className="swiper-slide" style={divStyleList[3]}></div>
+                <div className="swiper-slide" style={divStyleList[4]}></div>
               </div>
             </div>
+            <div id="intro-pag" className="swiper-pagination z1 absolute"></div>
           </div>
         </section>
         )

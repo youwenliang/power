@@ -117,7 +117,7 @@ class Projects extends Component {
       <section id="projects" className="fw-100 bg-dark pv6-l pv5"> 
         <div className="container mw9 w-85 center white">
           <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
-            <h5 className="ma0 lh-copy tc mw7 center fw4 f4-ns f5 o-70 mb5-l mb4 hideme hidediv">{section.tagline}</h5>
+            <h5 className="ma0 lh-large tc mw7 center fw4 o-70 mb5-l mb4 f4-l f5 hideme hidediv">{section.tagline}</h5>
           <div className="cf flexbox center mw74">
             {projectList}
           </div>

@@ -59,15 +59,15 @@ class Partner extends Component {
       partnerList.push(this.partner(i));
     }
     return (
-      <section id="partner" className="fw-100 bg-light pb6-l pb5">
+      <section id="partner" className="fw-100 bg-light pb6-l pb5 bt-orange-small">
         <div className="mb6-l mb5 pv5 bg-dark">
           <div className="mw8 w-85 center">
             <div className="cf">
-              <div className="fl w-25-l w-100 ma0 pa3 hideme hidediv">
-                <img src="images/powered-by-g0v.svg" width="240" alt="g0v-poweredby" />
+              <div className="fl w-25-l w-100 ma0 pa3 tc-ns hideme hidediv">
+                <img src="images/powered-by-g0v.svg" height="57" alt="g0v-poweredby" />
               </div>
               <div className="fl w-75-l w-100 ma0 pa3 hideme hidediv white">
-                <h5 className="fw4 ma0 pa0">{section.powerby}</h5>
+                <p className="fw4 ma0 pa0 lh-large">{section.powerby}</p>
               </div>
             </div>
           </div>

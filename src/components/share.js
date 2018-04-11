@@ -33,7 +33,7 @@ class Share extends Component {
         <span className="bg-white w-100 h-100 absolute showdiv showme-expand-y delay"></span>
         <span className="bg-dark w-100 h-100 absolute showdiv showme-expand-y"></span>
         <div className="bg-white pv5-l pv4 hover-bg-light-gray bg-animate tc">
-          <figure className="mb4 w3 h3 bg-dark center"></figure>
+          <figure className="mb4 w4 h4 bg-dark center"></figure>
           <h5 className="ma0">{shareListData[i].name}</h5>
           <p className="mw-320 mb4 center tc ph4 h2">{shareListData[i].description}</p>
           <a href="/" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden">
@@ -56,7 +56,7 @@ class Share extends Component {
       <div>
         <section id="share" className="fw-100 bg-white pt5"> 
           <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
-          <h5 className="ma0 lh-copy tc mw7 center fw4 f4-ns f5 o-70 mb5-l mb4 hideme hidediv">{section.tagline}</h5>
+          <h5 className="ma0 lh-copy tc mw7 center fw4 f4-l f5 o-70 mb4 hideme hidediv">{section.tagline}</h5>
           <div className="cf flexbox">
             {shareList}
           </div>

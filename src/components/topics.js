@@ -119,7 +119,7 @@ class Topics extends Component {
   componentDidMount() {
     /* Init Swiper */
     var swiper = new Swiper('#swiperTopic-container', {
-      pagination: '.swiper-pagination',
+      pagination: '#topic-pag',
       slidesPerView: 1,
       paginationClickable: true,
       nextButton: '.swiper-button-next',
@@ -136,7 +136,7 @@ class Topics extends Component {
     return (
         <li className="projectList w-100">
           <a className="flexbox alc pa3 ba b--light-gray near-black mv2 w-100" href={topicListData[i].projects[k].url}>
-            <img className="pr3" src={topicListData[i].projects[k].logo} height="40" width="40"/>
+            <img className="pr3" src={topicListData[i].projects[k].logo} height="40" width="40" alt="logo"/>
             {topicListData[i].projects[k].name}
           </a>
         </li>
@@ -214,7 +214,7 @@ class Topics extends Component {
             <div className="swiper-button-prev dn db-l z1"></div>
             <div className="swiper-button-next dn db-l z1"></div>
           </div>
-          <div className="swiper-pagination mt3"></div>
+          <div id="topic-pag" className="swiper-pagination mt3"></div>
         </div>
       </section>
     )
