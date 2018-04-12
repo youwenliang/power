@@ -65,13 +65,13 @@ class Share extends Component {
           className="fw-100 bg-dark pv5-l pv4"
           layers={[
               {
-                  image: 'images/topography.svg',
+                  image: 'images/star.jpg',
                   amount: 1,
                   slowerScrollRate: false,
               }
           ]}
           style={{
-              height: 'auto',
+              height: '184px',
           }}
         >
           <div className="container mw9 w-85 tc center">

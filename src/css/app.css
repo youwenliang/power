@@ -197,6 +197,8 @@ a {
 	overflow: hidden;
 	flex-wrap: wrap;
 }
+
+
 .flexbox.alc {
 	align-items: center;
 }
@@ -214,6 +216,26 @@ a {
 	width: calc(50% - 1px);
 }
 
+
+.fo1-l {
+	order: 1;
+}
+.fo2-l {
+	order: 2;
+}
+
+@media screen and (max-width: 960px) {
+	.fo1-l {
+		order: 2;
+	}
+	.fo2-l {
+		order: 1;
+	}
+	.flexbox .content {
+		width: 100%;
+	}
+}
+
 @media screen and (min-width: 1025px) {
 	.flexbox .push{
 		flex: 2 0 0;
@@ -222,11 +244,16 @@ a {
 		flex: 4 0 0;
 	}
 }
+
+
 .flexbox .partners {
 	width: calc(33.33% - 2rem - 1px);
 }
 .flexbox .project {
 	width: calc(50% - 2rem - 1px);
+}
+.flexbox .content {
+	width: calc(50% - 1px);	
 }
 .jcc {
 	justify-content: center;
@@ -246,6 +273,7 @@ a {
 		width: 100%;
 	}
 }
+
 @media screen and (max-width: 1024) and (min-width: 769px) {
 	.flexbox .partners {
 		width: calc(50% - 2rem - 1px);
@@ -299,6 +327,10 @@ a {
 .Modal-modal-0-1-3 {
 	padding: 0 !important;
 	max-width: none !important;
+}
+.Modal-closeIcon-0-1-4 {
+	z-index: 100;
+	fill: #fff;
 }
 
 .dash {
@@ -542,4 +574,7 @@ a {
 }
 .bb-orange-large {
 	border-bottom: #F4A118 solid 30px;
+}
+.parallax-outer {
+	opacity: .1;
 }

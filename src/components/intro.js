@@ -16,7 +16,7 @@ class Intro extends Component {
       return (
         <div className="center">
           <ul className="ma0 pa0 tc">
-            <li className="db center w48 tc white ph3 hideme hidediv">
+            <li className="db center w48 tc white ph3 hideme hidediv mb3">
               <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="29"
                 style={{
@@ -27,7 +27,7 @@ class Intro extends Component {
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">黑客松</p>
             </li>
-            <li className="db center w48 tc white ph3 hideme hidediv">
+            <li className="db center w48 tc white ph3 hideme hidediv mb3">
               <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="3"
                 style={{
@@ -38,7 +38,7 @@ class Intro extends Component {
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">國際雙年會</p>
             </li>
-            <li className="db center w48 tc white ph3 hideme hidediv">
+            <li className="db center w48 tc white ph3 hideme hidediv mb3">
               <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="517"
                 style={{
@@ -49,7 +49,7 @@ class Intro extends Component {
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">正式提案</p>
             </li>
-            <li className="db center w48 tc white ph3 hideme hidediv">
+            <li className="db center w48 tc white ph3 hideme hidediv mb3">
               <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="304"
                 style={{
@@ -60,7 +60,7 @@ class Intro extends Component {
               </h1><span>位</span>
               <p className="ma0 tc pa0 tracked">坑主</p>
             </li>
-            <li className="db center w48 tc white ph3 hideme hidediv">
+            <li className="db center w48 tc white ph3 hideme hidediv mb3">
               <h1 className="ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="5000"
                 style={{
@@ -80,14 +80,14 @@ class Intro extends Component {
         <section id="intro" className="fw-100 bg-dark"> 
           <div className="container center">
             <div className="cf flexbox">
-              <div className="fl intro ma0 hideme hidediv pt6-l pt5 ph6-l ph4 pb4 bg-light-gray">
+              <div className="fl intro ma0 hideme hidediv pt6-l pt5 ph6-l ph4 pb5 bg-light-gray">
                 <h3 className="ma0 lh-title pb4-l pb3 fw6 tc">{section.title}</h3>
                 <h5 className="ma0 fw4 f4-l f5 lh-large">{section.content}</h5>
                 <figure className="ma0 hideme hidediv tc pt3">
                   <img src="images/intro.png" width="420" alt="g0v-intro" />
                 </figure>
               </div>
-              <div className="fl intro ma0-l mt4 pt6-l pt5 pb4 ph6-l ph4 bg-dark hideme hidediv">
+              <div className="fl intro ma0-l mt4 pt6-l pt5 pb4 ph6-l ph4 pb5 bg-dark hideme hidediv">
                 <h3 className="ma0 lh-title pb4-l pb3 fw6 white tc">{section.numbers}</h3>
                 {this.numbers()}
               </div>

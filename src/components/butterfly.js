@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome';
 import AnimatedNumber from 'react-animated-number';
+import $ from 'jquery';
 
 var section =
 {
@@ -12,83 +13,105 @@ var section =
 }
 
 class Butterfly extends Component {
-    numbers = () => {
-      return (
-        <div className="numbers fl w-100 w-50-l mt5 mt0-l">
-          <div className="pt4-l center">
-            <ul className="ma0 pa0 tc">
-              <li className="dib ma2 w45 h45 tc bg-white pa2 hideme hidediv">
-                <h5 className="ma0 tc pt3 tracked">累積總提案</h5>
-                <h1 className="ma0 tc di pr1">
-                <AnimatedNumber component="text" value="151"
-                  stepPrecision = {0}
-                  duration={350} />
-                </h1><span>件</span>
-              </li>
-              <li className="dib ma2 w45 h45 tc bg-white pa2 hideme hidediv">
-                <h5 className="ma0 tc pt3 tracked">已獲獎專案</h5>
-                <h1 className="ma0 tc di pr1">
-                <AnimatedNumber component="text" value="13"
-                  stepPrecision = {0}
-                  duration={550} />
-                </h1><span>件</span>
-              </li>
-              <li className="dib ma2 w45 h45 tc bg-white pa2 hideme hidediv">
-                <h5 className="ma0 tc pt3 tracked">媒體報導</h5>
-                <h1 className="ma0 tc di pr1">
-                <AnimatedNumber component="text" value="30"
-                  stepPrecision = {0}
-                  duration={750} />
-                +</h1><span>篇</span>
-              </li>
-              <li className="dib ma2 w45 h45 tc bg-white pa2 hideme hidediv">
-                <h5 className="ma0 tc pt3 tracked">已發放獎金</h5>
-                <h1 className="ma0 tc di pr1">
-                <AnimatedNumber component="text" value="600"
-                  stepPrecision = {0}
-                  duration={950} />
-                </h1><span>萬元</span>
-              </li>
-            </ul>
-          </div>
+  constructor(props) {
+    super(props);
+    this.state = {
+      num: false
+    };
+  }
+  componentDidMount = () => {
+    
+  }
+  numbers = () => {
+    return (
+      <ul className="ma0 pa0 tc">
+        <li className="dib ma2 w45 tc bg-white pv4 hideme hidediv">
+          <h5 className="ma0 tc tracked">累積總提案</h5>
+          <h1 className="ma0 tc di pr1">
+          <AnimatedNumber component="text" value="151"
+            stepPrecision = {0}
+            duration={350} />
+          </h1><span>件</span>
+        </li>
+        <li className="dib ma2 w45 tc bg-white pv4 hideme hidediv">
+          <h5 className="ma0 tc tracked">已獲獎專案</h5>
+          <h1 className="ma0 tc di pr1">
+          <AnimatedNumber component="text" value="13"
+            stepPrecision = {0}
+            duration={550} />
+          </h1><span>件</span>
+        </li>
+        <li className="dib ma2 w45 tc bg-white pv4 hideme hidediv">
+          <h5 className="ma0 tc tracked">媒體報導</h5>
+          <h1 className="ma0 tc di pr1">
+          <AnimatedNumber component="text" value="30"
+            stepPrecision = {0}
+            duration={750} />
+          +</h1><span>篇</span>
+        </li>
+        <li className="dib ma2 w45 tc bg-white pv4 hideme hidediv">
+          <h5 className="ma0 tc tracked">已發放獎金</h5>
+          <h1 className="ma0 tc di pr1">
+          <AnimatedNumber component="text" value="600"
+            stepPrecision = {0}
+            duration={950} />
+          </h1><span>萬元</span>
+        </li>
+      </ul>
+    )
+  }
+  render() {
+    let num = null;
+    if(this.state.num) num = this.numbers();
+    var temp = this;
+    $(window).scroll( function(){      
+      if($('#animate').length > 0) {
+        var bottom_of_object = $('#animate').offset().top + $('#animate').outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if( bottom_of_window > bottom_of_object ){
+          // temp.setState({num: true});
+        }
+      }
+    });
+
+    return ( 
+      <section id="butterfly" className="fw-100 bg-primary"> 
+        <div className="ma0 bg-white pv5 ph4 hideme hidediv bb-orange-large">
+          <h1 className="ma0 lh-title pb3 tc fw7 tracked f2-l f3">{section.title}</h1>
+          <p className="ma0 lh-copy tc fw4 mb4 o-60">{section.tagline}</p>
+          <h5 className="ma0 tl mw7 center fw4 f4-l f5 lh-large">{section.intro}</h5>
         </div>
-      )
-    }
-    render() {
-      return ( 
-        <section id="butterfly" className="fw-100 bg-primary"> 
-          <div className="ma0 bg-white pv5 ph4 hideme hidediv bb-orange-large">
-            <h1 className="ma0 lh-title pb3 tc fw7 tracked f2-l f3">{section.title}</h1>
-            <p className="ma0 lh-copy tc fw4 mb4 o-60">{section.tagline}</p>
-            <h5 className="ma0 tl mw7 center fw4 f4-l f5 lh-large">{section.intro}</h5>
-          </div>
-          <figure className="w-100 tc ma0 hideme hidediv">
-            <img src="images/butterfly.png" width="100%" alt="butterfly" />
-          </figure>
-          <div className="ma0 bg-near-white pb6-l pb5 pt3 ph4 hideme hidediv">
-            <div className="container mw8 w-85 center">
-              <div className="cf mt3">
-                <div className="fl w-100 w-50-l">
-                  <div className="pa4-l hidediv hideme tc tl-l">
-                    <h5 className="mv3">{section.contentTitle}</h5>
-                    <p className="ma0 pt2 tl">
-                      {section.content}
+        <figure className="w-100 tc ma0 hideme hidediv">
+          <img src="images/butterfly.png" width="100%" alt="butterfly" />
+        </figure>
+        <div id="animate" className="ma0 bg-near-white pb6-l pb5 pt3 ph4 hideme hidediv">
+          <div className="container mw8 w-85 center">
+            <div className="cf mt3">
+              <div className="fl w-100 w-50-l">
+                <div className="pa4-l hidediv hideme tc tl-l">
+                  <h5 className="mv3">{section.contentTitle}</h5>
+                  <p className="ma0 pt2 tl">
+                    {section.content}
+                  </p>
+                  <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden mt4">
+                    <span className="btn-color bg-dark w-100 h-100 absolute"></span>
+                    <p className="ma0 lh-title tc fw5 pv3 relative">
+                      瀏覽獎助金官方網站
+                      <FontAwesome className="pl2" name='long-arrow-right'/>
                     </p>
-                    <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden mt4">
-                      <span className="btn-color bg-dark w-100 h-100 absolute"></span>
-                      <p className="ma0 lh-title tc fw5 pv3 relative">
-                        瀏覽獎助金官方網站
-                        <FontAwesome className="pl2" name='long-arrow-right'/>
-                      </p>
-                    </a>
-                  </div>
+                  </a>
                 </div>
-                {this.numbers()}
+              </div>
+              <div className="numbers fl w-100 w-50-l mt5 mt0-l">
+                <div className="pt4-l center">
+                  {num}
+                </div>
               </div>
             </div>
           </div>
-        </section>
-        )
-      }
+        </div>
+      </section>
+      )
     }
+  }
 export default Butterfly
