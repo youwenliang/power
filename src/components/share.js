@@ -31,12 +31,14 @@ class Share extends Component {
     return (
       <div className="push fl relative">
         <span className="bg-white w-100 h-100 absolute showdiv showme-expand-y delay"></span>
-        <span className="bg-dark w-100 h-100 absolute showdiv showme-expand-y"></span>
-        <div className="bg-white pv5-l pv4 hover-bg-light-gray bg-animate tc">
-          <figure className="mb4 w4 h4 bg-dark center"></figure>
+        <span className="bg-primary w-100 h-100 absolute showdiv showme-expand-y"></span>
+        <div className="bg-white pv4 hover-bg-light-gray bg-animate tc">
+          <figure className="mb2 center">
+            <img src={"images/icons/CTA"+shareListData[i].name+".png"} width="200" alt={shareListData[i].name}/>
+          </figure>
           <h5 className="ma0">{shareListData[i].name}</h5>
           <p className="mw-320 mb4 center tc ph4 h2">{shareListData[i].description}</p>
-          <a href="/" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden">
+          <a href="/" className="link btn ba b--dark bw1 dib center ph4 br1 mb3 dark btn-hover-white relative overflow-hidden">
             <span className="btn-color bg-dark w-100 h-100 absolute"></span>
             <p className="ma0 lh-title tc fw5 pv3 relative">
               {shareListData[i].action}
@@ -62,7 +64,7 @@ class Share extends Component {
           </div>
         </section>
         <ParallaxBanner
-          className="fw-100 bg-dark pv5-l pv4"
+          className="fw-100 bg-dark pv5"
           layers={[
               {
                   image: 'images/star.jpg',

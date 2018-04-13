@@ -45,7 +45,7 @@ class Partner extends Component {
       <div className="fl partners ma3 bg-white hidediv hideme br1">
         <div className="pa4">
           <figure className="center mb3">
-            <img src={partnerListData[i].image[0]} height="80" alt={partnerListData[i].name} />
+            <img src={partnerListData[i].image[0]} height="100" alt={partnerListData[i].name} />
           </figure>
           <p className="ma0 tracked o-90 pt3 fw6">{partnerListData[i].name}</p>
           <p className="mw-320 center o-70 p-small ph2">{partnerListData[i].description}</p>

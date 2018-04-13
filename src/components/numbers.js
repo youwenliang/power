@@ -78,7 +78,7 @@ class Numbers extends Component {
       return ( 
          <section id="numbers" className="fw-100 bg-moon-gray relative" style={bgStyle}>
           <div className="container center pv6-l pv5 relative">
-            <div className="pa4 h-250 bg-white mw6 hideme hidediv mh6-l mh5-m mh4 z1 relative">
+            <div className="pa4 h-250 h-300-s bg-white mw6 hideme hidediv mh6-l mh5-m mh4 z1 relative">
               <h3 className="show ma0 lh-title pb3 fw5 tracked">{content[this.state.id].title}</h3>
               <p className="show ma0 mw6 lh-copy fw4">{content[this.state.id].content}</p>
               <h5 className="tr o-50 mv0 fw1 absolute bottom-right">{(this.state.id+1)+"/5"}</h5>

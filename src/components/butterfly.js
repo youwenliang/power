@@ -16,7 +16,7 @@ class Butterfly extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      num: false
+      num: true
     };
   }
   componentDidMount = () => {
@@ -76,9 +76,9 @@ class Butterfly extends Component {
 
     return ( 
       <section id="butterfly" className="fw-100 bg-primary"> 
-        <div className="ma0 bg-white pv5 ph4 hideme hidediv bb-orange-large">
-          <h1 className="ma0 lh-title pb3 tc fw7 tracked f2-l f3">{section.title}</h1>
-          <p className="ma0 lh-copy tc fw4 mb4 o-60">{section.tagline}</p>
+        <div className="ma0 bg-white pv5 ph4 hideme hidediv tc-ns tl">
+          <h1 className="ma0 lh-title pb3 fw7 tracked f2-l f3">{section.title}</h1>
+          <p className="ma0 lh-copy fw4 mb4 o-60">{section.tagline}</p>
           <h5 className="ma0 tl mw7 center fw4 f4-l f5 lh-large">{section.intro}</h5>
         </div>
         <figure className="w-100 tc ma0 hideme hidediv">
