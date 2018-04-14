@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import AnimatedNumber from 'react-animated-number';
+import $ from 'jquery';
+
+var view = false;
 
 var section =
 {
@@ -9,9 +12,16 @@ var section =
 }
 
 class Intro extends Component {
-    componentDidMount(){
-      
+    constructor(props) {
+      super(props);
+      this.state = {
+        num: false
+      };
     }
+    componentDidMount(){
+     
+    }
+    
     numbers = () => {
       return (
         <div className="center">
@@ -23,7 +33,7 @@ class Intro extends Component {
                   fontSize: 60
                 }}
                 stepPrecision = {0}
-                duration={750} />
+                duration={650} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">黑客松</p>
             </li>
@@ -34,7 +44,7 @@ class Intro extends Component {
                   fontSize: 60
                 }}
                 stepPrecision = {0}
-                duration={790} />
+                duration={950} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">國際雙年會</p>
             </li>
@@ -45,7 +55,7 @@ class Intro extends Component {
                   fontSize: 60
                 }}
                 stepPrecision = {0}
-                duration={830} />
+                duration={1250} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">正式提案</p>
             </li>
@@ -56,7 +66,7 @@ class Intro extends Component {
                   fontSize: 60
                 }}
                 stepPrecision = {0}
-                duration={870} />
+                duration={1550} />
               </h1><span>位</span>
               <p className="ma0 tc pa0 tracked">坑主</p>
             </li>
@@ -67,7 +77,7 @@ class Intro extends Component {
                   fontSize: 60
                 }}
                 stepPrecision = {0}
-                duration={910} />
+                duration={1850} />
               +</h1>
               <p className="ma0 tc pa0 tracked">參與者</p>
             </li>
@@ -76,6 +86,27 @@ class Intro extends Component {
       )
     }
     render() {
+      let num = null;
+      if(this.state.num) num = this.numbers();
+      var temp = this;
+      $(window).scroll( function(){      
+        if($('#animatedNumber2').length > 0) {
+          var bottom_of_object = $('#animatedNumber2').offset().top + $('#animatedNumber2').outerHeight()/4;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if( bottom_of_window > bottom_of_object ){
+            if(!view) {
+              temp.setState({num: true});
+              view = true;
+            }
+          }
+        }
+      });
+      var bgStyle = {
+        backgroundImage: 'url(images/star-transparent.png)',
+        backgroundPosition: 'center center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      };
       return ( 
         <section id="intro" className="fw-100 bg-dark"> 
           <div className="container center">
@@ -87,9 +118,9 @@ class Intro extends Component {
                   <img src="images/icons/g0v組成.png" width="420" alt="g0v-intro" />
                 </figure>
               </div>
-              <div className="fl intro ma0-l mt4 pt6-l pt5 pb4 ph6-l ph4 pb5 bg-dark hideme hidediv">
+              <div className="fl intro ma0-l pt6-l pt5 pb4 ph6-l ph4 pb5 bg-primary hideme hidediv" id="animatedNumber2" style={bgStyle}>
                 <h3 className="ma0 lh-title pb4-l pb3 fw6 white tc">{section.numbers}</h3>
-                {this.numbers()}
+                {num}
               </div>
             </div>
           </div>

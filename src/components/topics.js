@@ -166,7 +166,7 @@ class Topics extends Component {
       projectItems.push(this.projectList(i,k));
     }
     return (
-      <div className="swiper-slide ph5-l ph0 pt4-l show2">
+      <div className="swiper-slide ph5-l ph0 pt4-l">
         <div className="fl w-25-l w-100 tc">
           <figure className="center">
             <img className="mw-320" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>

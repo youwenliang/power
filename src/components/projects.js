@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { ParallaxBanner } from 'react-scroll-parallax';
 import Modal from 'react-responsive-modal';
+import FontAwesome from 'react-fontawesome';
 import AnimatedNumber from 'react-animated-number';
 
 var modalId = "";
@@ -15,7 +16,7 @@ var projectListData = [
   {
     "name": "阿龜微氣候",
     "description": "自製田間土壤、氣象感測器，配合數據分析，並延伸到田間紀錄日誌，讓小農更聰明地看天吃飯。",
-    "logo": "images/intro.png",
+    "logo": "images/projects/logo-turt.png",
     "image": ["images/projects/cover-turt.png", "images/projects/insight-turt.png", "images/projects/idea-turt.png", "images/projects/impact-turt.png"],
     "url": "http://agriweather.beehivedt.com/",
     "insight": "不開放的農業資料，讓第一線的農民極度缺乏田間微氣候的即時資料，加上負擔不了昂貴的設備，台灣的小農因此難以科學耕作。",
@@ -27,7 +28,7 @@ var projectListData = [
   {
     "name": "真的假的 LINE BOT",
     "description": "用聊天機器人和群眾協作查核澄清 Line 封閉群組中的不實資訊。",
-    "logo": "images/intro.png",
+    "logo": "images/projects/logo-line.png",
     "image": ["images/projects/cover-line.png", "images/projects/insight-line.png", "images/projects/idea-line.png", "images/projects/impact-line.png"],
     "url": "https://cofacts.hacktabl.org/",
     "insight": "如果說上個世代以政黨顏色區分彼此的小圈圈，那麼這個時代，社交網站就成了新的小圈圈，亦稱同溫層。同溫層不只是取暖、討拍的地方，如今更變成假消息散布的管道、激起衝突以造成動員的場域。現在有許多謠言透過 Line 散佈，這些謠言可能是錯誤的知識、詐騙、蓄意引導，嚴重時甚至會影響大家的生活。",
@@ -39,7 +40,7 @@ var projectListData = [
   {
     "name": "OPEN 集團",
     "description": "「OPEN 集團」梳理出企業所屬集團的關係圖，再串聯「透明足跡」的污染排放資料，讓民眾以集團為單位，檢視排放汙染的企業體，藉此向有違規紀錄的集團施壓，同時呼籲政府正視現行法律的不足。",
-    "logo": "images/intro.png",
+    "logo": "images/projects/logo-open.png",
     "image": ["images/projects/cover-open.png", "images/projects/insight-open.png", "images/projects/idea-open.png", "images/projects/impact-open.png"],
     "url": "https://thaubing.gcaa.org.tw/companydata/openGroupLanding/index.html",
     "insight": "曾有集團五年來因排放廢棄物僅被開罰 3700 多萬，造成的廢水汙染讓政府投資治水的 37 億元前功盡棄，但該集團卻在五年間享有 29.96 億元的租稅減免。罰款金額相較於補貼獎勵，根本不值一提，導致違規企業屢屢以消耗環境的外部成本為代價，持續追逐高額利潤。",
@@ -51,7 +52,7 @@ var projectListData = [
   {
     "name": "國家寶藏",
     "description": "藉由遊戲化的群眾外包，翻拍遺落在海外的台灣相關史料，最後將圖檔文字數位化，建立數位開放的台灣史資料庫。",
-    "logo": "images/intro.png",
+    "logo": "images/projects/logo-treat.png",
     "image": ["images/projects/cover-treat.png", "images/projects/insight-treat.png", "images/projects/idea-treat.png", "images/projects/impact-treat.png"],
     "url": "https://www.nationaltreasure.tw/",
     "insight": "美國國家檔案館目前解密開放約六千萬筆、尚未數位化的台灣史料檔案，除非親自前往位於華盛頓 DC 或馬里蘭的美國國家檔案館調閱檔案才能觀看。相較於日本政府委託一個十人上下的專業團隊在美國國家檔案館翻拍十幾年，國家寶藏團隊想問的是：「政府不做，有沒有可能全民一起做『數位翻拍』？」",
@@ -81,7 +82,7 @@ class Projects extends Component {
 
   numbers = (i,j) => {
     return (
-      <li className="dib ma2 w45 tc white pv4">
+      <li className="dib ma2 w45 tc white">
         <h5 className="ma0 tc tracked">{projectListData[i].create[j].title}</h5>
         <h1 className="ma0 tc di pr1">
         <AnimatedNumber component="text" value={projectListData[i].create[j].num}
@@ -111,12 +112,12 @@ class Projects extends Component {
             <div className="w-100 mh-600 o-50 absolute pn" style={bgStyle}></div>
             <div className="container mw9 w-85 center white">
               <div className="cf relative z1 flexbox alc">
-                <div className="fl w-20-ns w-100 tc">
+                <div className="fl w-20-l w-100 pr4-l mb0-l mb4">
                   <img className="ma0" src={projectListData[i].logo} alt={projectListData[i].name} width="240" />
                 </div>
-                <div className="fl w-75-ns w-100">
+                <div className="fl w-75-l w-100">
                   <h1 className="ma0 fw2 tracked">{projectListData[i].name}</h1>
-                  <h5 className="mt2 o-90 fw4 mw6">{projectListData[i].description}</h5>
+                  <h5 className="mt2 o-90 fw4 mw6 mb0">{projectListData[i].description}</h5>
                 </div>
               </div>
             </div>
@@ -154,7 +155,7 @@ class Projects extends Component {
               className="fw-100 bg-primary pv5-l pv4"
               layers={[
                   {
-                      image: 'images/star.jpg',
+                      image: 'images/star.png',
                       amount: 1,
                       slowerScrollRate: false,
                   }
@@ -174,6 +175,13 @@ class Projects extends Component {
               <div className="content fl w-50-l w-100 ph3">
                 <h4 className="ma0 fw4">團隊介紹</h4>
                 <p className="mv2 o-70 mw6 pb4">{projectListData[i].team}</p>
+                <a href={projectListData[i].url} target="_blank" rel="noopener noreferrer" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden mb5">
+                  <span className="btn-color bg-dark w-100 h-100 absolute"></span>
+                  <p className="ma0 lh-title tc fw5 pv3 relative">
+                    前往官網
+                    <FontAwesome className="pl2" name='long-arrow-right'/>
+                  </p>
+                </a>
               </div>
               <div className="content fl w-50-l w-100 ph3">
                 <img src={projectListData[i].image[3]} alt={projectListData[i].name}/>
@@ -217,7 +225,7 @@ class Projects extends Component {
           className="fw-100"
           layers={[
               {
-                  image: 'images/star.jpg',
+                  image: 'images/star.png',
                   amount: .2,
                   slowerScrollRate: false,
               }

@@ -10,6 +10,7 @@
     "react-animated-number": "^0.4.4",
     "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",
+    "react-number-easing": "0.0.4",
     "react-parallax": "^1.6.1",
     "react-responsive-modal": "^2.0.1",
     "react-scripts": "1.1.1",
