@@ -38,8 +38,8 @@ class Share extends Component {
           </figure>
           <h5 className="ma0">{shareListData[i].name}</h5>
           <p className="mw-320 mb4 center tc ph4 h2">{shareListData[i].description}</p>
-          <a href="/" className="link btn ba b--dark bw1 dib center ph4 br1 mb3 dark btn-hover-white relative overflow-hidden">
-            <span className="btn-color bg-dark w-100 h-100 absolute"></span>
+          <a href="/" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
+            <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
             <p className="ma0 lh-title tc fw5 pv3 relative">
               {shareListData[i].action}
               <FontAwesome className="pl2" name='long-arrow-right'/>

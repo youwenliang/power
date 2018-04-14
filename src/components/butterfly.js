@@ -122,8 +122,8 @@ class Butterfly extends Component {
                   <p className="ma0 pt2 tl">
                     {section.content}
                   </p>
-                  <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden mt4">
-                    <span className="btn-color bg-dark w-100 h-100 absolute"></span>
+                  <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
+                    <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
                     <p className="ma0 lh-title tc fw5 pv3 relative">
                       瀏覽獎助金官方網站
                       <FontAwesome className="pl2" name='long-arrow-right'/>

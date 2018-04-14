@@ -175,8 +175,8 @@ class Projects extends Component {
               <div className="content fl w-50-l w-100 ph3">
                 <h4 className="ma0 fw4">團隊介紹</h4>
                 <p className="mv2 o-70 mw6 pb4">{projectListData[i].team}</p>
-                <a href={projectListData[i].url} target="_blank" rel="noopener noreferrer" className="link btn ba b--dark bw1 dib center ph4 br1 dark btn-hover-white relative overflow-hidden mb5">
-                  <span className="btn-color bg-dark w-100 h-100 absolute"></span>
+                <a href={projectListData[i].url} target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
+                    <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw5 pv3 relative">
                     前往官網
                     <FontAwesome className="pl2" name='long-arrow-right'/>

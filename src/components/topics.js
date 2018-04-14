@@ -152,10 +152,11 @@ class Topics extends Component {
     return (
       <li className="slide dib tc pa2 hideme hidediv relative w-third-l w-100 cp">
           <figure className="center mb3 dn db-l">
-            <img src={topicListData[i].image[0]} height="150" alt={topicListData[i].name}/>
+            <img className="icon" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
           </figure>
+          <h3 className="ma0 tracked o-90 pt3 fw6">{topicListData[i].name}
           <h1 className="absolute p-large o-10">{"0"+(i+1)}</h1>
-          <h3 className="ma0 tracked o-90 pt3 fw6">{topicListData[i].name}</h3>
+          </h3>
           <p className="mw-320 center o-70 ph2 mt4 mb0-l mb4">{topicListData[i].description}</p>
       </li>
     )
@@ -172,7 +173,7 @@ class Topics extends Component {
             <img className="mw-320" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
           </figure>
         </div>
-        <div className="fl w-75-l w-100 mw7-l ph4-l">
+        <div className="fl w-75-l w-100 mw7-l ph5-l">
           <h1 className="mv0 o-20">{"0"+(i+1)}</h1>
           <h1 className="mv0">{topicListData[i].name}</h1>
           <h3 className="mv1 o-60">{topicListData[i].description}</h3>

@@ -82,6 +82,7 @@ class Numbers extends Component {
               <h3 className="show ma0 lh-title pb3 fw5 tracked">{content[this.state.id].title}</h3>
               <p className="show ma0 mw6 lh-copy fw4">{content[this.state.id].content}</p>
               <h5 className="tr o-50 mv0 fw1 absolute bottom-right">{(this.state.id+1)+"/5"}</h5>
+              <div id="intro-pag" className="swiper-pagination z1 absolute"></div>
             </div>
             <div id="swiperPhoto" className="swiper-container center absolute">
               <div className="swiper-wrapper">
@@ -92,7 +93,6 @@ class Numbers extends Component {
                 <div className="swiper-slide" style={divStyleList[4]}></div>
               </div>
             </div>
-            <div id="intro-pag" className="swiper-pagination z1 absolute"></div>
           </div>
         </section>
         )

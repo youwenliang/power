@@ -24,58 +24,43 @@ class Intro extends Component {
     
     numbers = () => {
       return (
-        <div className="center">
+        <div className="center mt4">
           <ul className="ma0 pa0 tc">
-            <li className="db center w48 tc white ph3 hideme hidediv mb3">
-              <h1 className="ma0 tc di pr1 fw2">
+            <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
+              <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="29"
-                style={{
-                  fontSize: 60
-                }}
                 stepPrecision = {0}
                 duration={650} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">黑客松</p>
             </li>
-            <li className="db center w48 tc white ph3 hideme hidediv mb3">
-              <h1 className="ma0 tc di pr1 fw2">
+            <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
+              <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="3"
-                style={{
-                  fontSize: 60
-                }}
                 stepPrecision = {0}
                 duration={950} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">國際雙年會</p>
             </li>
-            <li className="db center w48 tc white ph3 hideme hidediv mb3">
-              <h1 className="ma0 tc di pr1 fw2">
+            <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
+              <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="517"
-                style={{
-                  fontSize: 60
-                }}
                 stepPrecision = {0}
                 duration={1250} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">正式提案</p>
             </li>
-            <li className="db center w48 tc white ph3 hideme hidediv mb3">
-              <h1 className="ma0 tc di pr1 fw2">
+            <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
+              <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="304"
-                style={{
-                  fontSize: 60
-                }}
                 stepPrecision = {0}
                 duration={1550} />
               </h1><span>位</span>
               <p className="ma0 tc pa0 tracked">坑主</p>
             </li>
-            <li className="db center w48 tc white ph3 hideme hidediv mb3">
-              <h1 className="ma0 tc di pr1 fw2">
+            <li className="dib center w-50 tc white ph3 hideme hidediv">
+              <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="5000"
-                style={{
-                  fontSize: 60
-                }}
                 stepPrecision = {0}
                 duration={1850} />
               +</h1>
@@ -111,16 +96,20 @@ class Intro extends Component {
         <section id="intro" className="fw-100 bg-dark"> 
           <div className="container center">
             <div className="cf flexbox">
-              <div className="fl intro ma0 hideme hidediv pt6-l pt5 ph6-l ph4 pb5 bg-light-gray">
-                <h3 className="ma0 lh-title pb4-l pb3 fw6 tc">{section.title}</h3>
-                <h5 className="ma0 fw4 f4-l f5 lh-large">{section.content}</h5>
-                <figure className="ma0 hideme hidediv tc pt3">
-                  <img src="images/icons/g0v組成.png" width="420" alt="g0v-intro" />
-                </figure>
+              <div className="fl intro ma0 pt6-l pt5 ph4 pb5 bg-light-gray">
+                <div className="ma0 hideme hidediv">
+                  <h3 className="ma0 lh-title pb4-l pb3 fw6 tc">{section.title}</h3>
+                  <h5 className="ma0 fw4 f4-l f5 lh-large mw6 center">{section.content}</h5>
+                  <figure className="ma0 hideme hidediv tc pt3">
+                    <img src="images/icons/g0v組成.png" width="420" alt="g0v-intro" />
+                  </figure>
+                </div>
               </div>
-              <div className="fl intro ma0-l pt6-l pt5 pb4 ph6-l ph4 pb5 bg-primary hideme hidediv" id="animatedNumber2" style={bgStyle}>
+              <div className="fl intro ma0-l pt6-l pt5 ph5 pb5 bg-primary" id="animatedNumber2" style={bgStyle}>
+                <div className="ma0 hideme hidediv">
                 <h3 className="ma0 lh-title pb4-l pb3 fw6 white tc">{section.numbers}</h3>
                 {num}
+                </div>
               </div>
             </div>
           </div>
