@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { ParallaxBanner } from 'react-scroll-parallax';
 import Modal from 'react-responsive-modal';
 import FontAwesome from 'react-fontawesome';
-import AnimatedNumber from 'react-animated-number';
 
 var modalId = "";
 
@@ -121,8 +120,9 @@ class Projects extends Component {
           <div className="mt5 container mw9 w-85 center">
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
-                <h4 className="ma0 fw4">觀察（insight）</h4>
-                <p className="mv2 o-70 mw6 pb4">{projectListData[i].insight}</p>
+                <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">1 • </span>觀察（insight）</h3>
+                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].insight}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3">            
                 <img className="mb5-l mb4" src={projectListData[i].image[1]} alt={projectListData[i].name}/>
@@ -130,8 +130,9 @@ class Projects extends Component {
             </div>
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3 fo2-l">
-                <h4 className="ma0 fw4">作法（idea）</h4>
-                <p className="mv2 o-70 mw6 pb4">{projectListData[i].idea}</p>
+                <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">2 • </span>作法（idea）</h3>
+                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].idea}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3 fo1-l">
                 <img className="mb5-l mb4" src={projectListData[i].image[2]} alt={projectListData[i].name}/>
@@ -139,8 +140,9 @@ class Projects extends Component {
             </div>
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
-                <h4 className="ma0 fw4">影響力（impact）</h4>
-                <p className="mv2 o-70 mw6 pb4">{projectListData[i].impact}</p>
+                <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">3 • </span>影響力（impact）</h3>
+                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].impact}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3">
                 <img className="mb5-l mb4" src={projectListData[i].image[3]} alt={projectListData[i].name}/>
@@ -148,11 +150,11 @@ class Projects extends Component {
             </div>
           </div>
             <ParallaxBanner
-              className="fw-100 bg-primary pv5-l pv4"
+              className="fw-100 bg-primary pv6-l pv5 bt-orange-small"
               layers={[
                   {
                       image: 'images/star-transparent.png',
-                      amount: 1,
+                      amount: .1,
                       slowerScrollRate: false,
                   }
               ]}
@@ -163,15 +165,15 @@ class Projects extends Component {
               <div className="container mw9 w-85 tc center">
                 <ul className="ma0 pa0 tc intro-num">
                   {numberList}
-                  <img src="images/介紹人.svg" className="absolute" width="250" />
+                  <img src="images/介紹人.svg" className="absolute bottom-0" width="450" alt="intro-person" />
                 </ul>
               </div>
             </ParallaxBanner>
           <div className="mt5 container mw9 w-85 center">
             <div className="cf relative z1 flexbox">
               <div className="content fl w-50-l w-100 ph3">
-                <h4 className="ma0 fw4">團隊介紹</h4>
-                <p className="mv2 o-70 mw6 pb4">{projectListData[i].team}</p>
+                <h3 className="ma0 fw4 mb3">團隊介紹</h3>
+                <h5 className="fw4 mv2 o-70 mw6 pb4">{projectListData[i].team}</h5>
                 <a href={projectListData[i].url} target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
                     <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw5 pv3 relative">
@@ -200,7 +202,7 @@ class Projects extends Component {
     return (
       <div className="fl project ma3 cp hideme-more hidediv" data-id={i} onClick={this.onOpenModal}>
         <div className="overflow-hidden center mt0 mb3 bg-white h5 relative br1 pn">
-          <span className="bg-dark-black w-100 h-100 absolute showdiv showme-expand-y"></span>
+          <span className="bg-dark w-100 h-100 absolute showdiv showme-expand-y"></span>
           <figure className="project-img w-100 h-100 ma0" style={divStyle}></figure>
         </div>
         <div className="pt0 pl5 dash hideme hidediv pn">
@@ -224,11 +226,6 @@ class Projects extends Component {
               {
                   image: 'images/cover-bg.png',
                   amount: .2,
-                  slowerScrollRate: false,
-              },
-              {
-                  image: 'images/star-transparent.png',
-                  amount: .1,
                   slowerScrollRate: false,
               }
           ]}

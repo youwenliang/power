@@ -34,7 +34,6 @@ $(window).scroll( function(){
 	  $('.removeActive').each( function(i){
 		  var bottom_of_object2 = $(this).offset().top + 200;
 		  var bottom_of_window = $(window).scrollTop() + $(window).height();
-		  console.log(bottom_of_object2+"-"+bottom_of_window);
 		  if( bottom_of_window > bottom_of_object2 ){
 		  	$(this).find('.moveActive').each(function(){
 		  		$(this).removeClass('moveActive');

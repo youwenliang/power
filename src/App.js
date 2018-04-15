@@ -14,19 +14,36 @@ import loadImage from 'image-promise';
 import $ from 'jquery';
 
 var id = ['cover','butterfly','projects','topics','intro','partner','share'];
+var project = ['turt','line','open','treat'];
+var img = ['cover', 'idea', 'insight', 'impact', 'logo'];
 
 class App extends Component {
   componentDidMount(){
+    $('html').addClass('no-scroll');
     $('#section-nav a').click(function(){
       $('html, body').animate({
           scrollTop: $( $.attr(this, 'href') ).offset().top
-      }, 600);
+      }, 800);
       return false;
     });
-    var images  = [];
+    var images  = ['images/cover-bg.png','images/cover/big-butterfly.png', 'images/cover/people.png', 'images/cover/lines.png'];
+    // var images  = ['images/cover-bg.png','images/cover/big-butterfly.png', 'images/cover/people.png', 'images/cover/lines.png', 'images/butterfly/butterfly-bg.png', 'images/star-transparent.png'];
+    // for(var i = 0; i < img.length; i++){
+    //   for(var j = 0; j < project.length; j++) {
+    //     images.push('images/projects/'+img[i]+'-'+project[j]+'.png');
+    //   }
+    // }
+    // for(var k = 0; k < 5; k++) {
+    //   images.push('images/numbers/g0v-0'+k+'.jpg');
+    // }
     loadImage(images)
     .then(function (allImgs) {
       console.log(allImgs.length, 'images loaded!', allImgs);
+      setTimeout(function(){
+        $('html').removeClass('no-scroll');
+        $('#loading').addClass('none');
+        $('.cover-bg').removeClass('init')
+      },600);
     })
     .catch(function (err) {
       console.error('One or more images have failed to load :(');
@@ -50,6 +67,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div id="loading">
+          <figure>
+            <img id="b2" src="images/butterfly/butterfly-move2.png" alt=""/>
+            <img id="b1" src="images/butterfly/butterfly-move1.png" alt=""/>
+          </figure>
+        </div>
         {/*--- Navigation---*/}
         <div id="section-nav">
           <a className="nav-link active" href="#cover">2017 公民科技創新獎助金</a>

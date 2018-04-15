@@ -24,7 +24,7 @@ class Intro extends Component {
     
     numbers = () => {
       return (
-        <div className="center mt4">
+        <div className="center mt4 mw6">
           <ul className="ma0 pa0 tc">
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
@@ -38,7 +38,7 @@ class Intro extends Component {
               <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="3"
                 stepPrecision = {0}
-                duration={950} />
+                duration={650} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">國際雙年會</p>
             </li>
@@ -46,7 +46,7 @@ class Intro extends Component {
               <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="517"
                 stepPrecision = {0}
-                duration={1250} />
+                duration={950} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">正式提案</p>
             </li>
@@ -54,7 +54,7 @@ class Intro extends Component {
               <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="304"
                 stepPrecision = {0}
-                duration={1550} />
+                duration={950} />
               </h1><span>位</span>
               <p className="ma0 tc pa0 tracked">坑主</p>
             </li>
@@ -62,7 +62,7 @@ class Intro extends Component {
               <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="5000"
                 stepPrecision = {0}
-                duration={1850} />
+                duration={1250} />
               +</h1>
               <p className="ma0 tc pa0 tracked">參與者</p>
             </li>
@@ -93,7 +93,7 @@ class Intro extends Component {
         backgroundRepeat: 'no-repeat'
       };
       return ( 
-        <section id="intro" className="fw-100 bg-dark"> 
+        <section id="intro" className="fw-100 bg-primary"> 
           <div className="container center">
             <div className="cf flexbox">
               <div className="fl intro ma0 pt6-l pt5 ph4 pb5 bg-light-gray">
@@ -105,7 +105,7 @@ class Intro extends Component {
                   </figure>
                 </div>
               </div>
-              <div className="fl intro ma0-l pt6-l pt5 ph5 pb5 bg-primary" id="animatedNumber2" style={bgStyle}>
+              <div className="fl intro ma0-l pt6-l pt5 ph4 pb5 bg-primary" id="animatedNumber2" style={bgStyle}>
                 <div className="ma0 hideme hidediv">
                 <h3 className="ma0 lh-title pb4-l pb3 fw6 white tc">{section.numbers}</h3>
                 {num}

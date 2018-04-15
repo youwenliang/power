@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ParallaxBanner } from 'react-scroll-parallax';
 import Swiper from 'swiper';
 import $ from 'jquery';
 
@@ -122,6 +123,7 @@ class Topics extends Component {
       pagination: '#topic-pag',
       slidesPerView: 1,
       paginationClickable: true,
+      resistanceRatio: .4,
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
       spaceBetween: 100,
@@ -168,17 +170,19 @@ class Topics extends Component {
     }
     return (
       <div className="swiper-slide ph5-l ph0 pt4-l">
-        <div className="fl w-25-l w-100 tc">
-          <figure className="center">
-            <img className="mw-320" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
-          </figure>
-        </div>
-        <div className="fl w-75-l w-100 mw7-l ph5-l">
-          <h1 className="mv0 o-20">{"0"+(i+1)}</h1>
-          <h1 className="mv0">{topicListData[i].name}</h1>
-          <h3 className="mv1 o-60">{topicListData[i].description}</h3>
-          <p>{topicListData[i].content}</p>
-          <ul className="list pa0 mt4">{projectItems}</ul>
+        <div className="mt5-l">
+          <div className="fl w-25-l w-100 tc">
+            <figure className="center">
+              <img className="mw-320" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
+            </figure>
+          </div>
+          <div className="fl w-75-l w-100 mw7-l ph5-l">
+            <h1 className="mv0 o-20">{"0"+(i+1)}</h1>
+            <h1 className="mv0">{topicListData[i].name}</h1>
+            <h3 className="mv1 o-60">{topicListData[i].description}</h3>
+            <p>{topicListData[i].content}</p>
+            <ul className="list pa0 mt4">{projectItems}</ul>
+          </div>
         </div>
       </div>
     )
@@ -208,6 +212,19 @@ class Topics extends Component {
 
   render() { 
     return (
+    <ParallaxBanner
+          className="fw-100"
+          layers={[
+              {
+                  image: 'images/cover/lines.png',
+                  amount: .2,
+                  slowerScrollRate: false,
+              }
+          ]}
+          style={{
+              height: 'auto'
+          }}
+      >
       <section id="topics" className="fw-100 bg-white pv6-l pv5"> 
         <div className="container mw9 w-85 center">
           <h3 className="ma0 lh-title pb4 tc fw5 hideme hidediv tracked">{section.title}</h3>
@@ -224,6 +241,7 @@ class Topics extends Component {
           <div id="topic-pag" className="swiper-pagination mt3"></div>
         </div>
       </section>
+      </ParallaxBanner>
     )
   }
 }

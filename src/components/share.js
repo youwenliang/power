@@ -70,11 +70,6 @@ class Share extends Component {
                   image: 'images/cover-bg.png',
                   amount: 0.5,
                   slowerScrollRate: false,
-              },
-              {
-                  image: 'images/star-transparent.png',
-                  amount: 0.2,
-                  slowerScrollRate: false,
               }
           ]}
           style={{

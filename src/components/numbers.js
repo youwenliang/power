@@ -43,11 +43,12 @@ class Numbers extends Component {
       var swiperPhoto = new Swiper('#swiperPhoto', {
         pagination: '#intro-pag',
         paginationClickable: true,
+        resistanceRatio: .1,
         slidesPerView: 1,
         spaceBetween: 0,
         autoplay: 4000,
         onInit: function () {
-          console.log('init');
+          
         },
         onSlideChangeStart: function(){
           $('.show').addClass('none');
@@ -69,15 +70,10 @@ class Numbers extends Component {
         };
         divStyleList.push(divStyle);
       }
-      var bgStyle = {
-        backgroundImage: 'url(images/star.jpg)',
-        backgroundPosition: 'center center',
-        backgroundSize: 'cover'
-      };
 
       return ( 
-         <section id="numbers" className="fw-100 bg-moon-gray relative" style={bgStyle}>
-          <div className="container center pv6-l pv5 relative">
+         <section id="numbers" className="fw-100 bg-moon-gray relative">
+          <div className="container center pv6-l pv5 pb8-l relative">
             <div className="pa4 h-250 h-300-s bg-white mw6 hideme hidediv mh6-l mh5-m mh4 z1 relative pn">
               <h3 className="show ma0 lh-title pb3 fw5 tracked">{content[this.state.id].title}</h3>
               <p className="show ma0 mw6 lh-copy fw4">{content[this.state.id].content}</p>

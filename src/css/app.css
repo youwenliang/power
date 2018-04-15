@@ -8,6 +8,9 @@ body {
 	font-size: 16px;
 	line-height: 1.61;
 }
+.no-scroll {
+	overflow-y: hidden;
+}
 /*@media screen and (max-width: 768px) {
 	body {
 		font-size: 13px;
@@ -437,6 +440,9 @@ a {
 .delay {
 	transition-duration: .75s;
 }
+.bottom-0 {
+	bottom: 0;
+}
 
 /* Swiper */
 .swiper-container {
@@ -466,6 +472,9 @@ a {
 }
 
 @media screen and (min-width: 769px) {
+	.pb8-l {
+		padding-bottom: 16rem;
+	}
 	.slide:hover {
 		transform: scale(1.04);
 		transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
@@ -700,33 +709,120 @@ a {
 	top: -24px;
 	opacity: 0;
 }
+
 .cover-bg .parallax-banner-layer-0 {
 	/*opacity: 0;*/
 }
+
+.cover-bg.init .parallax-banner-layer-1 {
+	transform: translate(195px,-120px);
+}
+.cover-bg.init #cover-people {
+	opacity: 0;
+	transform: translate(50px,20px);
+}
+.cover-bg.init #big-butterfly {
+	opacity: 0;
+	transform: translate(-145px,120px);
+}
+.cover-bg.init #small-butterfly {
+	opacity: 0;
+	transform: translate(-195px,120px);
+}
+.cover-bg.init #medium-butterfly {
+	opacity: 0;
+	transform: translate(-195px,120px);
+}
+
 .cover-bg .parallax-banner-layer-1 {
-	/*opacity: 0;*/
+	transform: translate(0,0);
+	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 #cover-people, #big-butterfly {
 	position: absolute;
-	bottom: 0.0625vh;
+	bottom: 4%;
 	left: 0;
 	right: 0;
 	margin: auto;
-	width: 75%;
-	max-width: 850px;
+	width: 95%;
+	max-width: 720px;
+	transform: translate(50px,0);
+}
+
+#cover-people {
+	opacity: 1;
+	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1) .9s;
+}
+#big-butterfly {
+	opacity: 1;
+	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1) .1s;
 }
 
 #small-butterfly {
+	opacity: 1;
 	position: absolute;
 	top: 5%;
-	right: 36%;
+	right: 20%;
 	margin: auto;
 	width: 140px;
+	transform: translate(0,0);
+	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1) .7s;
 }
 #medium-butterfly {
+	opacity: 1;
 	position: absolute;
 	left: 12%;
 	bottom: 10%;
 	margin: auto;
 	width: 180px;
+	transform: translate(0,0);
+	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1) .5s;
+}
+#loading {
+	width: 100%;
+	height: 100%;
+	background-color: #001C2F;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	opacity: 1;
+	pointer-events: none;
+}
+#loading.none {
+	opacity: 0;
+	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#b1, #b2 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+#loading figure {
+	display: block;
+	width: 93px;
+	height: 155px;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: calc(50% - 77px);
+	bottom: 0;
+	transform: rotate(-301deg) scale(.7);
+}
+
+#b1 {
+	width: 69px;
+	transform: translate(-7px,-67px);
+}
+#b2 {
+	width: 93px; 
+	animation: fly .6s infinite ease-in-out;
+}
+@keyframes fly {
+  0%   { transform: scaleX(1); }
+  33%   { transform: scaleX(0.01); }
+  100%   { transform: scaleX(1); }
 }
