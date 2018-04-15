@@ -84,11 +84,7 @@ class Projects extends Component {
     return (
       <li className="dib ma2 w45 tc white">
         <h5 className="ma0 tc tracked">{projectListData[i].create[j].title}</h5>
-        <h1 className="ma0 tc di pr1">
-        <AnimatedNumber component="text" value={projectListData[i].create[j].num}
-          stepPrecision = {0}
-          duration={350} />
-        +</h1>
+        <h1 className="ma0 tc di pr1">{projectListData[i].create[j].num+"+"}</h1>
       </li>
     )
   };
@@ -155,7 +151,7 @@ class Projects extends Component {
               className="fw-100 bg-primary pv5-l pv4"
               layers={[
                   {
-                      image: 'images/star.png',
+                      image: 'images/star-transparent.png',
                       amount: 1,
                       slowerScrollRate: false,
                   }
@@ -165,8 +161,9 @@ class Projects extends Component {
               }}
             >
               <div className="container mw9 w-85 tc center">
-                <ul className="ma0 pa0 tc">
+                <ul className="ma0 pa0 tc intro-num">
                   {numberList}
+                  <img src="images/介紹人.svg" className="absolute" width="250" />
                 </ul>
               </div>
             </ParallaxBanner>
@@ -225,8 +222,13 @@ class Projects extends Component {
           className="fw-100"
           layers={[
               {
-                  image: 'images/star.png',
+                  image: 'images/cover-bg.png',
                   amount: .2,
+                  slowerScrollRate: false,
+              },
+              {
+                  image: 'images/star-transparent.png',
+                  amount: .1,
                   slowerScrollRate: false,
               }
           ]}

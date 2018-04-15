@@ -392,9 +392,27 @@ a {
 	transform: translateY(0px) scaleX(1);
 	transition: all .35s ease-in-out;
 }
+
+.delay-0 {
+	transition: all .35s ease-in-out;	
+}
+.delay-1 {
+	transition: all .35s ease-in-out .2s;	
+}
+.delay-2 {
+	transition: all .35s ease-in-out .4s;	
+}
+.delay-3 {
+	transition: all .35s ease-in-out .6s;	
+}
+.delay-4 {
+	transition: all .35s ease-in-out .8s;	
+}
+
 .hideme {
 	opacity: 0;
 	transform: translateY(20px) scaleX(1);
+	transition: all .35s ease-in-out;
 }
 .hideme-more {
 	opacity: 1;
@@ -536,7 +554,7 @@ a {
 #section-nav a {
   font-size: 13px;
   letter-spacing: .5px;
-  color: #fff;
+  color: #aaa;
   padding-right: 35px;
   height: 25px;
   width: 25px;
@@ -554,7 +572,7 @@ a {
   content: "";
   display: block;
   width: 10px;
-  border: 1px solid #9D9FA2;
+  border: 1px solid #F5A117;
   position: absolute;
   right: 0px;
   top: 3px;
@@ -570,17 +588,11 @@ a {
 	  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 	}
 
-	#section-nav a:hover:before {
-	  width: 20px;
-	  background: #fff;
-	  border: 1px solid #fff;
-	  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
-	}
-
+	#section-nav a:hover:before,
 	#section-nav a.active:before {
 	  width: 20px;
-	  background: #fff;
-	  border: 1px solid #fff;
+	  background: #aaa;
+	  border: 1px solid #aaa;
 	  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
 	}
 }
@@ -611,10 +623,9 @@ a {
 .bb-orange-large {
 	border-bottom: #F4A118 solid 30px;
 }
-.parallax-outer {
-	opacity: .1;
+.intro-num {
+	margin-left: -125px;
 }
-
 
 /*Butterfly*/
 #money {
@@ -668,10 +679,54 @@ a {
 #people-1 {
 	left: calc(50% - 530px);
 	top: 31px;
-	max-width: initial !important
+	max-width: initial !important;
+	opacity: 1;
+	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#people-1.moveActive {
+	left: calc(50% - 730px);
+	top: -39px;
+	opacity: 0;
 }
 #people-2 {
 	right: calc(50% - 450px);
 	top: 46px;
-	max-width: initial !important
+	max-width: initial !important;
+	opacity: 1;
+	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#people-2.moveActive {
+	right: calc(50% - 650px);
+	top: -24px;
+	opacity: 0;
+}
+.cover-bg .parallax-banner-layer-0 {
+	/*opacity: 0;*/
+}
+.cover-bg .parallax-banner-layer-1 {
+	/*opacity: 0;*/
+}
+#cover-people, #big-butterfly {
+	position: absolute;
+	bottom: 0.0625vh;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 75%;
+	max-width: 850px;
+}
+
+#small-butterfly {
+	position: absolute;
+	top: 5%;
+	right: 36%;
+	margin: auto;
+	width: 140px;
+}
+#medium-butterfly {
+	position: absolute;
+	left: 12%;
+	bottom: 10%;
+	margin: auto;
+	width: 180px;
 }

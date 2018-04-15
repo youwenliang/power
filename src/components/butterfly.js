@@ -102,16 +102,22 @@ class Butterfly extends Component {
           </div>
         </div>
         <figure className="w-100 tc ma0 bg-primary pb6 relative" style={bgStyle}>
-          <h4 className="ma0 fw7">創意、公民科技人才</h4>
-          <h5 className="ma0 white fw4">Open Source</h5>
-          <img src="images/butterfly/CTG.svg" width="300" className="absolute" id="ctg" />
-          <img src="images/butterfly/people-1.svg" height="180" className="absolute" id="people-1" width="455" />
-          <img src="images/butterfly/people-2.svg" height="180" className="absolute" id="people-2" width="350" />
-          <img src="images/butterfly/Money.svg" id="money" />
-          <img src="images/butterfly/CTG-1.svg" id="ctg-1" width="255" />
-          <img src="images/butterfly/CTG-2.svg" id="ctg-2" width="255" />
-          <img src="images/butterfly/CTG-3.svg" id="ctg-3" width="300" />
-          <img src="images/butterfly/CTG-4.svg" id="ctg-4" width="300" />
+          <div className="hideme hidediv">
+            <h4 className="ma0 fw7">創意、公民科技人才</h4>
+            <h5 className="ma0 white fw4">Open Source</h5>
+            <img src="images/butterfly/CTG.svg" width="300" className="absolute" id="ctg" />
+          </div>
+          <div className="removeActive">
+            <img src="images/butterfly/people-1.svg" height="180" className="absolute moveActive" id="people-1" width="455" />
+            <img src="images/butterfly/people-2.svg" height="180" className="absolute moveActive" id="people-2" width="350" />
+          </div>
+          <img className="hideme hidediv" src="images/butterfly/Money.svg" id="money" />
+          <div className="hidechild">
+            <img className="hideme delay-0" src="images/butterfly/CTG-1.svg" id="ctg-1" width="255" />
+            <img className="hideme delay-1" src="images/butterfly/CTG-2.svg" id="ctg-2" width="255" />
+            <img className="hideme delay-2" src="images/butterfly/CTG-3.svg" id="ctg-3" width="300" />
+            <img className="hideme delay-3" src="images/butterfly/CTG-4.svg" id="ctg-4" width="300" />
+          </div>
         </figure>
         <div className="ma0 bg-near-white pb5 pt3 ph4">
           <div className="container mw8 center hideme hidediv">

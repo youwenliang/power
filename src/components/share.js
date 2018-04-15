@@ -67,8 +67,13 @@ class Share extends Component {
           className="fw-100 bg-dark pv5"
           layers={[
               {
-                  image: 'images/star.png',
-                  amount: 1,
+                  image: 'images/cover-bg.png',
+                  amount: 0.5,
+                  slowerScrollRate: false,
+              },
+              {
+                  image: 'images/star-transparent.png',
+                  amount: 0.2,
                   slowerScrollRate: false,
               }
           ]}

@@ -22,6 +22,25 @@ function scrollFunction() {
 
 
 $(window).scroll( function(){
+	  $('.hidechild').each( function(i){
+		  var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;
+		  var bottom_of_window = $(window).scrollTop() + $(window).height();
+		  if( bottom_of_window > bottom_of_object ){
+		  	$(this).find('.hideme').each(function(){
+		  		$(this).removeClass('hideme');
+		  	});
+		  }
+	  });
+	  $('.removeActive').each( function(i){
+		  var bottom_of_object2 = $(this).offset().top + 200;
+		  var bottom_of_window = $(window).scrollTop() + $(window).height();
+		  console.log(bottom_of_object2+"-"+bottom_of_window);
+		  if( bottom_of_window > bottom_of_object2 ){
+		  	$(this).find('.moveActive').each(function(){
+		  		$(this).removeClass('moveActive');
+		  	});
+		  }	 	  
+	  });
 	$('.showme-expand-y').each( function(i){
 	  var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	  var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -32,7 +51,7 @@ $(window).scroll( function(){
 	  	}, i*180)
 	  }	  
 	});
-	$('.hideme').each( function(i){
+	$('.hideme.hidediv').each( function(i){
 	  var bottom_of_object = $(this).offset().top + $(this).outerHeight()/4;
 	  var bottom_of_window = $(window).scrollTop() + $(window).height();
 	  if( bottom_of_window > bottom_of_object ){
@@ -42,6 +61,7 @@ $(window).scroll( function(){
 	  	}, i*50)
 	  }	  
 	});
+
 	$('.hideme-expand').each( function(i){
 	  var bottom_of_object = $(this).offset().top + $(this).outerHeight();
 	  var bottom_of_window = $(window).scrollTop() + $(window).height();
