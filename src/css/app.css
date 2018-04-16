@@ -65,7 +65,7 @@ h5 {
 	line-height: 1.8;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 959px) {
 	.p-large {
 		top: -30px;
 	}
@@ -95,6 +95,10 @@ a {
 }
 .w45 {
 	width: 10rem;
+}
+
+.w46 {
+	width: 12rem;
 }
 
 .w48 {
@@ -253,7 +257,7 @@ a {
 	order: 2;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 959px) {
 	.fo1-l {
 		order: 2;
 	}
@@ -318,6 +322,9 @@ a {
 }
 
 @media screen and (min-width: 960px) {
+	.intro-num {
+		margin-left: -125px;
+	}
 	.flexbox .push{
 		flex: 2 0 0;
 	}
@@ -632,9 +639,6 @@ a {
 .bb-orange-large {
 	border-bottom: #F4A118 solid 30px;
 }
-.intro-num {
-	margin-left: -125px;
-}
 
 /*Butterfly*/
 #money {
@@ -679,7 +683,7 @@ a {
 	max-width: 300px;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 959px) {
 	#ctg-1, #ctg-4 {left: 20px;}
 	#ctg-2, #ctg-3 {right: 20px;}
 	#ctg-3, #ctg-4 {top: calc(323px + 30%);}
@@ -714,9 +718,6 @@ a {
 	/*opacity: 0;*/
 }
 
-.cover-bg.init .parallax-banner-layer-1 {
-	transform: translate(195px,-120px);
-}
 .cover-bg.init #cover-people {
 	opacity: 0;
 	transform: translate(50px,20px);
@@ -735,9 +736,22 @@ a {
 }
 
 .cover-bg .parallax-banner-layer-1 {
-	transform: translate(0,0);
-	transition: all .8s cubic-bezier(0.23, 1, 0.32, 1);
+	transform: translate(162.5vw, -100vw);
+	animation: moving1 8s infinite linear;
 }
+.cover-bg .parallax-banner-layer-2 {
+	animation: moving2 8s infinite linear;	
+}
+@keyframes moving1 {
+  0%   { transform: translate(162.5vw, -100vw); }
+  100%   { transform: translate(0,0); }
+}
+@keyframes moving2 {
+  0%   { transform: translate(0, 0); }
+  100%   { transform: translate(-162.5vw,100vw); }
+}
+
+
 #cover-people, #big-butterfly {
 	position: absolute;
 	bottom: 4%;

@@ -26,8 +26,7 @@ class App extends Component {
       }, 800);
       return false;
     });
-    var images  = ['images/cover-bg.png','images/cover/big-butterfly.png', 'images/cover/people.png', 'images/cover/lines.png'];
-    // var images  = ['images/cover-bg.png','images/cover/big-butterfly.png', 'images/cover/people.png', 'images/cover/lines.png', 'images/butterfly/butterfly-bg.png', 'images/star-transparent.png'];
+    var images  = ['images/cover-bg.png','images/cover/big-butterfly.png', 'images/cover/people.png', 'images/cover/lines.png', 'images/butterfly/butterfly-bg.png', 'images/star-transparent.png'];
     // for(var i = 0; i < img.length; i++){
     //   for(var j = 0; j < project.length; j++) {
     //     images.push('images/projects/'+img[i]+'-'+project[j]+'.png');

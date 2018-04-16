@@ -15,7 +15,12 @@ class Cover extends Component {
               {
                   image: 'images/cover/lines.png',
                   amount: .2,
-                  slowerScrollRate: false,
+                  slowerScrollRate: true,
+              },
+              {
+                  image: 'images/cover/lines.png',
+                  amount: .2,
+                  slowerScrollRate: true,
               }
           ]}
           style={{

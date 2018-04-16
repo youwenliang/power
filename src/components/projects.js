@@ -81,7 +81,7 @@ class Projects extends Component {
 
   numbers = (i,j) => {
     return (
-      <li className="dib ma2 w45 tc white">
+      <li className="center dib-l ma2 w46 tc white z1">
         <h5 className="ma0 tc tracked">{projectListData[i].create[j].title}</h5>
         <h1 className="ma0 tc di pr1">{projectListData[i].create[j].num+"+"}</h1>
       </li>
@@ -121,7 +121,7 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">1 • </span>觀察（insight）</h3>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">1 • </span>洞察 Insight</h3>
                 <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].insight}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3">            
@@ -131,7 +131,7 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3 fo2-l">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">2 • </span>作法（idea）</h3>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">2 • </span>計畫 Idea</h3>
                 <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].idea}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3 fo1-l">
@@ -141,7 +141,7 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">3 • </span>影響力（impact）</h3>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">3 • </span>影響力 Impact</h3>
                 <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].impact}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3">
@@ -174,7 +174,7 @@ class Projects extends Component {
               <div className="content fl w-50-l w-100 ph3">
                 <h3 className="ma0 fw4 mb3">團隊介紹</h3>
                 <h5 className="fw4 mv2 o-70 mw6 pb4">{projectListData[i].team}</h5>
-                <a href={projectListData[i].url} target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
+                <a href={projectListData[i].url} target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mv4">
                     <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw5 pv3 relative">
                     前往官網
