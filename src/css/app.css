@@ -112,8 +112,9 @@ a {
 .h45 {
 	height: 10rem;
 }
-.mw-320 {
-	max-width: 320px;
+.mw-300 {
+	max-width: 300px;
+	width: 50%;
 }
 .mw74 {
 	max-width: 74rem;
@@ -323,6 +324,13 @@ a {
 /* Projects */
 .project-img {
 	transition: all .15s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.projectList a {
+	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.projectList a:hover {
+	border-color: #F5A117;
+	transition: all .35s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 @media screen and (min-width: 960px) {

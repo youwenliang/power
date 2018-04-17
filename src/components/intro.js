@@ -99,7 +99,7 @@ class Intro extends Component {
               <div className="fl intro ma0 pt6-l pt5 ph4 pb5 bg-light-gray">
                 <div className="ma0 hideme hidediv">
                   <h3 className="ma0 lh-title pb4-l pb3 fw6 tc">{section.title}</h3>
-                  <h5 className="ma0 fw4 f4-l f5 lh-large mw6 center">{section.content}</h5>
+                  <p className="ma0 fw4 lh-large mw6 center">{section.content}</p>
                   <figure className="ma0 hideme hidediv tc pt3">
                     <img src="images/icons/g0v組成.png" width="420" alt="g0v-intro" />
                   </figure>

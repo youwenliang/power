@@ -26,6 +26,19 @@ class App extends Component {
       }, 800);
       return false;
     });
+    var pre = ['images/butterfly/butterfly-move1.png', 'images/butterfly/butterfly-move2.png']
+    loadImage(pre)
+    .then(function (allImgs) {
+      console.log(allImgs.length, 'images loaded!!', allImgs);
+      $('#loading figure').removeClass('o-0');
+    })
+    .catch(function (err) {
+      console.error('One or more images have failed to load :(');
+      console.error(err.errored);
+      console.info('But these loaded fine:');
+      console.info(err.loaded);
+    });
+
     var images  = ['images/cover-bg.png','images/cover/big-butterfly.png', 'images/cover/people.png', 'images/cover/lines.png', 'images/butterfly/butterfly-bg.png', 'images/star-transparent.png'];
     // for(var i = 0; i < img.length; i++){
     //   for(var j = 0; j < project.length; j++) {
@@ -67,7 +80,7 @@ class App extends Component {
     return (
       <div className="App">
         <div id="loading">
-          <figure>
+          <figure className="o-0">
             <img id="b2" src="images/butterfly/butterfly-move2.png" alt=""/>
             <img id="b1" src="images/butterfly/butterfly-move1.png" alt=""/>
           </figure>

@@ -22,7 +22,8 @@ var projectListData = [
     "idea": "吳君孝與長期參與開源社群的科技農夫陳幸延，成立「阿龜微氣候天眼通」，自製田間土壤感測器、氣象盒子收集農業數據，並將接收到的環境數據彙整到儀表板，方便農友掌握即時田間狀況。",
     "impact": "拿到 g0v 獎助金後，只有兩三人的阿龜核心團隊在一個月內迅速成長至十幾人，並以「阿龜誌」拿到第二次 g0v 獎助金，接著開發田間紀錄日誌 APP，持續以農業資料為基底，架起一座橫跨農民與專家學者的橋樑。阿龜微氣候團隊開發成功的能量也回饋給 Open Hack Farm 社群，以開源科技深耕在地農業。",
     "team": "團隊介紹",
-    "create": [{"title":"首波測試農友", "num":60}, {"title":"品種", "num":600}, {"title":"肥料介紹", "num":3000}]
+    "create": [{"title":"首波測試農友", "num":60}, {"title":"品種", "num":600}, {"title":"肥料介紹", "num":3000}],
+    "people": "吳君孝／陳幸延／余孟勳／張育誠／林俊廷／施旭峰／寧格致／吳伯彥／蘇文毓／梁芳綺／鍾幸芸／胡靜諭／盧安邦／楊宗儒／許靜宜／林泰佑"
   },
   {
     "name": "真的假的 LINE BOT",
@@ -34,7 +35,8 @@ var projectListData = [
     "idea": "「真的假的 LINE Bot」讓不擅於使用 Google，資訊搜尋能力較低的使用者，可以在加入「真的假的 LINE Bot」之後，遇上任何 LINE 上不知真假的訊息時，直接轉發給機器人，接著就會收到回覆，判斷訊息的真假。",
     "impact": "真的假的團隊曾參與國家傳播委員會（NCC）關於假新聞的討論，並至新加坡、南非等地參與公民科技論壇，展現專案在資訊查核相關領域的社會影響力。目前約 2 萬人加入「真的假的 LINE Bot」 LINE 好友，每週有將近 250 篇訊息回報，200 位編輯加入線上闢謠。",
     "team": "團隊介紹",
-    "create": [{"title":"志工人次", "num":50}, {"title":"翻拍文件", "num":100000}]
+    "create": [{"title":"已闢謠條目", "num":14121}, {"title":"每週訊息回報", "num":250}],
+    "people":"郭冠宏（ggm）／梁翔勝（mrorz）／李柏緯（lucien）／魏妤庭（hazel）／李比鄰（billion）／劉澄真（delightfullychoatic）／朱柏澂（darkbtf）"
   },
   {
     "name": "OPEN 集團",
@@ -46,7 +48,8 @@ var projectListData = [
     "idea": "為與「透明足跡」的污染裁罰紀錄整併，團隊將 g0v 專案「台灣公司資料」與本專案資料兩相比對，梳理各公司行號的統一編號，歷經半年開發，匯入 2013 - 2016 四年間的資料，總計超過 1,400 個集團、3 萬個公司統一編號。",
     "impact": "OPEN 集團強調「讓企業負起更多責任」，期許透過開放資訊的力量，讓汙染現形，從此民眾不再只能被動等待政府開罰，可以根據實際數據監督違法企業、向政府反映，提醒企業應負起的環境責任。",
     "team": "團隊介紹",
-    "create": [{"title":"已闢謠條目", "num":14121}, {"title":"每週訊息回報", "num":250}]
+    "create": [{"title":"環境裁罰紀錄", "num":71366}, {"title":"集團彙整", "num":1487}],
+    "people": "卞中佩／洪申翰／曾虹文／陳奕伶"
   },
   {
     "name": "國家寶藏",
@@ -58,7 +61,8 @@ var projectListData = [
     "idea": "國家寶藏團隊找來設計師、工程師，開發翻拍檔案 APP，讓志工像玩遊戲一般，自動指派翻拍編號，一小時可處理 100～200 頁的文件。翻拍後的檔案會自動上傳資料庫，並且透過程式辨識圖片中的文字，數位化成為可搜尋的資料，現在還能將英文自動翻譯成中文，更方便台灣民眾查閱。",
     "impact": "這是一個極具野心的計畫，他們不只想挖美國國家檔案局的檔案，期望同樣的鄉民精神與科技工具可以讓世界各地的台灣人都可以自己挖寶。畢竟大英博物館、荷蘭東印度公司、俄國聖彼得堡、日本、澳洲等地都有大量關於台灣的文獻尚未被研究。目前團隊已在美國成立「臺灣國家寶藏基金會」，每月組織志工團到馬里蘭進行翻拍，累積超過 100,000 筆資料上網。",
     "team": "團隊介紹",
-    "create": [{"title":"環境裁罰紀錄", "num":71366}, {"title":"集團彙整", "num":1487}]
+    "create": [{"title":"志工人次", "num":50}, {"title":"翻拍文件", "num":100000}],
+    "people":"蕭新晟（hsiao-a）／林育正（小風）／莊士杰（Abraham）／張文馨（moon）"
   }
 ]
 
@@ -87,6 +91,28 @@ class Projects extends Component {
       </li>
     )
   };
+  contact = (i) => {
+    switch(i) {
+      case "0":
+        return (
+          <p><FontAwesome className="pr2" name='envelope'/>Email: shawwu@beehivedt.com<br/><FontAwesome className="pr2" name='slack'/>g0v Slack #shawwu<br/><FontAwesome className="pr2" name='facebook-square'/>Facebook: <a href="https://www.facebook.com/agriweather/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/agriweather/</a><br/>Line: @tyl2003d</p>
+        )
+      case "1":
+        return (
+          <p><FontAwesome className="pr2" name='envelope'/>Email: cofacts@googlegroups.com<br/><FontAwesome className="pr2" name='slack'/>g0v slack #cofacts<br/><FontAwesome className="pr2" name='facebook-square'/>Facebook: <a href="https://www.facebook.com/groups/cofacts" target="_blank" rel="noopener noreferrer">https://www.facebook.com/groups/cofacts</a></p>
+        )
+      case "2":
+        return (
+          <p><FontAwesome className="pr2" name='envelope'/>Email: gcaa.official@gmail.com</p>
+        )
+      case "3":
+        return (
+          <p><FontAwesome className="pr2" name='envelope'/>Email: join@nltr.tw<br/><FontAwesome className="pr2" name='slack'/>g0v slack #national-treasure<br/><FontAwesome className="pr2" name='facebook-square'/>Facebook: <a href="https://www.facebook.com/twnationaltreasure" target="_blank" rel="noopener noreferrer">https://www.facebook.com/twnationaltreasure</a></p>
+        )
+      default:
+        return false
+    }
+  }
 
   modalContent = (i) => {
     if(projectListData[i]) {
@@ -121,8 +147,8 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib f25-l f3"> <span className="o-50">1 • </span>洞察 Insight</h3>
-                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l f4-l f5">{projectListData[i].insight}</h5>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">1 • </span>洞察 Insight</h3>
+                <p className="fw4 mv2 o-70 mw6 pb4 lh-large">{projectListData[i].insight}</p>
               </div>
               <div className="content fl w-50-l w-100 ph3">            
                 <img className="mb5-l mb4" src={projectListData[i].image[1]} alt={projectListData[i].name}/>
@@ -131,8 +157,8 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3 fo2-l">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib f25-l f3"> <span className="o-50">2 • </span>計畫 Idea</h3>
-                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l f4-l f5">{projectListData[i].idea}</h5>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">2 • </span>計畫 Idea</h3>
+                <p className="fw4 mv2 o-70 mw6 pb4 lh-large">{projectListData[i].idea}</p>
               </div>
               <div className="content fl w-50-l w-100 ph3 fo1-l">
                 <img className="mb5-l mb4" src={projectListData[i].image[2]} alt={projectListData[i].name}/>
@@ -141,8 +167,8 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib f25-l f3"> <span className="o-50">3 • </span>影響力 Impact</h3>
-                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l f4-l f5">{projectListData[i].impact}</h5>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">3 • </span>影響力 Impact</h3>
+                <p className="fw4 mv2 o-70 mw6 pb4 lh-large">{projectListData[i].impact}</p>
               </div>
               <div className="content fl w-50-l w-100 ph3">
                 <img className="mb5-l mb4" src={projectListData[i].image[3]} alt={projectListData[i].name}/>
@@ -170,20 +196,15 @@ class Projects extends Component {
               </div>
             </ParallaxBanner>
           <div className="mt5 container mw9 w-85 center">
-            <div className="cf relative z1 flexbox">
+            <h3 className="ma0 fw4 mb4 ph3">團隊介紹</h3>
+            <div className="cf relative z1 flexbox lh-large">
               <div className="content fl w-50-l w-100 ph3">
-                <h3 className="ma0 fw4 mb3 f25-l f3">團隊介紹</h3>
-                <h5 className="fw4 mv2 o-70 mw6 pb4 f4-l f5">{projectListData[i].team}</h5>
-                <a href={projectListData[i].url} target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mv4">
-                    <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
-                  <p className="ma0 lh-title tc fw5 pv3 relative">
-                    前往官網
-                    <FontAwesome className="pl2" name='long-arrow-right'/>
-                  </p>
-                </a>
+                <h4 className="ma0">團隊成員：</h4>
+                <p className="mw6">{projectListData[i].people}</p>
               </div>
               <div className="content fl w-50-l w-100 ph3">
-                <img src={projectListData[i].image[3]} alt={projectListData[i].name}/>
+                <h4 className="ma0">聯絡資訊：</h4>
+                {this.contact(i)}
               </div>
             </div>
           </div>

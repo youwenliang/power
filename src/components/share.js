@@ -12,17 +12,20 @@ var shareListData = [
   {
     "name": "報名黑客松",
     "description": "想找地方揮灑熱血嗎？揪松網歡迎你！",
-    "action": "瞭解更多"
+    "action": "瞭解更多",
+    "url": "https://hack.g0v.tw/"
   },
   {
     "name": "贊助獎助金",
     "description": "贊助一份力量，實現更多可能！",
-    "action": "我要捐款"
+    "action": "我要捐款",
+    "url": "jothon-organizers@g0v.tw"
   },
   {
     "name": "下載最新年鑑",
     "description": "最新 2017 獎助金年鑑，歡迎取用！",
-    "action": "馬上下載"
+    "action": "馬上下載",
+    "url": "https://drive.google.com/open?id=1tBuYwplYMya1EiGXJcUIoOPf6q83ULNS"
   }
 ]
 
@@ -38,8 +41,8 @@ class Share extends Component {
           </figure>
           <h5 className="ma0">{shareListData[i].name}</h5>
           <p className="mw-320 mb4 center tc ph4 h2">{shareListData[i].description}</p>
-          <a href="/" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
-            <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
+          <a href={shareListData[i].url} target="_blank" className="link btn ba b--orange bw1 dib center ph4 br1 dark-black relative overflow-hidden mt4">
+            <span className="btn-color bg-white w-100 h-100 absolute"></span>
             <p className="ma0 lh-title tc fw5 pv3 relative">
               {shareListData[i].action}
               <FontAwesome className="pl2" name='long-arrow-right'/>

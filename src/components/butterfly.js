@@ -126,7 +126,7 @@ class Butterfly extends Component {
               <div className="fl w-100 w-50-l">
                 <div className="pa4-l hidediv hideme tc tl-l">
                   <h5 className="mv3">{section.contentTitle}</h5>
-                  <p className="ma0 pt2 tl">
+                  <p className="ma0 pt2 tl lh-large">
                     {section.content}
                   </p>
                   <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">

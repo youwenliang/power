@@ -17,13 +17,13 @@ var topicListData = [
     "projects": [
       {
         "name": "LostSAR - 搜救",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://lostsar.github.io/",
+        "logo": "images/logos/logo1-1.png"
       },
       {
         "name": "享食雲 Foodsharing Taiwan",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://foodsharing.tw",
+        "logo": "images/logos/logo1-2.png"
       }
     ]
   },
@@ -35,18 +35,18 @@ var topicListData = [
     "projects": [
       {
         "name": "OPEN 集團",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://thaubing.gcaa.org.tw",
+        "logo": "images/logos/logo2-1.png"
       },
       {
         "name": "司法陽光網－判決書 API 計畫",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://sunshine.jrf.org.tw/search",
+        "logo": "images/logos/logo2-2.png"
       },
       {
         "name": "2018 議員投票指南",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://councils.g0v.tw",
+        "logo": "images/logos/logo2-3.png"
       }
     ]
   },
@@ -58,23 +58,23 @@ var topicListData = [
     "projects": [
       {
         "name": "阿龜微氣候天眼通",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://github.com/Agriweather",
+        "logo": "images/logos/logo3-1.png"
       },
       {
         "name": "阿龜誌–農務紀錄好幫手",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "http://agriweather.beehivedt.com/",
+        "logo": "images/logos/logo3-2.png"
       },
       {
         "name": "美國國會台灣觀測站",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://www.taiwanwatch.org",
+        "logo": "images/logos/logo3-3.png"
       },
       {
         "name": "國家寶藏",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://nationaltreasure.tw",
+        "logo": "images/logos/logo3-4.png"
       }
     ]
   },
@@ -86,13 +86,13 @@ var topicListData = [
     "projects": [
       {
         "name": "真的假的 LINE BOT",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://cofacts.g0v.tw/",
+        "logo": "images/logos/logo4-1.png"
       },
       {
         "name": "好工作評論網 GoodJob",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://www.goodjob.life/",
+        "logo": "images/logos/logo4-2.png"
       }
     ]
   },
@@ -104,13 +104,13 @@ var topicListData = [
     "projects": [
       {
         "name": "中二網（middle2 開放 PaaS 平台）",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://middle2.com/",
+        "logo": "images/logos/logo5-1.svg"
       },
       {
         "name": "g0v 專案中心（YA0H: Yet Another g0v Hub）",
-        "url": "http",
-        "logo": "images/topography.svg"
+        "url": "https://amb.g0v.tw",
+        "logo": "images/logos/logo5-2.svg"
       }
     ]
   }
@@ -142,9 +142,9 @@ class Topics extends Component {
   }
   projectList = (i,k) => {
     return (
-        <li className="projectList w-100">
-          <a className="flexbox alc pa3 ba b--light-gray near-black mv2 w-100" href={topicListData[i].projects[k].url}>
-            <img className="pr3" src={topicListData[i].projects[k].logo} height="40" width="40" alt="logo"/>
+        <li className="projectList w-100 bg-near-white">
+          <a className="flexbox alc pa3 bw1 br2 ba b--near-white near-black mv2 w-100 f4-l f5 lh-large" href={topicListData[i].projects[k].url} target="_blank">
+            <img className="pr3" src={topicListData[i].projects[k].logo} height="75" alt="logo"/>
             {topicListData[i].projects[k].name}
           </a>
         </li>
@@ -173,7 +173,7 @@ class Topics extends Component {
         <div className="mt5-l">
           <div className="fl w-25-l w-100 tc">
             <figure className="center">
-              <img className="mw-320" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
+              <img className="mw-300" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
             </figure>
           </div>
           <div className="fl w-75-l w-100 mw7-l ph5-l">
