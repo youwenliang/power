@@ -121,8 +121,8 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">1 • </span>洞察 Insight</h3>
-                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].insight}</h5>
+                <h3 className="ma0 fw4 mb3 dib f25-l f3"> <span className="o-50">1 • </span>洞察 Insight</h3>
+                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l f4-l f5">{projectListData[i].insight}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3">            
                 <img className="mb5-l mb4" src={projectListData[i].image[1]} alt={projectListData[i].name}/>
@@ -131,8 +131,8 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3 fo2-l">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">2 • </span>計畫 Idea</h3>
-                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].idea}</h5>
+                <h3 className="ma0 fw4 mb3 dib f25-l f3"> <span className="o-50">2 • </span>計畫 Idea</h3>
+                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l f4-l f5">{projectListData[i].idea}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3 fo1-l">
                 <img className="mb5-l mb4" src={projectListData[i].image[2]} alt={projectListData[i].name}/>
@@ -141,8 +141,8 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">3 • </span>影響力 Impact</h3>
-                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l">{projectListData[i].impact}</h5>
+                <h3 className="ma0 fw4 mb3 dib f25-l f3"> <span className="o-50">3 • </span>影響力 Impact</h3>
+                <h5 className="fw4 mv2 o-70 mw6 pb4 pl6-l f4-l f5">{projectListData[i].impact}</h5>
               </div>
               <div className="content fl w-50-l w-100 ph3">
                 <img className="mb5-l mb4" src={projectListData[i].image[3]} alt={projectListData[i].name}/>
@@ -172,8 +172,8 @@ class Projects extends Component {
           <div className="mt5 container mw9 w-85 center">
             <div className="cf relative z1 flexbox">
               <div className="content fl w-50-l w-100 ph3">
-                <h3 className="ma0 fw4 mb3">團隊介紹</h3>
-                <h5 className="fw4 mv2 o-70 mw6 pb4">{projectListData[i].team}</h5>
+                <h3 className="ma0 fw4 mb3 f25-l f3">團隊介紹</h3>
+                <h5 className="fw4 mv2 o-70 mw6 pb4 f4-l f5">{projectListData[i].team}</h5>
                 <a href={projectListData[i].url} target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mv4">
                     <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
                   <p className="ma0 lh-title tc fw5 pv3 relative">

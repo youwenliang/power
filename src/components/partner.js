@@ -59,7 +59,7 @@ class Partner extends Component {
       partnerList.push(this.partner(i));
     }
     return (
-      <section id="partner" className="fw-100 bg-light pb6-l pb5 bt-orange-small">
+      <section id="partner" className="fw-100 bg-light pb6-l pb5">
         <div className="mb6-l mb5 pv5 bg-dark">
           <div className="mw8 w-85 center">
             <div className="cf">

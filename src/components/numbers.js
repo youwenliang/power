@@ -70,11 +70,16 @@ class Numbers extends Component {
         };
         divStyleList.push(divStyle);
       }
+      var bgStyle = {
+          backgroundImage: 'url(images/star-transparent.png), url(images/cover/lines.png)',
+          backgroundPosition: 'center center, -250px center',
+          backgroundSize: 'cover, 150%'
+      }
 
       return ( 
-         <section id="numbers" className="fw-100 bg-moon-gray relative">
-          <div className="container center pv6-l pv5 pb8-l relative">
-            <div className="pa4 h-250 h-300-s bg-white mw6 hideme hidediv mh6-l mh5-m mh4 z1 relative pn">
+         <section id="numbers" className="fw-100 bg-primary relative" style={bgStyle}>
+          <div className="container center pv6-ns pv0 relative">
+            <div className="pa4 h-250 h-300-s bg-white mw6 hideme hidediv mh6-ns mh0 z1 relative pn">
               <h3 className="show ma0 lh-title pb3 fw5 tracked">{content[this.state.id].title}</h3>
               <p className="show ma0 mw6 lh-copy fw4">{content[this.state.id].content}</p>
               <h5 className="tr o-50 mv0 fw1 absolute bottom-right">{(this.state.id+1)+"/5"}</h5>
