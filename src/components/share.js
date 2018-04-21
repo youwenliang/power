@@ -1,3 +1,4 @@
+/*global FB*/
 import React, { Component } from 'react'
 import FontAwesome from 'react-fontawesome';
 import { ParallaxBanner } from 'react-scroll-parallax';
@@ -52,6 +53,14 @@ class Share extends Component {
       </div>
     )
   }
+  socialShare = () => {
+    if (typeof FB !== 'undefined') {
+      FB.ui({
+        method: 'share',
+        href: "https://grants.g0v.tw/power",
+      }, function(response){});
+    }
+  }
   render() {
     let shareList = [];
     for(var i = 0; i < shareListData.length; i++) {
@@ -80,13 +89,13 @@ class Share extends Component {
           }}
         >
           <div className="container mw9 w-85 tc center">
-            <a href="/" className="link btn ba b--white bw1 dib center ph4 br1 white btn-hover-black relative overflow-hidden">
+            <div className="cp link btn ba b--white bw1 dib center ph4 br1 white btn-hover-black relative overflow-hidden" onClick={this.socialShare}>
               <span className="btn-color bg-white w-100 h-100 absolute"></span>
               <p className="ma0 lh-title tc fw5 pv3 relative">
                 <FontAwesome className="pr2" name='facebook-square'/>
                 分享到 Facebook
               </p>
-            </a>
+            </div>
           </div>
         </ParallaxBanner>
       </div>
