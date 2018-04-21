@@ -145,7 +145,10 @@ class Topics extends Component {
         <li className="projectList w-100 bg-near-white">
           <a className="flexbox alc pa3 bw1 br2 ba b--near-white near-black mv2 w-100 f4-l f5 lh-large" href={topicListData[i].projects[k].url} target="_blank">
             <img className="pr3" src={topicListData[i].projects[k].logo} height="75" alt="logo"/>
-            {topicListData[i].projects[k].name}
+            <div>
+              <h6 className="o-50 ma0 fw4 tiny">2017</h6>
+              {topicListData[i].projects[k].name}
+            </div>
           </a>
         </li>
     )

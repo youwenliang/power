@@ -41,6 +41,9 @@ h5 {
 	font-size: 1.25em;
 	letter-spacing: 0.5px;
 }
+h6 {
+	font-size: 0.9em;
+}
 .f60 {
 	font-size: 60px;
 }
@@ -88,6 +91,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 a {
 	text-decoration: none;
+}
+
+.tiny {
+	font-size: .6em;
 }
 
 /* Custom */

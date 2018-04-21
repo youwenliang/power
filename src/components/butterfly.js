@@ -141,6 +141,7 @@ class Butterfly extends Component {
               <div className="numbers fl w-100 w-50-l mt5 mt0-l" id="animatedNumber1" >
                 <div className="pt4-l center">
                   {num}
+                  <h6 className="ma0 mt2 tc o-30">*此數字統計截止至 2018 年 1 月份。</h6>
                 </div>
               </div>
             </div>

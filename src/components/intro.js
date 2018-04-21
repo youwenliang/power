@@ -33,6 +33,7 @@ class Intro extends Component {
                 duration={650} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">黑客松</p>
+              <a className="dib white ma0 pa0" href="https://hack.g0v.tw/" target="_blank"><h6 className="u-line ma0 mt2 o-60">前往揪松網>></h6></a>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
@@ -41,6 +42,7 @@ class Intro extends Component {
                 duration={650} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">國際雙年會</p>
+              <a className="dib white ma0 pa0" href="http://summit.g0v.tw/2018/" target="_blank"><h6 className="u-line ma0 mt2 o-60">最新資訊>></h6></a>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
