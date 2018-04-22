@@ -29,33 +29,33 @@ class Butterfly extends Component {
   numbers = () => {
     return (
       <ul className="ma0 pa0 tc">
-        <li className="dib ma2 w45 tc bg-white pv4 hideme hidediv">
-          <h5 className="ma0 tc tracked">累積總提案</h5>
-          <h1 className="ma0 tc di pr1">
+        <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
+          <h5 className="ma0 tc tracked f5-ns f6">累積總提案</h5>
+          <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="151"
             stepPrecision = {0}
             duration={950} />
           </h1><span>件</span>
         </li>
-        <li className="dib ma2 w45 tc bg-white pv4 hideme hidediv">
-          <h5 className="ma0 tc tracked">已獲獎專案</h5>
-          <h1 className="ma0 tc di pr1">
+        <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
+          <h5 className="ma0 tc tracked f5-ns f6">已獲獎專案</h5>
+          <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="13"
             stepPrecision = {0}
             duration={1250} />
           </h1><span>件</span>
         </li>
-        <li className="dib ma2 w45 tc bg-white pv4 hideme hidediv">
-          <h5 className="ma0 tc tracked">媒體報導</h5>
-          <h1 className="ma0 tc di pr1">
+        <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
+          <h5 className="ma0 tc tracked f5-ns f6">媒體報導</h5>
+          <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="30"
             stepPrecision = {0}
             duration={1550} />
           +</h1><span>篇</span>
         </li>
-        <li className="dib ma2 w45 tc bg-white pv4 hideme hidediv">
-          <h5 className="ma0 tc tracked">已發放獎金</h5>
-          <h1 className="ma0 tc di pr1">
+        <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
+          <h5 className="ma0 tc tracked f5-ns f6">已發放獎金</h5>
+          <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="600"
             stepPrecision = {0}
             duration={1850} />
@@ -130,7 +130,7 @@ class Butterfly extends Component {
                     {section.content}
                   </p>
                   <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
-                    <span className="btn-color bg-secondary w-100 h-100 absolute"></span>
+                    <span className="btn-color bg-secondary ba b--orange bw2 w-100 h-100 absolute"></span>
                     <p className="ma0 lh-title tc fw5 pv3 relative">
                       瀏覽獎助金官方網站
                       <FontAwesome className="pl2" name='long-arrow-right'/>

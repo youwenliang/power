@@ -20,7 +20,6 @@ function scrollFunction() {
     }
 }
 
-
 $(window).scroll( function(){
 	  $('.hidechild').each( function(i){
 		  var bottom_of_object = $(this).offset().top + $(this).outerHeight()/2;

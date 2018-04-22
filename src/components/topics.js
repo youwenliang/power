@@ -143,9 +143,9 @@ class Topics extends Component {
   projectList = (i,k) => {
     return (
         <li className="projectList w-100 bg-near-white">
-          <a className="flexbox alc pa3 bw1 br2 ba b--near-white near-black mv2 w-100 f4-l f5 lh-large" href={topicListData[i].projects[k].url} target="_blank">
-            <img className="pr3" src={topicListData[i].projects[k].logo} height="75" alt="logo"/>
-            <div>
+          <a className="flexbox alc pa3-l pa1 bw1 br2 ba b--near-white near-black mv2 w-100 f4-l f5 lh-large" href={topicListData[i].projects[k].url} target="_blank">
+            <img src={topicListData[i].projects[k].logo} height="75" alt="logo"/>
+            <div className="pa3">
               <h6 className="o-50 ma0 fw4 tiny">2017</h6>
               {topicListData[i].projects[k].name}
             </div>
@@ -230,7 +230,7 @@ class Topics extends Component {
       >
       <section id="topics" className="fw-100 bg-white pv6-l pv5"> 
         <div className="container mw9 w-85 center">
-          <h3 className="ma0 lh-title pb4 tc fw5 hideme hidediv tracked">{section.title}</h3>
+          <h3 className="ma0 lh-title pb4-l pb5 tc fw5 hideme hidediv tracked">{section.title}</h3>
           <div id="swiperTopic-container" className="swiper-container center relative">
             <div className="swiper-wrapper">
               <div className="swiper-slide ph5-l ph0">

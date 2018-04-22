@@ -14,7 +14,7 @@ import loadImage from 'image-promise';
 import $ from 'jquery';
 
 var id = ['cover','butterfly','projects','topics','intro','partner','share'];
-var project = ['turt','line','open','treat'];
+// var project = ['turt','line','open','treat'];
 var img = ['cover', 'idea', 'insight', 'impact', 'logo'];
 
 class App extends Component {

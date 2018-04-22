@@ -42,8 +42,8 @@ class Share extends Component {
           </figure>
           <h5 className="ma0">{shareListData[i].name}</h5>
           <p className="mw-320 mb4 center tc ph4 h2">{shareListData[i].description}</p>
-          <a href={shareListData[i].url} target="_blank" className="link btn ba b--orange bw1 dib center ph4 br1 dark-black relative overflow-hidden mt4">
-            <span className="btn-color bg-white w-100 h-100 absolute"></span>
+          <a href={shareListData[i].url} target="_blank" className="link btn ba b--orange bg-white hover-white bw1 dib center ph4 br1 dark-black relative overflow-hidden mt4">
+            <span className="btn-color bg-secondary ba b--orange bw2 w-100 h-100 absolute"></span>
             <p className="ma0 lh-title tc fw5 pv3 relative">
               {shareListData[i].action}
               <FontAwesome className="pl2" name='long-arrow-right'/>
@@ -90,7 +90,7 @@ class Share extends Component {
         >
           <div className="container mw9 w-85 tc center">
             <div className="cp link btn ba b--white bw1 dib center ph4 br1 white btn-hover-black relative overflow-hidden" onClick={this.socialShare}>
-              <span className="btn-color bg-white w-100 h-100 absolute"></span>
+              <span className="btn-color bg-white w-100 h-100 absolute b--white bw2 ba"></span>
               <p className="ma0 lh-title tc fw5 pv3 relative">
                 <FontAwesome className="pr2" name='facebook-square'/>
                 分享到 Facebook

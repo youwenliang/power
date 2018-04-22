@@ -196,7 +196,6 @@ class Projects extends Component {
               </div>
             </ParallaxBanner>
           <div className="mt5 container mw9 w-85 center">
-            <h3 className="ma0 fw4 mb4 ph3">團隊介紹</h3>
             <div className="cf relative z1 flexbox lh-large">
               <div className="content fl w-50-l w-100 ph3">
                 <h4 className="ma0">團隊成員：</h4>
