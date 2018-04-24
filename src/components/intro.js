@@ -6,7 +6,7 @@ var view = false;
 
 var section =
 {
-  "title": "誰是 g0v ？",
+  "title": "什麼是 g0v ？",
   "numbers": "從 2012 到 2018， g0v 創造了…",
   "content": "g0v.tw 是一個推動資訊透明化的社群，以開放原始碼的精神為基底，致力於開發公民參與社會的資訊平台與工具。將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也是代表數位原生世代從 0 與 1 世界的視野。"
 }
@@ -33,7 +33,7 @@ class Intro extends Component {
                 duration={650} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">黑客松</p>
-              <a className="dib white ma0 pa0" href="https://hack.g0v.tw/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">前往揪松網>></h6></a>
+              <a className="dib white ma0 pa0" href="https://hack.g0v.tw/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">來黑客松吧>></h6></a>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
@@ -42,7 +42,7 @@ class Intro extends Component {
                 duration={650} />
               </h1><span>次</span>
               <p className="ma0 tc pa0 tracked">國際雙年會</p>
-              <a className="dib white ma0 pa0" href="http://summit.g0v.tw/2018/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">最新資訊>></h6></a>
+              <a className="dib white ma0 pa0" href="http://summit.g0v.tw/2018/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">2018雙年會>></h6></a>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
