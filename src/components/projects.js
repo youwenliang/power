@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { ParallaxBanner } from 'react-scroll-parallax';
 import Modal from 'react-responsive-modal';
 import FontAwesome from 'react-fontawesome';
+import $ from 'jquery';
 
 var modalId = "";
 
@@ -116,7 +117,10 @@ class Projects extends Component {
 
   modalContent = (i) => {
     if(projectListData[i]) {
-      var k = projectListData[i].image[0];
+      var large = projectListData[i].image[0];
+      var medium = projectListData[i].image[0].split('.')[0]+'-m.png';
+      var small = projectListData[i].image[0].split('.')[0]+'-s.png';
+      var k = large;
       var bgStyle = {
         backgroundImage: 'url('+k+')',
         backgroundPosition: 'center top',
@@ -214,8 +218,11 @@ class Projects extends Component {
   }
 
   project = (i) => {
+    var large = projectListData[i].image[0];
+    var medium = projectListData[i].image[0].split('.')[0]+'-m.png';
+    var small = projectListData[i].image[0].split('.')[0]+'-s.png';
     var divStyle = {
-      backgroundImage: 'url(' + projectListData[i].image[0] + ')',
+      backgroundImage: 'url(' + medium + ')',
       backgroundPosition: 'center center',
       backgroundSize: 'cover'
     };
