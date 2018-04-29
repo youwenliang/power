@@ -8,7 +8,14 @@ var section =
 {
   "title": "什麼是 g0v ？",
   "numbers": "從 2012 到 2018， g0v 創造了…",
-  "content": "g0v.tw 是一個推動資訊透明化的社群，以開放原始碼的精神為基底，致力於開發公民參與社會的資訊平台與工具。將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也是代表數位原生世代從 0 與 1 世界的視野。"
+  "content": "g0v.tw 是一個推動資訊透明化的社群，以開放原始碼的精神為基底，致力於開發公民參與社會的資訊平台與工具。將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也是代表數位原生世代從 0 與 1 世界的視野。",
+  "number1": ["黑客松","次"],
+  "number2": ["國際雙年會","次"],
+  "number3": ["正式提案","次"],
+  "number4": ["坑主","位"],
+  "number5": ["參與者","+"],
+  "link1": "來黑客松吧>>",
+  "link2": "2018雙年會>>"
 }
 
 class Intro extends Component {
@@ -31,42 +38,42 @@ class Intro extends Component {
               <AnimatedNumber component="text" value="29"
                 stepPrecision = {0}
                 duration={650} />
-              </h1><span>次</span>
-              <p className="ma0 tc pa0 tracked">黑客松</p>
-              <a className="dib white ma0 pa0" href="https://hack.g0v.tw/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">來黑客松吧>></h6></a>
+              </h1><span>{section.number1[1]}</span>
+              <p className="ma0 tc pa0 tracked">{section.number1[0]}</p>
+              <a className="dib white ma0 pa0" href="https://hack.g0v.tw/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">{section.link1}</h6></a>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="3"
                 stepPrecision = {0}
                 duration={650} />
-              </h1><span>次</span>
-              <p className="ma0 tc pa0 tracked">國際雙年會</p>
-              <a className="dib white ma0 pa0" href="http://summit.g0v.tw/2018/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">2018雙年會>></h6></a>
+              </h1><span>{section.number2[1]}</span>
+              <p className="ma0 tc pa0 tracked">{section.number2[0]}</p>
+              <a className="dib white ma0 pa0" href="http://summit.g0v.tw/2018/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">{section.link2}</h6></a>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="517"
                 stepPrecision = {0}
                 duration={950} />
-              </h1><span>次</span>
-              <p className="ma0 tc pa0 tracked">正式提案</p>
+              </h1><span>{section.number3[1]}</span>
+              <p className="ma0 tc pa0 tracked">{section.number3[0]}</p>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="304"
                 stepPrecision = {0}
                 duration={950} />
-              </h1><span>位</span>
-              <p className="ma0 tc pa0 tracked">坑主</p>
+              </h1><span>{section.number4[1]}</span>
+              <p className="ma0 tc pa0 tracked">{section.number4[0]}</p>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv">
               <h1 className="big ma0 tc di pr1 fw2">
               <AnimatedNumber component="text" value="5000"
                 stepPrecision = {0}
                 duration={1250} />
-              +</h1>
-              <p className="ma0 tc pa0 tracked">參與者</p>
+              {section.number5[1]}</h1>
+              <p className="ma0 tc pa0 tracked">{section.number5[0]}</p>
             </li>
           </ul>
         </div>

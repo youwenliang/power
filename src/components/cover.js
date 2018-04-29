@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { ParallaxBanner } from 'react-scroll-parallax';
 
+var title = ["公民科技創新獎助金", "成果報告"];
+
 class Cover extends Component {
     render() {
       return ( 
@@ -32,7 +34,7 @@ class Cover extends Component {
             <div className="pv6-ns pv4 pb6">
               <img src="images/powered-by-g0v.svg" height="60" alt="butterfly-logo"/>
               <h1 className="f1-ns f2 white fw3 mt2 mb0">Report of g0v <br/>Civic Tech <br/> Prototype Grant<br/></h1>
-              <h2 className="f2-ns f3 near-white mt2 mb3 fw5 tracked">公民科技創新獎助金<br/>成果報告</h2>
+              <h2 className="f2-ns f3 near-white mt2 mb3 fw5 tracked">{title[0]}<br/>{title[1]}</h2>
             </div>
           </div>
           <img id="small-butterfly" src="images/cover/big-butterfly.png" alt="butterfly"/>

@@ -6,7 +6,8 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 var section =
 {
   "title": "參與更多行動",
-  "tagline": "邀請你與我們一起，締造更多蝴蝶效應！" 
+  "tagline": "邀請你與我們一起，締造更多蝴蝶效應！",
+  "facebook": "分享到 Facebook"
 }
 
 var shareListData = [
@@ -93,7 +94,7 @@ class Share extends Component {
               <span className="btn-color bg-white w-100 h-100 absolute b--white bw2 ba"></span>
               <p className="ma0 lh-title tc fw5 pv3 relative">
                 <FontAwesome className="pr2" name='facebook-square'/>
-                分享到 Facebook
+                {section.facebook}
               </p>
             </div>
           </div>

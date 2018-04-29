@@ -2,14 +2,18 @@ import React, { Component } from 'react'
 import { ParallaxBanner } from 'react-scroll-parallax';
 import Modal from 'react-responsive-modal';
 import FontAwesome from 'react-fontawesome';
-import $ from 'jquery';
 
 var modalId = "";
 
 var section =
 {
   "title": "精選 2017 獲獎專案",
-  "tagline": "自 2017 年開始，公民科技創新獎助金已陸續為 13 個獲獎團隊帶入實質資源，讓專案得以延續，持續運作。其中更有許多優秀專案，已成功締造實質改變！" 
+  "tagline": "自 2017 年開始，公民科技創新獎助金已陸續為 13 個獲獎團隊帶入實質資源，讓專案得以延續，持續運作。其中更有許多優秀專案，已成功締造實質改變！" ,
+  "insight": "洞察 Insight",
+  "idea": "計畫 Idea",
+  "impact": "影響力 Impact",
+  "team": "團隊成員：",
+  "contact": "聯絡資訊："
 }
 
 var projectListData = [
@@ -118,8 +122,8 @@ class Projects extends Component {
   modalContent = (i) => {
     if(projectListData[i]) {
       var large = projectListData[i].image[0];
-      var medium = projectListData[i].image[0].split('.')[0]+'-m.png';
-      var small = projectListData[i].image[0].split('.')[0]+'-s.png';
+      //var medium = projectListData[i].image[0].split('.')[0]+'-m.png';
+      //var small = projectListData[i].image[0].split('.')[0]+'-s.png';
       var k = large;
       var bgStyle = {
         backgroundImage: 'url('+k+')',
@@ -151,7 +155,7 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">1 • </span>洞察 Insight</h3>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">1 • </span>{section.insight}</h3>
                 <p className="fw4 mv2 o-70 mw6 pb4 lh-large">{projectListData[i].insight}</p>
               </div>
               <div className="content fl w-50-l w-100 ph3">            
@@ -161,7 +165,7 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3 fo2-l">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">2 • </span>計畫 Idea</h3>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">2 • </span>{section.idea}</h3>
                 <p className="fw4 mv2 o-70 mw6 pb4 lh-large">{projectListData[i].idea}</p>
               </div>
               <div className="content fl w-50-l w-100 ph3 fo1-l">
@@ -171,7 +175,7 @@ class Projects extends Component {
             <div className="cf relative z1 flexbox alc">
               <div className="content fl w-50-l w-100 ph3">
                 <img src="images/cover/big-butterfly.png" width="100" className="dib" alt="butterfly"/>
-                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">3 • </span>影響力 Impact</h3>
+                <h3 className="ma0 fw4 mb3 dib"> <span className="o-50">3 • </span>{section.impact}</h3>
                 <p className="fw4 mv2 o-70 mw6 pb4 lh-large">{projectListData[i].impact}</p>
               </div>
               <div className="content fl w-50-l w-100 ph3">
@@ -202,11 +206,11 @@ class Projects extends Component {
           <div className="mt5 container mw9 w-85 center">
             <div className="cf relative z1 flexbox lh-large">
               <div className="content fl w-50-l w-100 ph3">
-                <h4 className="ma0">團隊成員：</h4>
+                <h4 className="ma0">{section.team}</h4>
                 <p className="mw6">{projectListData[i].people}</p>
               </div>
               <div className="content fl w-50-l w-100 ph3">
-                <h4 className="ma0">聯絡資訊：</h4>
+                <h4 className="ma0">{section.contact}</h4>
                 {this.contact(i)}
               </div>
             </div>
@@ -218,9 +222,9 @@ class Projects extends Component {
   }
 
   project = (i) => {
-    var large = projectListData[i].image[0];
+    //var large = projectListData[i].image[0];
     var medium = projectListData[i].image[0].split('.')[0]+'-m.png';
-    var small = projectListData[i].image[0].split('.')[0]+'-s.png';
+    //var small = projectListData[i].image[0].split('.')[0]+'-s.png';
     var divStyle = {
       backgroundImage: 'url(' + medium + ')',
       backgroundPosition: 'center center',

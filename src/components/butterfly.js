@@ -13,7 +13,14 @@ var section =
   "tagline": "蝴蝶效應（Butterfly effect），指一個微小的變化，就能帶動整個系統的巨大連鎖反應。",
   "intro": "我們是 g0v，一直相信，每一個公民科技好點子背後的創意與力量，都像是一隻輕拍翅膀的蝴蝶，若能導入持續開發、長期營運的人力與資源，就能引發蝴蝶效應，產生足以扭轉未來的成果。",
   "contentTitle": "什麼是「公民科技創新獎助金」？",
-  "content": "為鼓勵更多優秀人才投入公民科技領域、加速孵化更多成果，g0v 向國內外各大具社會影響力之媒體、科技產業、非政府組織募集「公民科技創新獎助金」，並從 g0v 零時政府揪松團設計一套參與、評選機制，來獎助具潛力且有助公共利益的專案，投入原型開發或維護營運。希望在黑客松的形式之外，促使更多公民科技專案成果能真正產生影響力，創造蝴蝶效應，並延伸出更多可能。"
+  "content": "為鼓勵更多優秀人才投入公民科技領域、加速孵化更多成果，g0v 向國內外各大具社會影響力之媒體、科技產業、非政府組織募集「公民科技創新獎助金」，並從 g0v 零時政府揪松團設計一套參與、評選機制，來獎助具潛力且有助公共利益的專案，投入原型開發或維護營運。希望在黑客松的形式之外，促使更多公民科技專案成果能真正產生影響力，創造蝴蝶效應，並延伸出更多可能。",
+  "number1": ["累積總提案", "件"],
+  "number2": ["已獲獎專案", "件"],
+  "number3": ["媒體報導", "篇"],
+  "number4": ["已發放獎金", "萬元"],
+  "imageTitle": "創意、公民科技人才",
+  "link": "瀏覽獎助金官方網站",
+  "note": "*此數字統計截止至 2018 年 1 月份。"
 }
 
 class Butterfly extends Component {
@@ -30,36 +37,36 @@ class Butterfly extends Component {
     return (
       <ul className="ma0 pa0 tc">
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc tracked f5-ns f6">累積總提案</h5>
+          <h5 className="ma0 tc tracked f5-ns f6">{section.number1[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="151"
             stepPrecision = {0}
             duration={950} />
-          </h1><span>件</span>
+          </h1><span>{section.number1[1]}</span>
         </li>
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc tracked f5-ns f6">已獲獎專案</h5>
+          <h5 className="ma0 tc tracked f5-ns f6">{section.number2[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="13"
             stepPrecision = {0}
             duration={1250} />
-          </h1><span>件</span>
+          </h1><span>{section.number2[1]}</span>
         </li>
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc tracked f5-ns f6">媒體報導</h5>
+          <h5 className="ma0 tc tracked f5-ns f6">{section.number3[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="30"
             stepPrecision = {0}
             duration={1550} />
-          +</h1><span>篇</span>
+          +</h1><span>{section.number3[1]}</span>
         </li>
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc tracked f5-ns f6">已發放獎金</h5>
+          <h5 className="ma0 tc tracked f5-ns f6">{section.number4[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="600"
             stepPrecision = {0}
             duration={1850} />
-          </h1><span>萬元</span>
+          </h1><span>{section.number4[1]}</span>
         </li>
       </ul>
     )
@@ -104,7 +111,7 @@ class Butterfly extends Component {
         </div>
         <figure className="w-100 tc ma0 bg-primary pb6 relative" style={bgStyle}>
           <div className="hideme hidediv">
-            <h4 className="ma0 fw7">創意、公民科技人才</h4>
+            <h4 className="ma0 fw7">{section.imageTitle}</h4>
             <h5 className="ma0 white fw4">Open Source</h5>
             <img src="images/butterfly/CTG.svg" width="300" className="absolute" id="ctg" alt="CTG"/>
           </div>
@@ -132,7 +139,7 @@ class Butterfly extends Component {
                   <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
                     <span className="btn-color bg-secondary ba b--orange bw2 w-100 h-100 absolute"></span>
                     <p className="ma0 lh-title tc fw5 pv3 relative">
-                      瀏覽獎助金官方網站
+                      {section.link}
                       <FontAwesome className="pl2" name='long-arrow-right'/>
                     </p>
                   </a>
@@ -141,7 +148,7 @@ class Butterfly extends Component {
               <div className="numbers fl w-100 w-50-l mt5 mt0-l" id="animatedNumber1" >
                 <div className="pt4-l center">
                   {num}
-                  <h6 className="ma0 mt2 tc o-30">*此數字統計截止至 2018 年 1 月份。</h6>
+                  <h6 className="ma0 mt2 tc o-30">{section.note}</h6>
                 </div>
               </div>
             </div>
