@@ -6,21 +6,21 @@ import $ from 'jquery';
 var view = false;
 var section =
 {
-  "title": "準備好，見證一場「蝴蝶效應」！",
-  "title2": "公民科技創新獎助金，為引發正向蝴蝶效應而生！",
-  "intro2": "「公民科技創新獎助金」為什麼存在？",
-  "intro3": "不為別的，是為「支持專案推進，引發正向蝴蝶效應」的關鍵推力而生！",
-  "tagline": "蝴蝶效應（Butterfly effect），指一個微小的變化，就能帶動整個系統的巨大連鎖反應。",
-  "intro": "我們是 g0v，一直相信，每一個公民科技好點子背後的創意與力量，都像是一隻輕拍翅膀的蝴蝶，若能導入持續開發、長期營運的人力與資源，就能引發蝴蝶效應，產生足以扭轉未來的成果。",
-  "contentTitle": "什麼是「公民科技創新獎助金」？",
-  "content": "為鼓勵更多優秀人才投入公民科技領域、加速孵化更多成果，g0v 向國內外各大具社會影響力之媒體、科技產業、非政府組織募集「公民科技創新獎助金」，並從 g0v 零時政府揪松團設計一套參與、評選機制，來獎助具潛力且有助公共利益的專案，投入原型開發或維護營運。希望在黑客松的形式之外，促使更多公民科技專案成果能真正產生影響力，創造蝴蝶效應，並延伸出更多可能。",
-  "number1": ["累積總提案", "件"],
-  "number2": ["已獲獎專案", "件"],
-  "number3": ["媒體報導", "篇"],
-  "number4": ["已發放獎金", "萬元"],
-  "imageTitle": "創意、公民科技人才",
-  "link": "瀏覽獎助金官方網站",
-  "note": "*此數字統計截止至 2018 年 1 月份。"
+  "title": "Get ready to witness a “Butterfly effect”!",
+  "tagline": "The Butterfly effect asserts that an infinitesimal change in a system can cause a chain reaction that affects the whole system.",
+  "intro": "We're g0v, and we've always believed that the innovation and strength behind every good idea in civic tech is a force like a butterfly flapping its wings. If we can channel sustainable development, and operate in the long term, then we can produce a butterfly effect, and produce results that cause a knock-on effect.",
+  "title2": " g0v Civic Tech Prototype Grant been set up for positive butterfly effect!",
+  "intro2": "Why have we set up the g0v \"Civic Tech Prototype Grant\"?",
+  "intro3": "For no other reason than to support the advancement of civic tech projects, and to be a driving force that will trigger a positive butterfly effect.",
+  "contentTitle": "What is the \"g0v Civic Tech Prototype Grant\"?",
+  "content": "In order to encourage more talented individuals and teams to join the civic tech community and to accelerate the incubation phase of projects, g0v has raised funds from influential media groups, IT firms, and NGOs to create the \"g0v Civic Tech Prototype Grant.\" Based on a participation and public appraisal system, g0v's Jothon Project Team awards the grant to projects that have great potential and communal benefit. We hope that through civic tech hackathons, we can compel more projects to produce influence, create a butterfly effect, and extend out more possibilities.",
+  "number1": ["Proposals", ""],
+  "number2": ["Grantee", ""],
+  "number3": ["Media Exposure", ""],
+  "number4": ["Funds for Grantee", "TWD"],
+  "imageTitle": "Civic Technology Talents",
+  "link": "The g0v Civic Tech Prototype Grant Official Website",
+  "note": "*Statistics by January 2018."
 }
 
 class Butterfly extends Component {
@@ -105,7 +105,7 @@ class Butterfly extends Component {
         </div>
         <div className="ma0 pv5 ph4 tc-ns tl bg-secondary white">
           <div className="hideme hidediv">
-            <h1 className="ma0 lh-title pb3 fw7 tracked f2-l f3">{section.title2}</h1>
+            <h1 className="ma0 lh-title pb3 fw7 tracked f2-l f3 mw7 center">{section.title2}</h1>
             <h5 className="ma0 tc mw7 center fw4 f4-l f5 lh-large">{section.intro2}<br/>{section.intro3}</h5>
           </div>
         </div>
@@ -138,7 +138,7 @@ class Butterfly extends Component {
                   </p>
                   <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
                     <span className="btn-color bg-secondary ba b--orange bw2 w-100 h-100 absolute"></span>
-                    <p className="ma0 lh-title tc fw5 pv3 relative">
+                    <p className="ma0 lh-large tc fw5 pv3 relative mw5">
                       {section.link}
                       <FontAwesome className="pl2" name='long-arrow-right'/>
                     </p>

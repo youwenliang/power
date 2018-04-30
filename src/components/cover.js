@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ParallaxBanner } from 'react-scroll-parallax';
 
-var title = ["公民科技創新獎助金", "成果報告"];
+var title = ["", ""];
 
 class Cover extends Component {
     render() {

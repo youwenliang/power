@@ -6,16 +6,16 @@ var view = false;
 
 var section =
 {
-  "title": "什麼是 g0v ？",
-  "numbers": "從 2012 到 2018， g0v 創造了…",
-  "content": "g0v.tw 是一個推動資訊透明化的社群，以開放原始碼的精神為基底，致力於開發公民參與社會的資訊平台與工具。將 gov 以「零」替代成為 g0v，從零重新思考政府的角色，也是代表數位原生世代從 0 與 1 世界的視野。",
-  "number1": ["黑客松","次"],
-  "number2": ["國際雙年會","次"],
-  "number3": ["正式提案","次"],
-  "number4": ["坑主","位"],
-  "number5": ["參與者","+"],
-  "link1": "來黑客松吧>>",
-  "link2": "2018雙年會>>"
+  "title": "What is g0v?",
+  "numbers": "From 2012 to 2018, g0v creates...",
+  "content": "g0v.tw is an online community that pushes for greater data transparency, and is focused on developing new platforms and tools that help citizens participate in civil society. By substituting the “o” with “0″ in the word “gov”, the new “g0v” not only stands for rethinking the role that government plays from the bottom up, but also represents the way the digital natives generation views the world, in “0s” and “1s.” ",
+  "number1": ["Hackathons",""],
+  "number2": ["International Summits",""],
+  "number3": ["Proposals",""],
+  "number4": ["Kenzu",""],
+  "number5": ["Contributors","+"],
+  "link1": "Let's Hack! >>",
+  "link2": "g0v Summit 2018 >>"
 }
 
 class Intro extends Component {

@@ -5,110 +5,110 @@ import $ from 'jquery';
 
 var section =
 {
-  "title": "五大類別獲獎專案一覽",
+  "title": "Five Categories of Wining Projects",
 }
 
 var topicListData = [
   {
-    "name": "科技與公益",
-    "description": "科技陪公益走完最後一哩路",
-    "content": "g0v 社群長期與公民團體站在同一個陣線，在開放資料與公眾參與的基礎上，降低議題的參與門檻，也累積議題的能量，讓公民團體與大眾更靠近。",
+    "name": "Technology and Charity",
+    "description": "Technology can accompany civil society organizations (CSOs) to complete the last mile.",
+    "content": "Through the foundation of open data and civic engagement, the g0v community accompanies CSOs for the long haul. It helps reduce divides and accumulates energy on issues, bringing CSOs closer to the public. ",
     "image": ["images/icons/分類科技與公益.png"],
     "projects": [
       {
-        "name": "LostSAR - 搜救",
+        "name": "LostSAR Search & Rescue",
         "url": "https://lostsar.github.io/",
         "logo": "images/logos/logo1-1.png"
       },
       {
-        "name": "享食雲 Foodsharing Taiwan",
+        "name": "Foodsharing Taiwan",
         "url": "https://foodsharing.tw",
         "logo": "images/logos/logo1-2.png"
       }
     ]
   },
   {
-    "name": "開放政府",
-    "description": "開放政府，民間續航",
-    "content": "公民科技所作的事，就是讓公民把事情攤開來檢視，以「開放×資料×程式」的策略，從解決資訊落差開始，讓參與的層次前所未有的激發。",
+    "name": "Open Government",
+    "description": "Open Government, public engagement",
+    "content": "What civic tech does is allow citizens to spread things out for closer inspection and use the “open × data × program” strategy to eliminate digital divides, creating new advantages and opportunities for social engagement.",
     "image": ["images/icons/分類開放政府.png"],
     "projects": [
       {
-        "name": "OPEN 集團",
+        "name": "Open Corporate Groups",
         "url": "https://thaubing.gcaa.org.tw",
         "logo": "images/logos/logo2-1.png"
       },
       {
-        "name": "司法陽光網－判決書 API 計畫",
+        "name": "Verdict Search",
         "url": "https://sunshine.jrf.org.tw/search",
         "logo": "images/logos/logo2-2.png"
       },
       {
-        "name": "2018 議員投票指南",
+        "name": "Councillor Voter Guide",
         "url": "https://councils.g0v.tw",
         "logo": "images/logos/logo2-3.png"
       }
     ]
   },
   {
-    "name": "新資料",
-    "description": "這樣也行！創新的資料收集大法",
-    "content": "公民科技的介入，將資料從原本不易分享的型態解放出來，這個過程本身即是公民參與的實踐。",
+    "name": "New Data",
+    "description": "This works! Innovative Data Collection",
+    "content": "Since the dawn of civic tech, data that was once difficult to access has now become open. This process itself is the practice of social engagement.",
     "image": ["images/icons/分類新資料.png"],
     "projects": [
       {
-        "name": "阿龜微氣候天眼通",
+        "name": "AgriWeather",
         "url": "https://github.com/Agriweather",
         "logo": "images/logos/logo3-1.png"
       },
       {
-        "name": "阿龜誌–農務紀錄好幫手",
+        "name": "AgriNote",
         "url": "http://agriweather.beehivedt.com/",
         "logo": "images/logos/logo3-2.png"
       },
       {
-        "name": "美國國會台灣觀測站",
+        "name": "Taiwan Watch: Taiwan Affairs in the US Congress",
         "url": "https://www.taiwanwatch.org",
         "logo": "images/logos/logo3-3.png"
       },
       {
-        "name": "國家寶藏",
+        "name": "Taiwan National Tressures",
         "url": "https://nationaltreasure.tw",
         "logo": "images/logos/logo3-4.png"
       }
     ]
   },
   {
-    "name": "資料檢核",
-    "description": "自媒體時代，資料查核與再加值",
-    "content": "從單方向一元的傳播模式，走向多元分散式的結構化資料，新世代開發者嘗試在媒體領域走出一條新路，也應用在其他大量資料的領域。",
+    "name": "Data Check",
+    "description": "Data Check and Value Added in the Self-Media Generation",
+    "content": "From a one-way communication model to multiple, decentralized, and structured data, a new generation of developers are attempting to develop a new path in the field of media and apply it to other areas of big data.",
     "image": ["images/icons/分類資料檢核.png"],
     "projects": [
       {
-        "name": "真的假的 LINE BOT",
+        "name": "COFACTS LINE BOT",
         "url": "https://cofacts.g0v.tw/",
         "logo": "images/logos/logo4-1.png"
       },
       {
-        "name": "好工作評論網 GoodJob",
+        "name": "GoodJob",
         "url": "https://www.goodjob.life/",
         "logo": "images/logos/logo4-2.png"
       }
     ]
   },
   {
-    "name": "社群基礎建設",
-    "description": "前瞻也顧後，社群基礎建設整合公民科技力",
-    "content": "g0v 揪松團從 2016 年開始推廣社群投入基礎建設工作，希望打造讓更多人投入協作、長期開發的公民科技生態系。",
+    "name": "Community Infrastructure",
+    "description": "Looking ahead and back, the g0v’s infrastructure integrated with citizen’s technology.",
+    "content": "Starting in 2016, the g0v Jothon Group began to promote the community's investment in infrastructure construction. It hopes to create a civic tech ecosystem that will allow more people to collaborate and develop over long periods of time.",
     "image": ["images/icons/分類社群基礎建設.png"],
     "projects": [
       {
-        "name": "中二網（middle2 開放 PaaS 平台）",
+        "name": "middle2",
         "url": "https://middle2.com/",
         "logo": "images/logos/logo5-1.svg"
       },
       {
-        "name": "g0v 專案中心（YA0H: Yet Another g0v Hub）",
+        "name": "YA0H: Yet Another g0v Hub",
         "url": "https://amb.g0v.tw",
         "logo": "images/logos/logo5-2.svg"
       }

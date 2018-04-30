@@ -2,39 +2,39 @@ import React, { Component } from 'react'
 
 var section =
 {
-  "title": "2017 獎助金合作夥伴",
-  "powerby": "揪松團在獎助金網站介紹徵件辦法、合作夥伴與獲獎專案一覽，獲獎專案網站或其他形式服務須至少在持續營運一年內註明 Powered by g0v，並連結回「Powered by g0v」頁面。"
+  "title": "2017 Partners",
+  "powerby": "Projects that receive an award need to mark their website with a \"powered by g0v\" insignia, and link back to the \"powered by g0v\" official website for at least one year. "
 }
 
 var partnerListData = [
   {
-    "name": "聯合報系願景工程",
-    "description": "願景工程不只報導，還有行動，你我合作，正向改變。",
+    "name": "Vision Project, United Daily News Group",
+    "description": "\"Vision Project\" isn't just news, it's a call to action. Let's cooperate to make positive change. ",
     "image": ["images/partners/logo-lian.svg"]
   },
   {
-    "name": "台灣大哥大基金會",
-    "description": "希望成為「數位匯流的領航者」，帶動公益科技化，使社會效益極大化。",
+    "name": "Taiwan Mobile Foundation",
+    "description": "We hope to become the leader in digital convergence and promote public welfare with technology in order to maximize social benefits.",
     "image": ["images/partners/logo-taiwan.svg"]
   },
   {
-    "name": "前政委蔡玉玲律師",
-    "description": "2013 年入閣擔任行政院政務委員，隔年結緣 g0v 並在黑客松提案，由 g0v 志工建置「vTaiwan」。",
+    "name": "Former Minister without Portfolio and lawyer Jaclyn Tsai",
+    "description": "Ms. Tsai joined the Executive Yuan as Minister without Portfolio in 2013. She proposed the \"vTaiwan\" platform at a g0v hackathon in 2014, and worked with g0v volunteers to co-create the platform. ",
     "image": ["images/partners/logo-yulin.svg"]
   },
   {
     "name": "Openfind",
-    "description": "長期致力於網際網路相關技術研發，提供高品質、高穩定與高擴充性的軟體與服務。",
+    "description": "Openfind is committed to Internet-related technology R&D, and provide high quality, stable, and scalable software and services.",
     "image": ["images/partners/logo-openfind.svg"]
   },
   {
-    "name": "天氣風險管理開發",
-    "description": "台灣第一家民間氣象公司，服務客戶跨及媒體、運輸、製造、物流、通路等超過 170 家企業。",
+    "name": "Weatherrisk",
+    "description": "Weatherrisk is the first private weather company in Taiwan, serving customers at more than 170 companies across media, transportation, manufacturing, logistics, and distributing.",
     "image": ["images/partners/logo-weather.svg"]
   },
   {
-    "name": "開放文化基金會",
-    "description": "藉由法人組織的力量，協助台灣開放源碼社群的推廣與倡議。",
+    "name": "Open Culture Foundation",
+    "description": "OCF supports local communities advocate for the use of open technologies in a broad range of sectors, including open source software, open hardware, and open data.",
     "image": ["images/partners/logo-ocf.svg"]
   }
 ]

@@ -2,32 +2,26 @@ import React, { Component } from 'react'
 import Swiper from 'swiper';
 import $ from 'jquery';
 
-var section =
-{
-  "title": "從 2012 到 2018， g0v 創造了…",
-  "powerby": "揪松團在獎助金網站介紹徵件辦法、合作夥伴與獲獎專案一覽，獲獎專案網站或其他形式服務須至少在持續營運一年內註明 Powered by g0v，並連結回「Powered by g0v」頁面。"
-}
-
 var content = [
   {
-    "title": "緣起",
-    "content": "2012 年，g0v 台灣零時政府社群以「寫程式改造社會」為口號，強調開放透明、公民參與的精神，正式號召第一場活動。"
+    "title": "Origin",
+    "content": "At g0v's first event in 2012, the g0v community used the slogan \"Coding to Transform Society\" to emphasize the spirit of openness, transparency, and citizen participation. "
   },
   {
-    "title": "成就",
-    "content": "五年來，g0v 本著開放資料、開放政府的精神，已舉辦二十餘次百人大黑客松，超過五千人次參與，共同發想數百個專案，為全球前三大開放政府運動社群之一。"
+    "title": "Achievement",
+    "content": "Over the past five years, g0v has looked to conform to the spirit of open data and open government. g0v has hosted more than 29 bi-monthly hackathons, each with over 100 participants. In total, over 5,000 people have participated in g0v events, creating hundreds of civic innovation projects. Today, g0v is one of the globe's top three largest civic hacking/open government advocacy communities. "
   },
   {
-    "title": "理念",
-    "content": "不要問為什麼沒有人做這個，先承認你就是「沒有人」！社會問題不是別人的問題，而是身為公民的、我們的問題。"
+    "title": "Idea",
+    "content": "\"Ask not why nobody is doing this. First admit that you are that 'nobody'.\" Society's problems are not other people's problems, but our collective problems as citizens."
   },
   {
-    "title": "特色",
-    "content": "不只寫程式，g0v 打造公民科技工具來促進公民參與的新實踐，所有成果都以開放授權的方式公開，任何人都可以直接使用、改作、加入協作或發展出更新的版本。"
+    "title": "Features",
+    "content": "g0v doesn't just do coding. It also creates civic tech tools that promote new methods of social engagement. All our projects are listed under open licenses. Anyone is free to directly use, change, join, or develop newer versions of g0v projects. "
   },
   {
-    "title": "影響",
-    "content": "這場開放資料、開放政府運動，也打破民間與政府對抗的傳統運動路線，開創出台灣公民社會與政府互動的新模式。"
+    "title": "Influences",
+    "content": "The open data and open government movements have broken down the traditional methods that society has protested against the government, and created a new model for Taiwanese civil society and government to interact. "
   }
 ]
 

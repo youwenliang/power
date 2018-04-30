@@ -5,29 +5,32 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 
 var section =
 {
-  "title": "參與更多行動",
-  "tagline": "邀請你與我們一起，締造更多蝴蝶效應！",
-  "facebook": "分享到 Facebook"
+  "title": "Take Action",
+  "tagline": "Join us and create more butterfly effects!",
+  "facebook": "Share to Facebook"
 }
 
 var shareListData = [
   {
-    "name": "報名黑客松",
-    "description": "想找地方揮灑熱血嗎？揪松網歡迎你！",
-    "action": "瞭解更多",
-    "url": "https://hack.g0v.tw/"
+    "name": "Sign Up for the Hackathon",
+    "description": "Looking for a place to relieve some sweat and blood? Come join us at hack.g0v.tw",
+    "action": "More Information",
+    "url": "https://hack.g0v.tw/",
+    "img": "報名黑客松"
   },
   {
-    "name": "贊助獎助金",
-    "description": "贊助一份力量，實現更多可能！",
-    "action": "我要捐款",
-    "url": "jothon-organizers@g0v.tw"
+    "name": "Support the Grant initiative",
+    "description": "Sponsor us. Help us achieve even more possibilities.",
+    "action": "Donate Now",
+    "url": "jothon-organizers@g0v.tw",
+    "img": "贊助獎助金"
   },
   {
-    "name": "下載最新年鑑",
+    "name": "Download the Newest Annual Report",
     "description": "最新 2017 獎助金年鑑，歡迎取用！",
-    "action": "馬上下載",
-    "url": "https://drive.google.com/open?id=1tBuYwplYMya1EiGXJcUIoOPf6q83ULNS"
+    "action": "Download Now",
+    "url": "https://drive.google.com/open?id=1tBuYwplYMya1EiGXJcUIoOPf6q83ULNS",
+    "img": "下載最新年鑑"
   }
 ]
 
@@ -39,7 +42,7 @@ class Share extends Component {
         <span className="bg-primary w-100 h-100 absolute showdiv showme-expand-y"></span>
         <div className="bg-white pv4 hover-bg-light-gray bg-animate tc">
           <figure className="mb2 center">
-            <img src={"images/icons/CTA"+shareListData[i].name+".png"} width="200" alt={shareListData[i].name}/>
+            <img src={"images/icons/CTA"+shareListData[i].img+".png"} width="200" alt={shareListData[i].name}/>
           </figure>
           <h5 className="ma0">{shareListData[i].name}</h5>
           <p className="mw-320 mb4 center tc ph4 h2">{shareListData[i].description}</p>
