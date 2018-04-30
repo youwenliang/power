@@ -5,7 +5,7 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 
 var section =
 {
-  "title": "Take Action",
+  "title": "Take Actions",
   "tagline": "Join us and create more butterfly effects!",
   "facebook": "Share to Facebook"
 }
@@ -27,7 +27,7 @@ var shareListData = [
   },
   {
     "name": "Download the Newest Annual Report",
-    "description": "最新 2017 獎助金年鑑，歡迎取用！",
+    "description": "The 2017 Annual Report to know stories.",
     "action": "Download Now",
     "url": "https://drive.google.com/open?id=1tBuYwplYMya1EiGXJcUIoOPf6q83ULNS",
     "img": "下載最新年鑑"

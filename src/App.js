@@ -87,13 +87,13 @@ class App extends Component {
         </div>
         {/*--- Navigation---*/}
         <div id="section-nav">
-          <a className="nav-link active" href="#cover">2017 公民科技創新獎助金</a>
-          <a className="nav-link" href="#butterfly">見證一場「蝴蝶效應」</a>
-          <a className="nav-link"href="#projects">精選 2017 獲獎專案</a>
-          <a className="nav-link"href="#topics">五大類別獲獎專案一覽</a>
-          <a className="nav-link"href="#intro">誰是g0v？</a>
-          <a className="nav-link"href="#partner">獎助金合作夥伴</a>
-          <a className="nav-link"href="#share">參與更多行動</a>
+          <a className="nav-link active" href="#cover">Civic Tech Prototype Grant</a>
+          <a className="nav-link" href="#butterfly">Get ready to witness a “Butterfly effect”!</a>
+          <a className="nav-link"href="#projects">Featured 2017 Grantee</a>
+          <a className="nav-link"href="#topics">Five Categories of Winning Projects</a>
+          <a className="nav-link"href="#intro">What is g0v?</a>
+          <a className="nav-link"href="#partner">Partners</a>
+          <a className="nav-link"href="#share">Take Actions</a>
         </div>
         <ParallaxProvider>
         <Cover/>

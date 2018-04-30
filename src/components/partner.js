@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 var section =
 {
-  "title": "2017 Partners",
+  "title": "Partners",
   "powerby": "Projects that receive an award need to mark their website with a \"powered by g0v\" insignia, and link back to the \"powered by g0v\" official website for at least one year. "
 }
 

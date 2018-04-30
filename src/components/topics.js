@@ -5,7 +5,7 @@ import $ from 'jquery';
 
 var section =
 {
-  "title": "Five Categories of Wining Projects",
+  "title": "Five Categories of Winning Projects",
 }
 
 var topicListData = [
