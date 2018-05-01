@@ -176,7 +176,7 @@ class Topics extends Component {
         <div className="mt5-l">
           <div className="fl w-25-l w-100 tc">
             <figure className="center">
-              <img className="mw-300" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
+              <img className="mw-301" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
             </figure>
           </div>
           <div className="fl w-75-l w-100 mw7-l ph5-l">
