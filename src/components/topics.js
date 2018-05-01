@@ -159,7 +159,7 @@ class Topics extends Component {
           <figure className="center mb3 dn db-l">
             <img className="icon" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
           </figure>
-          <h3 className="ma0 tracked o-90 pt3 fw6">{topicListData[i].name}
+          <h3 className="ma0 o-90 pt3 fw6">{topicListData[i].name}
           <h1 className="absolute p-large o-10">{"0"+(i+1)}</h1>
           </h3>
           <p className="mw-320 center o-70 ph2 mt4 mb0-l mb4">{topicListData[i].description}</p>
@@ -176,13 +176,13 @@ class Topics extends Component {
         <div className="mt5-l">
           <div className="fl w-25-l w-100 tc">
             <figure className="center">
-              <img className="mw-300" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
+              <img className="mw-301" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
             </figure>
           </div>
           <div className="fl w-75-l w-100 mw7-l ph5-l">
             <h1 className="mv0 o-20">{"0"+(i+1)}</h1>
             <h1 className="mv0">{topicListData[i].name}</h1>
-            <h3 className="mv1 o-60">{topicListData[i].description}</h3>
+            <h3 className="mv1 o-60 lh-title">{topicListData[i].description}</h3>
             <p>{topicListData[i].content}</p>
             <ul className="list pa0 mt4">{projectItems}</ul>
           </div>
@@ -230,7 +230,7 @@ class Topics extends Component {
       >
       <section id="topics" className="fw-100 bg-white pv6-l pv5"> 
         <div className="container mw9 w-85 center">
-          <h3 className="ma0 lh-title pb4-l pb5 tc fw5 hideme hidediv tracked">{section.title}</h3>
+          <h3 className="ma0 lh-title pb4-l pb5 tc fw5 hideme hidediv">{section.title}</h3>
           <div id="swiperTopic-container" className="swiper-container center relative">
             <div className="swiper-wrapper">
               <div className="swiper-slide ph5-l ph0">

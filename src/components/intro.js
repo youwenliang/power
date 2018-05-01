@@ -39,7 +39,7 @@ class Intro extends Component {
                 stepPrecision = {0}
                 duration={650} />
               </h1><span>{section.number1[1]}</span>
-              <p className="ma0 tc pa0 tracked">{section.number1[0]}</p>
+              <p className="ma0 tc pa0">{section.number1[0]}</p>
               <a className="dib white ma0 pa0" href="https://hack.g0v.tw/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">{section.link1}</h6></a>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
@@ -48,7 +48,7 @@ class Intro extends Component {
                 stepPrecision = {0}
                 duration={650} />
               </h1><span>{section.number2[1]}</span>
-              <p className="ma0 tc pa0 tracked">{section.number2[0]}</p>
+              <p className="ma0 tc pa0">{section.number2[0]}</p>
               <a className="dib white ma0 pa0" href="http://summit.g0v.tw/2018/" target="_blank" rel="noopener noreferrer"><h6 className="u-line ma0 mt2 o-60">{section.link2}</h6></a>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
@@ -57,7 +57,7 @@ class Intro extends Component {
                 stepPrecision = {0}
                 duration={950} />
               </h1><span>{section.number3[1]}</span>
-              <p className="ma0 tc pa0 tracked">{section.number3[0]}</p>
+              <p className="ma0 tc pa0">{section.number3[0]}</p>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv mb5">
               <h1 className="big ma0 tc di pr1 fw2">
@@ -65,7 +65,7 @@ class Intro extends Component {
                 stepPrecision = {0}
                 duration={950} />
               </h1><span>{section.number4[1]}</span>
-              <p className="ma0 tc pa0 tracked">{section.number4[0]}</p>
+              <p className="ma0 tc pa0">{section.number4[0]}</p>
             </li>
             <li className="dib center w-50 tc white ph3 hideme hidediv">
               <h1 className="big ma0 tc di pr1 fw2">
@@ -73,7 +73,7 @@ class Intro extends Component {
                 stepPrecision = {0}
                 duration={1250} />
               {section.number5[1]}</h1>
-              <p className="ma0 tc pa0 tracked">{section.number5[0]}</p>
+              <p className="ma0 tc pa0">{section.number5[0]}</p>
             </li>
           </ul>
         </div>

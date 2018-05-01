@@ -125,6 +125,9 @@ a {
 	max-width: 300px;
 	width: 50%;
 }
+.mw-301 {
+	max-width: 300px;
+}
 .mw74 {
 	max-width: 74rem;
 }
@@ -145,6 +148,9 @@ a {
 }
 .h-250 {
 	height: 250px;
+}
+.h-330 {
+	height: 330px;
 }
 .h-300 {
 	height: 300px;

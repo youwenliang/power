@@ -91,7 +91,7 @@ class Projects extends Component {
   numbers = (i,j) => {
     return (
       <li className="center dib-l ma2 w46 tc white z1">
-        <h5 className="ma0 tc tracked">{projectListData[i].create[j].title}</h5>
+        <h5 className="ma0 tc">{projectListData[i].create[j].title}</h5>
         <h1 className="ma0 tc di pr1">{projectListData[i].create[j].num+"+"}</h1>
       </li>
     )
@@ -145,7 +145,7 @@ class Projects extends Component {
                   <img className="ma0" src={projectListData[i].logo} alt={projectListData[i].name} width="240" />
                 </div>
                 <div className="fl w-75-l w-100">
-                  <h1 className="ma0 fw2 tracked">{projectListData[i].name}</h1>
+                  <h1 className="ma0 fw2">{projectListData[i].name}</h1>
                   <h5 className="mt2 o-90 fw4 mw6 mb0">{projectListData[i].description}</h5>
                 </div>
               </div>
@@ -266,7 +266,7 @@ class Projects extends Component {
       >
       <section id="projects" className="fw-100 bg-dark pv6-l pv5"> 
         <div className="container mw9 w-85 center white">
-          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
+          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv">{section.title}</h3>
             <h5 className="ma0 lh-large tc mw7 center fw4 o-70 mb5-l mb4 f4-l f5 hideme hidediv">{section.tagline}</h5>
           <div className="cf flexbox center mw74">
             {projectList}

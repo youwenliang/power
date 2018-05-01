@@ -37,7 +37,7 @@ class Butterfly extends Component {
     return (
       <ul className="ma0 pa0 tc">
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc tracked f5-ns f6">{section.number1[0]}</h5>
+          <h5 className="ma0 tc f5-ns f6">{section.number1[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="151"
             stepPrecision = {0}
@@ -45,7 +45,7 @@ class Butterfly extends Component {
           </h1><span>{section.number1[1]}</span>
         </li>
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc tracked f5-ns f6">{section.number2[0]}</h5>
+          <h5 className="ma0 tc f5-ns f6">{section.number2[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="13"
             stepPrecision = {0}
@@ -53,7 +53,7 @@ class Butterfly extends Component {
           </h1><span>{section.number2[1]}</span>
         </li>
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc tracked f5-ns f6">{section.number3[0]}</h5>
+          <h5 className="ma0 tc f5-ns f6">{section.number3[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="30"
             stepPrecision = {0}
@@ -61,7 +61,7 @@ class Butterfly extends Component {
           +</h1><span>{section.number3[1]}</span>
         </li>
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc tracked f5-ns f6">{section.number4[0]}</h5>
+          <h5 className="ma0 tc f5-ns f6">{section.number4[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="600"
             stepPrecision = {0}
@@ -98,14 +98,14 @@ class Butterfly extends Component {
       <section id="butterfly" className="fw-100"> 
         <div className="ma0 pv5 ph4 tc-ns tl bg-white">
           <div className="hideme hidediv">
-          <h1 className="ma0 lh-title pb3 fw7 tracked f2-l f3">{section.title}</h1>
+          <h1 className="ma0 lh-title pb3 fw7 f2-l f3">{section.title}</h1>
           <p className="ma0 lh-copy fw4 mb4 o-60">{section.tagline}</p>
           <h5 className="ma0 tl mw7 center fw4 f4-l f5 lh-large">{section.intro}</h5>
           </div>
         </div>
         <div className="ma0 pv5 ph4 tc-ns tl bg-secondary white">
           <div className="hideme hidediv">
-            <h1 className="ma0 lh-title pb3 fw7 tracked f2-l f3 mw7 center">{section.title2}</h1>
+            <h1 className="ma0 lh-title pb3 fw7 f2-l f3 mw7 center">{section.title2}</h1>
             <h5 className="ma0 tc mw7 center fw4 f4-l f5 lh-large">{section.intro2}<br/>{section.intro3}</h5>
           </div>
         </div>

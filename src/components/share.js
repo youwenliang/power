@@ -73,7 +73,7 @@ class Share extends Component {
     return (
       <div>
         <section id="share" className="fw-100 bg-white pt5"> 
-          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
+          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv">{section.title}</h3>
           <h5 className="ma0 lh-copy tc mw7 center fw4 f4-l f5 o-70 mb4 hideme hidediv">{section.tagline}</h5>
           <div className="cf flexbox">
             {shareList}

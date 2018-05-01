@@ -44,11 +44,11 @@ class Partner extends Component {
     return (
       <div className="fl partners ma3 bg-white hidediv hideme br1">
         <div className="pa4">
-          <figure className="center mb3">
+          <figure className="center mb3 tc">
             <img src={partnerListData[i].image[0]} height="100" alt={partnerListData[i].name} />
           </figure>
-          <p className="ma0 tracked o-90 pt3 fw6">{partnerListData[i].name}</p>
-          <p className="mw-320 center o-70 p-small ph2">{partnerListData[i].description}</p>
+          <p className="tc ma0 o-90 pt3 fw6">{partnerListData[i].name}</p>
+          <p className="tl mw-320 center o-70 p-small ph2">{partnerListData[i].description}</p>
         </div>
       </div>
     )
@@ -73,8 +73,8 @@ class Partner extends Component {
           </div>
         </div>
         <div className="container mw9 w-85 center">
-          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv tracked">{section.title}</h3>
-          <div className="cf tc flexbox center mw74">
+          <h3 className="ma0 lh-title pb4-l pb3 tc fw5 hideme hidediv">{section.title}</h3>
+          <div className="cf flexbox center mw74">
             {partnerList}
           </div>
         </div>
