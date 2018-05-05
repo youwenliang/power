@@ -72,6 +72,21 @@ h6 {
 	line-height: 1.8;
 }
 
+#language {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    color: #fff;
+    z-index: 10;
+}
+
+#language a {
+    color: #fff;
+    padding: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 959px) {
 	.p-large {
 		top: -30px;
