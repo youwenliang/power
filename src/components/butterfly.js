@@ -113,18 +113,18 @@ class Butterfly extends Component {
           <div className="hideme hidediv">
             <h4 className="ma0 fw7">{section.imageTitle}</h4>
             <h5 className="ma0 white fw4">Open Source</h5>
-            <img src="images/butterfly/CTG.svg" width="300" className="absolute" id="ctg" alt="CTG"/>
+            <img src="images/butterfly/CTG_en.svg" width="300" className="absolute" id="ctg" alt="CTG"/>
           </div>
           <div className="removeActive">
             <img src="images/butterfly/people-1.svg" height="180" className="absolute moveActive" id="people-1" width="455" alt="people" />
             <img src="images/butterfly/people-2.svg" height="180" className="absolute moveActive" id="people-2" width="350" alt="people" />
           </div>
-          <img className="hideme hidediv" src="images/butterfly/Money.svg" id="money" alt="grant" />
+          <img className="hideme hidediv" src="images/butterfly/Money_en.svg" id="money" alt="grant" />
           <div className="hidechild">
-            <img className="hideme delay-3" src="images/butterfly/CTG-1.svg" id="ctg-1" width="255" alt="icon"/>
-            <img className="hideme delay-0" src="images/butterfly/CTG-2.svg" id="ctg-2" width="255" alt="icon"/>
-            <img className="hideme delay-1" src="images/butterfly/CTG-3.svg" id="ctg-3" width="300" alt="icon"/>
-            <img className="hideme delay-2" src="images/butterfly/CTG-4.svg" id="ctg-4" width="300" alt="icon"/>
+            <img className="hideme delay-3" src="images/butterfly/CTG-1_en.svg" id="ctg-1" width="255" alt="icon"/>
+            <img className="hideme delay-0" src="images/butterfly/CTG-2_en.svg" id="ctg-2" width="255" alt="icon"/>
+            <img className="hideme delay-1" src="images/butterfly/CTG-3_en.svg" id="ctg-3" width="300" alt="icon"/>
+            <img className="hideme delay-2" src="images/butterfly/CTG-4_en.svg" id="ctg-4" width="300" alt="icon"/>
           </div>
         </figure>
         <div className="ma0 bg-near-white pb5 pt3 ph4">

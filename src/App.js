@@ -80,7 +80,7 @@ class App extends Component {
     return (
       <div className="App">
         <div id="language">
-          <a href="/en">EN</a><span>|</span><a href="/">中</a>
+          <a href="/">EN</a><span>|</span><a href="../">中</a>
         </div>
         <div id="loading">
           <figure className="o-0">

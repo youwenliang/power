@@ -1,10 +1,10 @@
 import React from 'react'
 
 var titles = {
-	"link1": "Grant 官網",
-	"link2": "g0v 官網",
-	"link3": "揪松網",
-	"link4": "收支明細"
+	"link1": "Grant",
+	"link2": "g0v",
+	"link3": "Jothon",
+	"link4": "Transaction"
 }
 
 export default () => (
