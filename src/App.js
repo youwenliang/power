@@ -79,6 +79,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div id="language">
+          <a href="/en">EN</a><span>|</span><a href="/">中</a>
+        </div>
         <div id="loading">
           <figure className="o-0">
             <img id="b2" src="images/butterfly/butterfly-move2.png" alt=""/>

@@ -29,7 +29,7 @@ class Cover extends Component {
               height: 'auto'
           }}
       >
-         <section id="cover" className='fw-100 vh-100 mh-640 bg-dark'>
+         <section id="cover" className='fw-100 vh-100 mh-640 bg-dark pn'>
           <div className="container mw9 w-85 center relative z1">
             <div className="pv6-ns pv4 pb6">
               <img src="images/powered-by-g0v.svg" height="60" alt="butterfly-logo"/>

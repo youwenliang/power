@@ -45,7 +45,7 @@ var projectListData = [
   },
   {
     "name": "Open Corporate Groups",
-    "description": "The \"Open Corporate Groups\" maps the relationship between large-scale conglomerates and companies accused of emitting air pollution, and uses data from the \"Thaubing Project\". The project allows the public to inspect corporation pollution data, and to put pressure on conglomerates that have heavy penalty records. The project calls for the government to face the deficiencies of the existing laws.",
+    "description": "The \"Open Corporate Groups\" maps the relationship between large-scale conglomerates and companies accused of emitting air pollution, and uses data from the \"Thaubing Project\".",
     "logo": "images/projects/logo-open.png",
     "image": ["images/projects/cover-open.png", "images/projects/insight-open.png", "images/projects/idea-open.png", "images/projects/impact-open.png"],
     "url": "https://thaubing.gcaa.org.tw/companydata/openGroupLanding/index.html",
@@ -236,7 +236,7 @@ class Projects extends Component {
           <span className="bg-dark w-100 h-100 absolute showdiv showme-expand-y"></span>
           <figure className="project-img w-100 h-100 ma0" style={divStyle}></figure>
         </div>
-        <div className="pt0 pl5 dash hideme hidediv pn">
+        <div className="pt0 pl5-ns pl0 dash hideme hidediv pn">
           <h4 className="ma0 white fw4">{projectListData[i].name}</h4>
           <p className="white mt2 o-70">{projectListData[i].description}</p>
         </div>

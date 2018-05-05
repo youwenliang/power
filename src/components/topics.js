@@ -11,7 +11,7 @@ var section =
 var topicListData = [
   {
     "name": "Technology and Charity",
-    "description": "Technology can accompany civil society organizations (CSOs) to complete the last mile.",
+    "description": "Tech can accompany civil society organizations (CSOs) to complete the last mile.",
     "content": "Through the foundation of open data and civic engagement, the g0v community accompanies CSOs for the long haul. It helps reduce divides and accumulates energy on issues, bringing CSOs closer to the public. ",
     "image": ["images/icons/分類科技與公益.png"],
     "projects": [
@@ -159,9 +159,9 @@ class Topics extends Component {
           <figure className="center mb3 dn db-l">
             <img className="icon" src={topicListData[i].image[0]} width="100%" alt={topicListData[i].name}/>
           </figure>
-          <h3 className="ma0 o-90 pt3 fw6">{topicListData[i].name}
+          <h4 className="ma0 o-90 pt3 fw6">{topicListData[i].name}
           <h1 className="absolute p-large o-10">{"0"+(i+1)}</h1>
-          </h3>
+          </h4>
           <p className="mw-320 center o-70 ph2 mt4 mb0-l mb4">{topicListData[i].description}</p>
       </li>
     )
@@ -182,7 +182,7 @@ class Topics extends Component {
           <div className="fl w-75-l w-100 mw7-l ph5-l">
             <h1 className="mv0 o-20">{"0"+(i+1)}</h1>
             <h1 className="mv0">{topicListData[i].name}</h1>
-            <h3 className="mv1 o-60 lh-title">{topicListData[i].description}</h3>
+            <h4 className="mv1 o-60 lh-title">{topicListData[i].description}</h4>
             <p>{topicListData[i].content}</p>
             <ul className="list pa0 mt4">{projectItems}</ul>
           </div>

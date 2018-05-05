@@ -26,7 +26,7 @@ var shareListData = [
     "img": "贊助獎助金"
   },
   {
-    "name": "Download the Newest Annual Report",
+    "name": "The Newest Annual Report",
     "description": "The 2017 Annual Report to know stories.",
     "action": "Download Now",
     "url": "https://drive.google.com/open?id=1tBuYwplYMya1EiGXJcUIoOPf6q83ULNS",
@@ -44,8 +44,8 @@ class Share extends Component {
           <figure className="mb2 center">
             <img src={"images/icons/CTA"+shareListData[i].img+".png"} width="200" alt={shareListData[i].name}/>
           </figure>
-          <h5 className="ma0">{shareListData[i].name}</h5>
-          <p className="mw-320 mb4 center tc ph4 h2">{shareListData[i].description}</p>
+          <h5 className="ma0 ph4">{shareListData[i].name}</h5>
+          <p className="mw-320 mb4 center tc ph4 h2 p-small">{shareListData[i].description}</p>
           <a href={shareListData[i].url} target="_blank" className="link btn ba b--orange bg-white hover-white bw1 dib center ph4 br1 dark-black relative overflow-hidden mt4">
             <span className="btn-color bg-secondary ba b--orange bw2 w-100 h-100 absolute"></span>
             <p className="ma0 lh-title tc fw5 pv3 relative">

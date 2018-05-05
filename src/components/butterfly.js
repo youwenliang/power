@@ -17,9 +17,9 @@ var section =
   "number1": ["Proposals", ""],
   "number2": ["Grantee", ""],
   "number3": ["Media Exposure", ""],
-  "number4": ["Funds for Grantee", "TWD"],
+  "number4": ["Funds for Grantee", "M TWD"],
   "imageTitle": "Civic Technology Talents",
-  "link": "The g0v Civic Tech Prototype Grant Official Website",
+  "link": "The Grant Website",
   "note": "*Statistics by January 2018."
 }
 
@@ -53,7 +53,7 @@ class Butterfly extends Component {
           </h1><span>{section.number2[1]}</span>
         </li>
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc f5-ns f6">{section.number3[0]}</h5>
+          <h5 className="ma0 tc f5-ns f6 ph3 ph1-ns">{section.number3[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="30"
             stepPrecision = {0}
@@ -61,7 +61,7 @@ class Butterfly extends Component {
           +</h1><span>{section.number3[1]}</span>
         </li>
         <li className="dib ma2 w45 tc bg-white pv4-ns pv3 hideme hidediv">
-          <h5 className="ma0 tc f5-ns f6">{section.number4[0]}</h5>
+          <h5 className="ma0 tc f5-ns f6 ph3 ph1-ns">{section.number4[0]}</h5>
           <h1 className="ma0 tc di pr1 f1-ns f2">
           <AnimatedNumber component="text" value="600"
             stepPrecision = {0}
@@ -133,7 +133,7 @@ class Butterfly extends Component {
               <div className="fl w-100 w-50-l">
                 <div className="pa4-l hidediv hideme tc tl-l">
                   <h5 className="mv3">{section.contentTitle}</h5>
-                  <p className="ma0 pt2 tl lh-large">
+                  <p className="ma0 pt2 tl lh-large p-small">
                     {section.content}
                   </p>
                   <a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="link btn ba b--orange bw1 dib center ph4 br1 btn-hover-white dark-black relative overflow-hidden mt4">
