@@ -340,6 +340,9 @@ a {
 .w45 {
 		width: 8rem;
 	}
+#language {
+	right: 30px;
+}
 }
 
 @media screen and (max-width: 1024) and (min-width: 769px) {

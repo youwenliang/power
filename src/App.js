@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import { 
+    BrowserRouter, 
+    Route, 
+    Link,
+    Match
+} from "react-browser-router";
 import Cover from './components/cover';
 import Intro from './components/intro';
 import Numbers from './components/numbers';
@@ -78,41 +84,43 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <div id="language">
-          <a href="/power/en">EN</a><span>|</span><a href=".">中</a>
+      <BrowserRouter>
+        <div className="App">
+          <div id="language">
+            <Link to="/power/en" onClick="window.location.reload()">EN</Link><span>|</span><a href=".">中</a>
+          </div>
+          <div id="loading">
+            <figure className="o-0">
+              <img id="b2" src="images/butterfly/butterfly-move2.png" alt=""/>
+              <img id="b1" src="images/butterfly/butterfly-move1.png" alt=""/>
+            </figure>
+          </div>
+          {/*--- Navigation---*/}
+          <div id="section-nav">
+            <a className="nav-link active" href="#cover">2017 公民科技創新獎助金</a>
+            <a className="nav-link" href="#butterfly">見證一場「蝴蝶效應」</a>
+            <a className="nav-link"href="#projects">精選 2017 獲獎專案</a>
+            <a className="nav-link"href="#topics">五大類別獲獎專案一覽</a>
+            <a className="nav-link"href="#intro">什麼是g0v？</a>
+            <a className="nav-link"href="#partner">獎助金合作夥伴</a>
+            <a className="nav-link"href="#share">參與更多行動</a>
+          </div>
+          <ParallaxProvider>
+          <Cover/>
+          <Butterfly/>
+          <Projects/>
+          <Topics/>
+          <Intro/>
+          <Numbers/>
+          <Partner/>
+          <Share/>
+          <Footer/>
+          </ParallaxProvider>
+          <button onClick={this.topFunction} id="myBtn" title="Go to top">
+            <FontAwesome name='long-arrow-up'/>
+          </button> 
         </div>
-        <div id="loading">
-          <figure className="o-0">
-            <img id="b2" src="images/butterfly/butterfly-move2.png" alt=""/>
-            <img id="b1" src="images/butterfly/butterfly-move1.png" alt=""/>
-          </figure>
-        </div>
-        {/*--- Navigation---*/}
-        <div id="section-nav">
-          <a className="nav-link active" href="#cover">2017 公民科技創新獎助金</a>
-          <a className="nav-link" href="#butterfly">見證一場「蝴蝶效應」</a>
-          <a className="nav-link"href="#projects">精選 2017 獲獎專案</a>
-          <a className="nav-link"href="#topics">五大類別獲獎專案一覽</a>
-          <a className="nav-link"href="#intro">誰是g0v？</a>
-          <a className="nav-link"href="#partner">獎助金合作夥伴</a>
-          <a className="nav-link"href="#share">參與更多行動</a>
-        </div>
-        <ParallaxProvider>
-        <Cover/>
-        <Butterfly/>
-        <Projects/>
-        <Topics/>
-        <Intro/>
-        <Numbers/>
-        <Partner/>
-        <Share/>
-        <Footer/>
-        </ParallaxProvider>
-        <button onClick={this.topFunction} id="myBtn" title="Go to top">
-          <FontAwesome name='long-arrow-up'/>
-        </button> 
-      </div>
+      </BrowserRouter>
     );
   }
 }
