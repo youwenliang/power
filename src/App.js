@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+import {Route} from 'react-router-dom';
 import { 
     BrowserRouter, 
-    Route, 
     Link,
-    Match
 } from "react-browser-router";
 import Cover from './components/cover';
 import Intro from './components/intro';
@@ -84,11 +83,13 @@ class App extends Component {
   }
   render() {
     return (
-      <BrowserRouter>
         <div className="App">
-          <div id="language">
-            <Link to="/power/en" onClick="window.location.reload()">EN</Link><span>|</span><a href=".">中</a>
-          </div>
+          <BrowserRouter>
+            <div id="language">
+              <Route exact path='/power/en' component={() => window.location = 'https://grants.g0v.tw/power/en'} />
+              <Link to="/power/en">EN</Link><span>|</span><a href=".">中</a>
+            </div>
+          </BrowserRouter>
           <div id="loading">
             <figure className="o-0">
               <img id="b2" src="images/butterfly/butterfly-move2.png" alt=""/>
@@ -120,7 +121,6 @@ class App extends Component {
             <FontAwesome name='long-arrow-up'/>
           </button> 
         </div>
-      </BrowserRouter>
     );
   }
 }
