@@ -4,8 +4,13 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import $ from 'jquery';
+import { BrowserRouter } from "react-browser-router";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((
+<BrowserRouter basename='power'>
+	<App />
+</BrowserRouter>), 
+document.getElementById('root'));
 registerServiceWorker();
 
 
