@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import $ from 'jquery';
 import { BrowserRouter } from "react-browser-router";
+import { unregister } from './registerServiceWorker';
 
 ReactDOM.render((
-<BrowserRouter>
+<BrowserRouter basename="power">
 	<App />
 </BrowserRouter>), 
 document.getElementById('root'));
+unregister();
 
 
 // When the user scrolls down 20px from the top of the document, show the button
