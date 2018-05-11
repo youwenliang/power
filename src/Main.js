@@ -4,15 +4,14 @@ import Home from './Home'
 
 class Main extends Component {
   render() {
-    function changeLAN() {
-      if (typeof window !== 'undefined') {
-        window.location = '/power/en/';
-      }
+    const reload = () => {
+      window.location.reload();
+      console.log("RELOAD?")
     }
     return (
       <main>
         <div id="language">
-          <a onClick={changeLAN} href="#">EN</a><span>|</span><a href=".">中</a>
+          <a href="/power/en">EN</a><span>|</span><a href=".">中</a>
         </div>
         <div id="loading">
           <figure className="o-0">
@@ -22,6 +21,7 @@ class Main extends Component {
         </div>
         <Switch>
           <Route exact path='/power' component={Home} />
+          <Route path="/power/en" onEnter={reload} />
         </Switch>
       </main>
     );

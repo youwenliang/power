@@ -7,11 +7,10 @@ import $ from 'jquery';
 import { BrowserRouter } from "react-browser-router";
 
 ReactDOM.render((
-<BrowserRouter basename='power'>
+<BrowserRouter>
 	<App />
 </BrowserRouter>), 
 document.getElementById('root'));
-registerServiceWorker();
 
 
 // When the user scrolls down 20px from the top of the document, show the button
