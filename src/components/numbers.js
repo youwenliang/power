@@ -21,7 +21,7 @@ var content = [
   },
   {
     "title": "Influences",
-    "content": "The open data and open government movements have improved upon the traditional methods that society has used to protest against a government, and created a new model for Taiwanese civil society and government to interact. "
+    "content": "The open data and open government movements have improved upon the traditional methods that society has used to protest against government, and created a new model for Taiwanese civil society and government to interact. "
   }
 ]
 
