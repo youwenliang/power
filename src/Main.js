@@ -6,7 +6,7 @@ class Main extends Component {
   render() {
     function changeLAN() {
       if (typeof window !== 'undefined') {
-        window.location = '/power/en/';
+        window.location = '/power_en';
       }
     }
     return (
