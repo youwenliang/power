@@ -38,9 +38,9 @@ var projectListData = [
     "url": "https://cofacts.hacktabl.org/",
     "insight": "Many rumors are spread through LINE. Those rumors may be false or misleading information or wilful deceit. In serious cases, they can severely affect people’s lives.",
     "idea": "By adding the “LINE bot Cofacts” as a friend, LINE users who are not familiar with the use of Google or users who don’t know how to search for information, can directly send a request to the bot to evaluate the veracity of dubious information. The bot then determines the reliability of the information and sends a reply to the user.",
-    "impact": "The Cofacts team took part in different national and international meetings - including the National Communications Commission (NCC) discussion meeting on fake news, civic tech forums in Singapore, South Africa, etc. - to demonstrate the social impact of the Cofacts project in the field of fact checking and other related areas. Currently, around 20,000 people use the LINE bot. Nearly 250 information news are reported to the bot each week and 200 editors have joined the Cofacts team online to help deconstruct rumors.",
+    "impact": "The Cofacts team took part in different national and international meetings - including the National Communications Commission (NCC) discussion meeting on fake news, civic tech forums in Singapore, South Africa, etc. - to demonstrate the social impact of the Cofacts project in the field of fact checking and other related areas. Currently, around 20,000 people use the LINE bot. Nearly 250 pieces of information are reported to the bot each week and 200 editors have joined the Cofacts team online to help deconstruct rumors.",
     "team": "團隊介紹",
-    "create": [{"title":"Rumors checked", "num":14121}, {"title":"News reported each week", "num":250}],
+    "create": [{"title":"Rumors checked", "num":14121}, {"title":"News items reported each week", "num":250}],
     "people":"郭冠宏（ggm）／梁翔勝（mrorz）／李柏緯（lucien）／魏妤庭（hazel）／李比鄰（billion）／劉澄真（delightfullychoatic）／朱柏澂（darkbtf）"
   },
   {
