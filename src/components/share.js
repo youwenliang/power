@@ -21,7 +21,7 @@ var shareListData = [
     "name": "贊助獎助金",
     "description": "贊助一份力量，實現更多可能！",
     "action": "我要捐款",
-    "url": "mailto:jothon-organizers@g0v.tw"
+    "url": "https://g0vjothon.typeform.com/to/jycWXK"
   },
   {
     "name": "下載最新年鑑",
