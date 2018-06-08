@@ -8,7 +8,7 @@
 
 # production
 /build
-_production
+_public
 deploy
 
 # misc
