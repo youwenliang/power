@@ -9,7 +9,6 @@
 # production
 /build
 _public
-deploy
 
 # misc
 .DS_Store
