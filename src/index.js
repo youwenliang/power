@@ -5,14 +5,13 @@ import App from './App';
 import $ from 'jquery';
 import { BrowserRouter } from "react-browser-router";
 import { unregister } from './registerServiceWorker';
-import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render((
 <BrowserRouter basename="power">
 	<App />
 </BrowserRouter>), 
 document.getElementById('root'));
-registerServiceWorker();
+unregister();
 
 
 // When the user scrolls down 20px from the top of the document, show the button
