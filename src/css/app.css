@@ -314,6 +314,28 @@ a {
 .flexbox .partners {
 	width: calc(33.33% - 2rem - 1px);
 }
+.flexbox .judges {
+	width: calc(33.33% - 2rem - 1px);
+        white-space: pre-wrap;
+        text-align: left;
+}
+.flexbox .judges .pa4 {
+  height: 160px;
+}
+.flexbox .judges figure {
+  margin: 0;
+}
+.flexbox .judges .desc {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+.flexbox .judges img {
+  margin: 0 10px 10px 0;
+  float: left;
+}
 .flexbox .project {
 	width: calc(50% - 2rem - 1px);
 }

@@ -1,3 +1,50 @@
+g0v power
+==============
+
+hooked under https://grants.g0v.tw/power/
+
+
+Usage
+--------------
+
+以下指令皆在專案根目錄下執行。
+
+ * 在中英文版間切換:
+
+   * 切換至中文版: 執行下列指令
+     ```
+     git checkout master
+     ```
+
+   * 切換至英文版: 執行下列指令
+     ```
+     git checkout en
+     ```
+
+
+ * 本地端測試: 執行下列指令後，瀏覽器會自動開啟預覽頁面:
+   ```
+   npm run start
+   ```
+
+ * 送交修改: 執行下列指令：
+   ```
+   ./deploy
+   ```
+   
+ * deploy 之後，還需要再更新 grant repo. 請到 grant 目錄下執行這些指令:
+   ```
+   git pull
+   git submodule foreach git pull
+   git add public/power
+   git commit -m "update submodule"
+   git push
+   ```
+
+
+Original Readme Content
+=====================
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

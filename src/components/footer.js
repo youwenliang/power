@@ -1,5 +1,12 @@
 import React from 'react'
 
+var gacode = [
+        "window.dataLayer = window.dataLayer || [];",
+        "function gtag(){dataLayer.push(arguments);}",
+        "gtag('js', new Date());",
+        "gtag('config', 'UA-41326468-1');"
+].join("\n");
+
 var titles = {
 	"link1": "Grant 官網",
 	"link2": "g0v 官網",
@@ -14,5 +21,7 @@ export default () => (
     <h2 className='f6 fw2 tracked moon-gray'>
     	<a href="https://grants.g0v.tw/" target="_blank" rel="noopener noreferrer" className="u-line moon-gray dib relative">{titles.link1}</a> • <a href="http://g0v.tw/" target="_blank" rel="noopener noreferrer" className="u-line moon-gray dib relative">{titles.link2}</a> • <a href="https://hack.g0v.tw/" target="_blank" rel="noopener noreferrer" className="u-line moon-gray dib relative">{titles.link3}</a> • <a href="https://hack.g0v.tw/transaction" target="_blank" rel="noopener noreferrer" className="u-line moon-gray dib relative">{titles.link4}</a>
     </h2>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41326468-1"></script>
+    <script>{gacode}</script>
   </footer>
 )

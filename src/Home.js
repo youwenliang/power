@@ -6,6 +6,7 @@ import Numbers from './components/numbers';
 import Butterfly from './components/butterfly';
 import Projects from './components/projects';
 import Topics from './components/topics';
+import Judges from './components/judges';
 import Partner from './components/partner';
 import Share from './components/share';
 import Footer from './components/footer';
@@ -84,11 +85,12 @@ class Home extends Component {
           <div id="section-nav">
             <a className="nav-link active" href="#cover">2017 公民科技創新獎助金</a>
             <a className="nav-link" href="#butterfly">見證一場「蝴蝶效應」</a>
-            <a className="nav-link"href="#projects">精選 2017 獲獎專案</a>
-            <a className="nav-link"href="#topics">五大類別獲獎專案一覽</a>
-            <a className="nav-link"href="#intro">什麼是g0v？</a>
-            <a className="nav-link"href="#partner">獎助金合作夥伴</a>
-            <a className="nav-link"href="#share">參與更多行動</a>
+            <a className="nav-link" href="#projects">精選 2017 獲獎專案</a>
+            <a className="nav-link" href="#topics">五大類別獲獎專案一覽</a>
+            <a className="nav-link" href="#intro">什麼是g0v？</a>
+            <a className="nav-link" href="#judges">過往評審</a>
+            <a className="nav-link" href="#partner">獎助金合作夥伴</a>
+            <a className="nav-link" href="#share">參與更多行動</a>
           </div>
           <ParallaxProvider>
           <Cover/>
@@ -97,6 +99,7 @@ class Home extends Component {
           <Topics/>
           <Intro/>
           <Numbers/>
+          <Judges/>
           <Partner/>
           <Share/>
           <Footer/>
