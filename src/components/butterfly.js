@@ -7,11 +7,11 @@ var view = false;
 var section =
 {
   "title": "Get ready to witness a “Butterfly effect”!",
-  "tagline": "The Butterfly effect asserts that an infinitesimal change in a system can cause a chain reaction that affects the whole system.",
-  "intro": "We're g0v, and we've always believed that the innovation and strength behind every good idea in civic tech is a force like a butterfly flapping its wings. If we can channel sustainable development, and operate in the long term, then we can produce a butterfly effect, and produce results that cause a knock-on effect.",
-  "title2": " g0v Civic Tech Prototype Grant been set up for positive butterfly effect!",
+  "tagline": "The Butterfly effect asserts that an infinitesimal change can cause a chain reaction that affects the whole system.",
+  "intro": "We're g0v, and we've always believed that the innovation and strength behind every good idea in civic tech is like a butterfly flapping its wings. If we can channel sustainable development, and operate in the long term, then we can produce a butterfly effect, and produce results that cause a knock-on effect.",
+  "title2": "The g0v Civic Tech Prototype Grant has been set up to generate positive butterfly effects!",
   "intro2": "Why have we set up the g0v \"Civic Tech Prototype Grant\"?",
-  "intro3": "For no other reason than to support the advancement of civic tech projects, and to be a driving force that will trigger a positive butterfly effect.",
+  "intro3": "For no other reason than to support the advancement of civic tech projects, and to be a generative force that will trigger positive butterfly effects.",
   "contentTitle": "What is the \"g0v Civic Tech Prototype Grant\"?",
   "content": "The grant aims to encourage talented individuals and teams to join the civic tech community and to accelerate the incubation phase of projects. Hosted by g0v Hackathon Organizer Team, the funding of \"g0v Civic Tech Prototype Grant\" is raised from influential media groups, IT firms, and NGOs. The grant awardees are selected based on their projects’ potentials and communal benefits through an open proposal process. Along with the g0v hackathons, g0v Grant hopes to further support projects capable of producing influences, butterfly effects and new possibilities.",
   "number1": ["Proposals", ""],

@@ -34,7 +34,7 @@ var partnerListData = [
   },
   {
     "name": "Open Culture Foundation",
-    "description": "OCF supports local communities advocate for the use of open technologies in a broad range of sectors, including open source software, open hardware, and open data.",
+    "description": "OCF supports local communities in advocating for the use of open technologies in a broad range of sectors, including open source software, open hardware, and open data.",
     "image": ["images/partners/logo-ocf.svg"]
   }
 ]

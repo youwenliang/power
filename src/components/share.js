@@ -22,7 +22,7 @@ var shareListData = [
     "name": "Support the Grant initiative",
     "description": "Sponsor us. Help us achieve even more possibilities.",
     "action": "Donate Now",
-    "url": "mailto:jothon-organizers@g0v.tw",
+    "url": "https://g0vjothon.typeform.com/to/jycWXK",
     "img": "贊助獎助金"
   },
   {
