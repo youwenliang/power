@@ -36,6 +36,21 @@ var partnerListData = [
     "name": "Open Culture Foundation",
     "description": "OCF supports local communities in advocating for the use of open technologies in a broad range of sectors, including open source software, open hardware, and open data.",
     "image": ["images/partners/logo-ocf.svg"]
+  },
+  {
+    "name": "Chunghwa Telecom",
+    "description": "",
+    "image": ["images/partners/logo-cht.png"]
+  },
+  {
+    "name": "AppWorks",
+    "description": "",
+    "image": ["images/partners/logo-appworks.png"]
+  },
+  {
+    "name": "EasyCard Corp.",
+    "description": "",
+    "image": ["images/partners/logo-easycard.png"]
   }
 ]
 
