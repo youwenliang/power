@@ -36,6 +36,21 @@ var partnerListData = [
     "name": "開放文化基金會",
     "description": "藉由法人組織的力量，協助台灣開放源碼社群的推廣與倡議。",
     "image": ["images/partners/logo-ocf.svg"]
+  },
+  {
+    "name": "Chunghwa Telecom",
+    "description": "",
+    "image": ["images/partners/logo-cht.png"]
+  },
+  {
+    "name": "AppWorks",
+    "description": "",
+    "image": ["images/partners/logo-appworks.png"]
+  },
+  {
+    "name": "EasyCard Corp.",
+    "description": "",
+    "image": ["images/partners/logo-easycard.png"]
   }
 ]
 
